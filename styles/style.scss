@@ -1,0 +1,395 @@
+[class*="_container"]{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+*{
+    font-weight: 400;
+    font-size: 24px;
+
+
+}
+
+h2{
+    font-size: 70px;
+    line-height: 105px;
+
+    text-align: center;
+
+    margin-bottom: 90px;
+}
+
+body{
+    background: #FFD57614;
+    
+}
+
+header{
+    margin: 60px 0;
+
+    .header_container{
+        nav{
+            ul{
+                display: flex;
+                gap: 90px;
+                li{
+                    a{
+                        font-size: 22px;
+                        line-height: 33px;
+
+                        
+                    }
+                }
+
+                .header-logo{
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+}
+
+main{
+    margin-bottom: 190px;
+
+    .hero{
+        margin-bottom: 600px;
+
+        .hero_container{
+            position: relative;
+
+            .hero-title{
+                display: flex;
+                justify-content: space-between;
+
+                h1{
+                    font-size: 70px;
+                    line-height: 105px;
+
+                    margin-right: 110px;
+                }
+
+                p{
+                    font-size: 36px;
+                    line-height: 54px;
+                }
+            }
+
+            img{
+                width: 100%;
+                height: auto;
+
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                position: absolute;
+                top: 200px;
+                left: 0px;
+            }
+        }
+    }
+
+    .about-us{
+        margin-bottom: 145px;
+
+        .about-us_container{
+            
+
+            h2{
+                line-height: 67.5px;
+            }
+            .about-us-block{
+                border-radius: 45px;
+                background: linear-gradient(90deg, #5A5454 0.08%, rgba(90, 84, 84, 0.00) 99.9%);
+
+                display: flex;
+                position: relative;
+                img{
+                    margin-right: 30px;
+                }
+                .about-us-text{
+                    width: 100%;
+                    h3{
+                        position: absolute;
+                        font-size: 45px;
+                        line-height: 150%;
+                        left: 653px;
+                        top: 22px;
+                    }
+                    p{
+                        margin-top: 110px;
+                        font-size: 26px;
+                        line-height: 150%;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .services{
+        .services_container{
+
+            .services-cards{
+                display: flex;
+                gap: 120px;
+                li{
+                    width: 33%;
+                    text-align: center;
+                    img{
+                        height: 300px;
+                        width: 300px;
+
+                        margin-bottom: 75px;
+                    }
+                    h3{
+                        font-size: 26px;
+                        line-height: 39px;
+                        font-weight: 600;
+
+                        margin-bottom: 30px;
+
+                    }
+                    p{
+                        line-height: 33px;
+                        font-size: 22px;
+
+                        margin: 0 auto;
+                        width: 80%;
+
+                    }
+                }
+
+                .services-card-1{
+                    border-radius: 45px;
+                    background: linear-gradient(0deg, rgba(255, 205, 41, 0.23) 0%, rgba(217, 217, 217, 0.00) 100%);
+                }
+                .services-card-2{
+                    border-radius: 45px;
+                    background: linear-gradient(0deg, rgba(50, 232, 232, 0.23) 0%, rgba(217, 217, 217, 0.00) 100%);
+                }
+                .services-card-3{
+                    border-radius: 45px;
+                    background: linear-gradient(0deg, rgba(198, 110, 238, 0.23) 0%, rgba(217, 217, 217, 0.00) 100%);
+                }
+            }
+        }
+    }
+
+    .gallery{
+        .galery_container{
+            .gallery_block{
+                * {
+                    box-sizing: border-box;
+                  }
+                  
+                  /* Position the image container (needed to position the left and right arrows) */
+                  .galery-block {
+                    position: relative;
+                  }
+                  
+                  /* Hide the images by default */
+                  .mySlides {
+                    display: none;
+                  }
+                  
+                  /* Add a pointer when hovering over the thumbnail images */
+                  .cursor {
+                    cursor: pointer;
+                  }
+                  
+                  /* Next & previous buttons */
+                  .prev,
+                  .next {
+                    cursor: pointer;
+                    position: absolute;
+                    top: 40%;
+                    width: auto;
+                    padding: 16px;
+                    margin-top: -50px;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 20px;
+                    border-radius: 0 3px 3px 0;
+                    user-select: none;
+                    -webkit-user-select: none;
+                  }
+                  
+                  /* Position the "next button" to the right */
+                  .next {
+                    right: 0;
+                    border-radius: 3px 0 0 3px;
+                  }
+                  
+                  /* On hover, add a black background color with a little bit see-through */
+                  .prev:hover,
+                  .next:hover {
+                    background-color: rgba(0, 0, 0, 0.8);
+                  }
+                  
+                  /* Number text (1/3 etc) */
+                  .numbertext {
+                    color: #f2f2f2;
+                    font-size: 12px;
+                    padding: 8px 12px;
+                    position: absolute;
+                    top: 0;
+                  }
+                  
+                  /* Container for image text */
+                  .caption-container {
+                    text-align: center;
+                    background-color: #222;
+                    padding: 2px 16px;
+                    color: white;
+                  }
+                  
+                  .row:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                  }
+                  
+                  /* Six columns side by side */
+                  .column {
+                    float: left;
+                    width: 16.66%;
+                  }
+                  
+                  /* Add a transparency effect for thumnbail images */
+                  .demo {
+                    opacity: 0.6;
+                  }
+                  
+                  .active,
+                  .demo:hover {
+                    opacity: 1;
+                  }
+            }
+        }
+    }
+
+    .form{
+        .form_container{
+            display: flex;
+            justify-content: space-between;
+
+            ::-webkit-input-placeholder { /* Для Chrome и Safari */
+                padding-left: 10px; /* Отступ слева */
+                font-size: 16px; /* Размер шрифта */
+            }
+            :-moz-placeholder { /* Для Firefox 4-18 */
+                padding-left: 10px;
+                font-size: 16px;
+            }
+            ::-moz-placeholder { /* Для Firefox 19+ */
+                padding-left: 10px;
+                font-size: 16px;
+            }
+            :-ms-input-placeholder { /* Для IE */
+                padding-left: 10px;
+                font-size: 16px;
+            }
+
+
+            .form-left-part{
+                max-width: 50%;
+                h3{
+                    font-size: 20px;
+                    line-height: 150%;
+
+                    text-align: center;
+                }
+                img{
+                    width: 100%;
+                    background-size: cover;
+                }
+            }
+
+            .form-right-part{
+                max-width: 50%;
+                background-color: #22222267;
+                text-align: center;
+                form{
+
+                    input{
+                        width: 50%;
+
+                        height: 45px;
+                        border-radius: 35px;
+                        background: rgba(255, 255, 255, 0.47);
+                    }
+                    input[type="submit"] {
+                        font-size: 26px; 
+                        
+                        background: #C66EEE;
+                        
+                        max-width: 30%;
+                    }
+                }
+            }
+
+        }
+    }
+    
+    .contact-us{
+        .contact-us_container{
+            .contact-us-all{
+                display: flex;
+                justify-content: space-between;
+
+                align-items: center;
+                .contact-us-left{
+                    li{
+                        display: flex;
+                        align-items: center;
+                        img{
+                            margin-right: 30px;
+                        }
+                            a{
+                                max-width: 530px;
+                                padding: 22px 0 22px 22px;
+                                border-radius: 20px;
+                                background: rgba(75, 54, 8, 0.548);
+
+                                width: 100%;
+                            }
+                    }
+                }
+
+                .contat-us-map{
+                    iframe{
+                        border-radius: 45px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer{
+    background: #a0280abe;
+    .footer_container{
+        .footer-links{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            ul{
+                display: flex;
+                gap: 90px;
+
+                margin-bottom: 90px;
+                
+                li{
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+        p{
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+}
