@@ -1,13 +1,15 @@
 [class*="_container"]{
     max-width: 1500px;
     margin: 0 auto;
+    
+    padding: 0 20px;
 }
 
 *{
     font-weight: 400;
     font-size: 24px;
 
-
+    color: #FFFFFF;
 }
 
 h2{
@@ -20,8 +22,7 @@ h2{
 }
 
 body{
-    background: #FFD57614;
-    
+    background: rgb(77, 54, 0);
 }
 
 header{
@@ -31,7 +32,7 @@ header{
         nav{
             ul{
                 display: flex;
-                gap: 90px;
+                justify-content: space-between;
                 li{
                     a{
                         font-size: 22px;
@@ -39,7 +40,13 @@ header{
 
                         
                     }
+                    .header-btn{
+                        padding: 20px 47px;
+                        border-radius: 15px;
+                        background: #C66EEE;
+                    }
                 }
+
 
                 .header-logo{
                     font-size: 36px;
@@ -60,30 +67,31 @@ main{
 
             .hero-title{
                 display: flex;
-                justify-content: space-between;
-
                 h1{
                     font-size: 70px;
-                    line-height: 105px;
+                    line-height: 120%;
 
-                    margin-right: 110px;
+                    max-width: 450px;
+
+                    margin-right: 100px;
                 }
 
                 p{
                     font-size: 36px;
                     line-height: 54px;
+
+                    max-height: 100px;
                 }
             }
 
             img{
                 width: 100%;
                 height: auto;
-
                 background-size: cover;
                 background-repeat: no-repeat;
 
                 position: absolute;
-                top: 200px;
+                top: 126px;
                 left: 0px;
             }
         }
@@ -106,6 +114,8 @@ main{
                 position: relative;
                 img{
                     margin-right: 30px;
+
+                    max-width: 50%;
                 }
                 .about-us-text{
                     width: 100%;
@@ -128,17 +138,24 @@ main{
     }
 
     .services{
+        margin-bottom: 100px;
+
         .services_container{
 
             .services-cards{
                 display: flex;
-                gap: 120px;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                gap: 40px;
                 li{
-                    width: 33%;
+                    flex: 1 1 auto;
                     text-align: center;
+
+                    max-width: 400px;
                     img{
-                        height: 300px;
-                        width: 300px;
+                        max-height: 300px;
+                        max-width: 80%;
 
                         margin-bottom: 75px;
                     }
@@ -176,117 +193,122 @@ main{
         }
     }
 
-    .gallery{
-        .galery_container{
-            .gallery_block{
-                * {
-                    box-sizing: border-box;
-                  }
-                  
-                  /* Position the image container (needed to position the left and right arrows) */
-                  .galery-block {
+    .gallery {
+        margin-bottom: 100px;
+            .gallery_container {
+                
+                .gallery-block {
                     position: relative;
-                  }
-                  
-                  /* Hide the images by default */
-                  .mySlides {
-                    display: none;
-                  }
-                  
-                  /* Add a pointer when hovering over the thumbnail images */
-                  .cursor {
-                    cursor: pointer;
-                  }
-                  
-                  /* Next & previous buttons */
-                  .prev,
-                  .next {
-                    cursor: pointer;
-                    position: absolute;
-                    top: 40%;
-                    width: auto;
-                    padding: 16px;
-                    margin-top: -50px;
-                    color: white;
-                    font-weight: bold;
-                    font-size: 20px;
-                    border-radius: 0 3px 3px 0;
-                    user-select: none;
-                    -webkit-user-select: none;
-                  }
-                  
-                  /* Position the "next button" to the right */
-                  .next {
-                    right: 0;
-                    border-radius: 3px 0 0 3px;
-                  }
-                  
-                  /* On hover, add a black background color with a little bit see-through */
-                  .prev:hover,
-                  .next:hover {
-                    background-color: rgba(0, 0, 0, 0.8);
-                  }
-                  
-                  /* Number text (1/3 etc) */
-                  .numbertext {
-                    color: #f2f2f2;
-                    font-size: 12px;
-                    padding: 8px 12px;
-                    position: absolute;
-                    top: 0;
-                  }
-                  
-                  /* Container for image text */
-                  .caption-container {
-                    text-align: center;
-                    background-color: #222;
-                    padding: 2px 16px;
-                    color: white;
-                  }
-                  
-                  .row:after {
-                    content: "";
-                    display: table;
-                    clear: both;
-                  }
-                  
-                  /* Six columns side by side */
-                  .column {
-                    float: left;
-                    width: 16.66%;
-                  }
-                  
-                  /* Add a transparency effect for thumnbail images */
-                  .demo {
-                    opacity: 0.6;
-                  }
-                  
-                  .active,
-                  .demo:hover {
-                    opacity: 1;
-                  }
+                    * {
+                        box-sizing: border-box;
+                    }
+    
+
+    
+                    /* Hide the images by default */
+                    .mySlides {
+                        display: none;
+
+                        img{
+                            max-height: 800px;
+
+                            border-radius: 3%;
+                        }
+                    }
+    
+                    /* Add a pointer when hovering over the thumbnail images */
+                    .cursor {
+                        cursor: pointer;
+                    }
+    
+                    /* Next & previous buttons */
+                    .prev,
+                    .next {
+                        cursor: pointer;
+                        position: absolute;
+                        top: 50%;
+                        width: auto;
+                        padding: 16px;
+                        margin-top: -50px;
+                        color: white;
+                        font-weight: bold;
+                        font-size: 20px;
+                        border-radius: 0 3px 3px 0;
+                        user-select: none;
+                        -webkit-user-select: none;
+                    }
+    
+                    /* Position the "next button" to the right */
+                    .next {
+                        right: 0;
+                        border-radius: 3px 0 0 3px;
+                    }
+    
+                    /* On hover, add a black background color with a little bit see-through */
+                    .prev:hover,
+                    .next:hover {
+                        background-color: rgba(0, 0, 0, 0.8);
+                    }
+    
+                    /* Number text (1/3 etc) */
+                    .numbertext {
+                        color: #f2f2f2;
+                        font-size: 22px;
+                        padding: 8px 12px;
+                        position: absolute;
+                        top: 0;
+                    }
+    
+                    .row:after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                    }
+    
+                    /* Six columns side by side */
+                    .column {
+                        float: left;
+                        width: 16.66%;
+                    }
+    
+                    /* Add a transparency effect for thumnbail images */
+                    .demo {
+                        opacity: 0.6;
+                    }
+    
+                    .active,
+                    .demo:hover {
+                        opacity: 1;
+                    }
+                }
             }
-        }
     }
 
     .form{
+        margin-bottom: 100px;
+
         .form_container{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
 
             ::-webkit-input-placeholder { /* Для Chrome и Safari */
+                opacity: 80%;
+                color: #FFFFFF;
                 padding-left: 10px; /* Отступ слева */
                 font-size: 16px; /* Размер шрифта */
             }
             :-moz-placeholder { /* Для Firefox 4-18 */
+                color: #FFFFFF;
                 padding-left: 10px;
                 font-size: 16px;
             }
             ::-moz-placeholder { /* Для Firefox 19+ */
+                color: #FFFFFF;
                 padding-left: 10px;
                 font-size: 16px;
             }
             :-ms-input-placeholder { /* Для IE */
+                color: #FFFFFF;
                 padding-left: 10px;
                 font-size: 16px;
             }
@@ -294,15 +316,22 @@ main{
 
             .form-left-part{
                 max-width: 50%;
+
+                border-radius: 45px;
+                background: linear-gradient(0deg, rgba(90, 84, 84, 0.23) 0%, rgba(217, 217, 217, 0.00) 100%);
                 h3{
-                    font-size: 20px;
+                    font-size: 45px;
                     line-height: 150%;
 
-                    text-align: center;
+                    max-width: 70%;
+                    margin: 0 auto;
+
                 }
                 img{
                     width: 100%;
                     background-size: cover;
+
+                    margin-bottom: 30px;
                 }
             }
 
@@ -310,16 +339,26 @@ main{
                 max-width: 50%;
                 background-color: #22222267;
                 text-align: center;
-                form{
 
+                h2{
+                    max-width: 500px;
+
+                    border-radius: 45px;
+                    background: linear-gradient(0deg, rgba(90, 84, 84, 0.23) 0%, rgba(217, 217, 217, 0.00) 100%);
+                }
+
+                form{
+                    fill: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, rgba(217, 217, 217, 0.23) 97%);
                     input{
-                        width: 50%;
+                        width: 65%;
 
                         height: 45px;
                         border-radius: 35px;
                         background: rgba(255, 255, 255, 0.47);
                     }
                     input[type="submit"] {
+                        margin-top: 60px;
+
                         font-size: 26px; 
                         
                         background: #C66EEE;
@@ -340,6 +379,7 @@ main{
 
                 align-items: center;
                 .contact-us-left{
+                    width: 50%;
                     li{
                         display: flex;
                         align-items: center;
@@ -358,7 +398,9 @@ main{
                 }
 
                 .contat-us-map{
+                    width: 50%;
                     iframe{
+                        width: 100%;
                         border-radius: 45px;
                     }
                 }
@@ -369,27 +411,40 @@ main{
 
 footer{
     background: #a0280abe;
+    padding: 0px 0px 30px ;
     .footer_container{
-        .footer-links{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            ul{
+            .footer-links{
+                padding: 50px 0 50px 0;
                 display: flex;
-                gap: 90px;
+                justify-content: space-between;
 
-                margin-bottom: 90px;
-                
-                li{
-                    align-items: center;
+                align-items: center;
+                ul{
                     display: flex;
-                    flex-direction: column;
+                    gap: 90px;
+                    li{
+                        display: flex;
+                        flex-direction: column;
+                        a{
+                            margin-bottom: 15px;
+                        }
+                    }
                 }
             }
-        }
-        p{
-            font-size: 12px;
-            text-align: center;
-        }
+
+            p{
+                font-size: 12px;
+                text-align: center;
+
+                position: relative;
+            }
+            p::before {
+                content: "";
+                position: absolute;
+                top: -15px;
+                left: 10%; 
+                width: 80%;
+                border-top: 1px solid #ffffff; 
+            }
     }
-}
+}                                                                                                                                                                              

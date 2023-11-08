@@ -2,11 +2,13 @@
 [class*=_container] {
   max-width: 1500px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 * {
   font-weight: 400;
   font-size: 24px;
+  color: #FFFFFF;
 }
 
 h2 {
@@ -17,7 +19,7 @@ h2 {
 }
 
 body {
-  background: rgba(255, 213, 118, 0.0784313725);
+  background: rgb(77, 54, 0);
 }
 
 header {
@@ -25,11 +27,16 @@ header {
 }
 header .header_container nav ul {
   display: flex;
-  gap: 90px;
+  justify-content: space-between;
 }
 header .header_container nav ul li a {
   font-size: 22px;
   line-height: 33px;
+}
+header .header_container nav ul li .header-btn {
+  padding: 20px 47px;
+  border-radius: 15px;
+  background: #C66EEE;
 }
 header .header_container nav ul .header-logo {
   font-size: 36px;
@@ -46,16 +53,17 @@ main .hero .hero_container {
 }
 main .hero .hero_container .hero-title {
   display: flex;
-  justify-content: space-between;
 }
 main .hero .hero_container .hero-title h1 {
   font-size: 70px;
-  line-height: 105px;
-  margin-right: 110px;
+  line-height: 120%;
+  max-width: 450px;
+  margin-right: 100px;
 }
 main .hero .hero_container .hero-title p {
   font-size: 36px;
   line-height: 54px;
+  max-height: 100px;
 }
 main .hero .hero_container img {
   width: 100%;
@@ -63,7 +71,7 @@ main .hero .hero_container img {
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  top: 200px;
+  top: 126px;
   left: 0px;
 }
 main .about-us {
@@ -80,6 +88,7 @@ main .about-us .about-us_container .about-us-block {
 }
 main .about-us .about-us_container .about-us-block img {
   margin-right: 30px;
+  max-width: 50%;
 }
 main .about-us .about-us_container .about-us-block .about-us-text {
   width: 100%;
@@ -96,17 +105,23 @@ main .about-us .about-us_container .about-us-block .about-us-text p {
   font-size: 26px;
   line-height: 150%;
 }
+main .services {
+  margin-bottom: 100px;
+}
 main .services .services_container .services-cards {
   display: flex;
-  gap: 120px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }
 main .services .services_container .services-cards li {
-  width: 33%;
+  flex: 1 1 auto;
   text-align: center;
+  max-width: 400px;
 }
 main .services .services_container .services-cards li img {
-  height: 300px;
-  width: 300px;
+  max-height: 300px;
+  max-width: 80%;
   margin-bottom: 75px;
 }
 main .services .services_container .services-cards li h3 {
@@ -133,35 +148,38 @@ main .services .services_container .services-cards .services-card-3 {
   border-radius: 45px;
   background: linear-gradient(0deg, rgba(198, 110, 238, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
 }
-main .gallery .galery_container .gallery_block {
-  /* Position the image container (needed to position the left and right arrows) */
+main .gallery {
+  margin-bottom: 100px;
+}
+main .gallery .gallery_container .gallery-block {
+  position: relative;
   /* Hide the images by default */
   /* Add a pointer when hovering over the thumbnail images */
   /* Next & previous buttons */
   /* Position the "next button" to the right */
   /* On hover, add a black background color with a little bit see-through */
   /* Number text (1/3 etc) */
-  /* Container for image text */
   /* Six columns side by side */
   /* Add a transparency effect for thumnbail images */
 }
-main .gallery .galery_container .gallery_block * {
+main .gallery .gallery_container .gallery-block * {
   box-sizing: border-box;
 }
-main .gallery .galery_container .gallery_block .galery-block {
-  position: relative;
-}
-main .gallery .galery_container .gallery_block .mySlides {
+main .gallery .gallery_container .gallery-block .mySlides {
   display: none;
 }
-main .gallery .galery_container .gallery_block .cursor {
+main .gallery .gallery_container .gallery-block .mySlides img {
+  max-height: 800px;
+  border-radius: 3%;
+}
+main .gallery .gallery_container .gallery-block .cursor {
   cursor: pointer;
 }
-main .gallery .galery_container .gallery_block .prev,
-main .gallery .galery_container .gallery_block .next {
+main .gallery .gallery_container .gallery-block .prev,
+main .gallery .gallery_container .gallery-block .next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 50%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -172,87 +190,102 @@ main .gallery .galery_container .gallery_block .next {
   user-select: none;
   -webkit-user-select: none;
 }
-main .gallery .galery_container .gallery_block .next {
+main .gallery .gallery_container .gallery-block .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-main .gallery .galery_container .gallery_block .prev:hover,
-main .gallery .galery_container .gallery_block .next:hover {
+main .gallery .gallery_container .gallery-block .prev:hover,
+main .gallery .gallery_container .gallery-block .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-main .gallery .galery_container .gallery_block .numbertext {
+main .gallery .gallery_container .gallery-block .numbertext {
   color: #f2f2f2;
-  font-size: 12px;
+  font-size: 22px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
 }
-main .gallery .galery_container .gallery_block .caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-main .gallery .galery_container .gallery_block .row:after {
+main .gallery .gallery_container .gallery-block .row:after {
   content: "";
   display: table;
   clear: both;
 }
-main .gallery .galery_container .gallery_block .column {
+main .gallery .gallery_container .gallery-block .column {
   float: left;
   width: 16.66%;
 }
-main .gallery .galery_container .gallery_block .demo {
+main .gallery .gallery_container .gallery-block .demo {
   opacity: 0.6;
 }
-main .gallery .galery_container .gallery_block .active,
-main .gallery .galery_container .gallery_block .demo:hover {
+main .gallery .gallery_container .gallery-block .active,
+main .gallery .gallery_container .gallery-block .demo:hover {
   opacity: 1;
+}
+main .form {
+  margin-bottom: 100px;
 }
 main .form .form_container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 main .form .form_container ::-webkit-input-placeholder { /* Для Chrome и Safari */
+  opacity: 80%;
+  color: #FFFFFF;
   padding-left: 10px; /* Отступ слева */
   font-size: 16px; /* Размер шрифта */
 }
 main .form .form_container :-moz-placeholder { /* Для Firefox 4-18 */
+  color: #FFFFFF;
   padding-left: 10px;
   font-size: 16px;
 }
 main .form .form_container ::-moz-placeholder { /* Для Firefox 19+ */
+  color: #FFFFFF;
   padding-left: 10px;
   font-size: 16px;
 }
 main .form .form_container :-ms-input-placeholder { /* Для IE */
+  color: #FFFFFF;
   padding-left: 10px;
   font-size: 16px;
 }
 main .form .form_container .form-left-part {
   max-width: 50%;
+  border-radius: 45px;
+  background: linear-gradient(0deg, rgba(90, 84, 84, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
 }
 main .form .form_container .form-left-part h3 {
-  font-size: 20px;
+  font-size: 45px;
   line-height: 150%;
-  text-align: center;
+  max-width: 70%;
+  margin: 0 auto;
 }
 main .form .form_container .form-left-part img {
   width: 100%;
   background-size: cover;
+  margin-bottom: 30px;
 }
 main .form .form_container .form-right-part {
   max-width: 50%;
   background-color: rgba(34, 34, 34, 0.4039215686);
   text-align: center;
 }
+main .form .form_container .form-right-part h2 {
+  max-width: 500px;
+  border-radius: 45px;
+  background: linear-gradient(0deg, rgba(90, 84, 84, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
+}
+main .form .form_container .form-right-part form {
+  fill: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, rgba(217, 217, 217, 0.23) 97%);
+}
 main .form .form_container .form-right-part form input {
-  width: 50%;
+  width: 65%;
   height: 45px;
   border-radius: 35px;
   background: rgba(255, 255, 255, 0.47);
 }
 main .form .form_container .form-right-part form input[type=submit] {
+  margin-top: 60px;
   font-size: 26px;
   background: #C66EEE;
   max-width: 30%;
@@ -261,6 +294,9 @@ main .contact-us .contact-us_container .contact-us-all {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+main .contact-us .contact-us_container .contact-us-all .contact-us-left {
+  width: 50%;
 }
 main .contact-us .contact-us_container .contact-us-all .contact-us-left li {
   display: flex;
@@ -276,14 +312,20 @@ main .contact-us .contact-us_container .contact-us-all .contact-us-left li a {
   background: rgba(75, 54, 8, 0.548);
   width: 100%;
 }
+main .contact-us .contact-us_container .contact-us-all .contat-us-map {
+  width: 50%;
+}
 main .contact-us .contact-us_container .contact-us-all .contat-us-map iframe {
+  width: 100%;
   border-radius: 45px;
 }
 
 footer {
   background: rgba(160, 40, 10, 0.7450980392);
+  padding: 0px 0px 30px;
 }
 footer .footer_container .footer-links {
+  padding: 50px 0 50px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -291,14 +333,24 @@ footer .footer_container .footer-links {
 footer .footer_container .footer-links ul {
   display: flex;
   gap: 90px;
-  margin-bottom: 90px;
 }
 footer .footer_container .footer-links ul li {
-  align-items: center;
   display: flex;
   flex-direction: column;
+}
+footer .footer_container .footer-links ul li a {
+  margin-bottom: 15px;
 }
 footer .footer_container p {
   font-size: 12px;
   text-align: center;
+  position: relative;
+}
+footer .footer_container p::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 10%;
+  width: 80%;
+  border-top: 1px solid #ffffff;
 }/*# sourceMappingURL=style.css.map */

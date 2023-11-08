@@ -21,7 +21,36 @@ main{
                 flex-wrap: wrap;
                 justify-content: space-between;
 
+                .card-1{
+                    border-radius: 45px;
+                    background: linear-gradient(0deg, rgba(255, 205, 41, 0.23) 0%, rgba(217, 217, 217, 0.00) 100%);
+                }
 
+                .card-2{
+                    border-radius: 45px;
+                    background: linear-gradient(0deg, rgba(50, 232, 232, 0.23) 0%, rgba(217, 217, 217, 0.00) 100%);
+                }
+
+                .card-3{
+                    border-radius: 45px;
+                    background: linear-gradient(0deg, rgba(198, 110, 238, 0.23) 0%, rgba(217, 217, 217, 0.00) 100%);
+                }
+
+                .card-4{
+                    border-radius: 45px;
+                    background: linear-gradient(0deg, rgba(50, 232, 232, 0.23) 0%, rgba(217, 217, 217, 0.00) 100%);
+                }
+
+                .card-5{
+                    border-radius: 45px;
+                    background: linear-gradient(0deg, rgba(198, 110, 238, 0.23) 0%, rgba(217, 217, 217, 0.00) 100%);
+                }
+
+                .card-6{
+                    border-radius: 45px;
+                    background: linear-gradient(0deg, rgba(255, 205, 41, 0.23) 0%, rgba(217, 217, 217, 0.00) 100%);
+                }
+                
                 li{
                     flex: 1 1;
                     text-align: center;
