@@ -7,6 +7,24 @@ main{
     .trainer-cards{
         
         .trainer-cards_container{
+            position: relative;
+
+            .bg-turquoise-circle{
+                padding:300px;
+                border-radius: 979px;
+                background: rgba(50, 232, 232, 0.628);
+    
+                filter: blur(200px);
+    
+                position: absolute;
+
+                
+                bottom: -135px;
+                left: 684px;
+    
+                z-index: -1;
+            }
+
             h1{
                 line-height: 150%;
                 font-size: 70px;
@@ -60,6 +78,7 @@ main{
 
                     margin-bottom: 100px;
 
+                    padding-bottom: 50px;
                     img{
                         max-width: 450px;
                         height: auto;
@@ -75,7 +94,6 @@ main{
                     }
 
                     p{
-                        margin-bottom: 40px;
 
                         max-width: 410px;
                         margin: 0 auto;
@@ -89,6 +107,14 @@ main{
 
     .requirements{
         .requirements_container{
+            h2{
+                max-width: 1000px;
+
+                margin: 0 auto;
+
+                margin-bottom: 90px;
+            }
+
             ul{
                 display: flex;
                 flex-wrap: wrap;
@@ -106,7 +132,7 @@ main{
                     border-radius: 15%;
 
                     width: 300px;
-                    height: 200px;
+                    height: 220px;
 
                     max-width: 370px;
                     
@@ -120,8 +146,13 @@ main{
 
                     h3{
                         font-size: 30px;
-
+                        max-width: 260px;
+                        font-weight: 400;
                         text-align: center;
+                        span{
+                            font-size: 20px;
+                            font-weight: 300;
+                        }
                     }
                 }
             }
@@ -129,6 +160,7 @@ main{
     }
 
     .attention{
+        margin-bottom: 100px;
         .attention_container{
             display: flex;
             align-items: center;

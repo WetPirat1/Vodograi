@@ -19,7 +19,7 @@ h2 {
 }
 
 body {
-  background: rgb(77, 54, 0);
+  background: rgba(69, 26, 0, 0.91);
 }
 
 header {
@@ -71,11 +71,34 @@ main .hero .hero_container img {
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  top: 126px;
+  top: 70px;
   left: 0px;
+}
+main .hero .hero_container .bg-yel-circle {
+  padding: 300px;
+  border-radius: 979px;
+  background: rgba(255, 204, 0, 0.661);
+  filter: blur(200px);
+  position: absolute;
+  top: -188px;
+  left: -112px;
+  z-index: -1;
+}
+main .hero .hero_container .bg-purple-circle {
+  padding: 300px;
+  border-radius: 979px;
+  background: rgba(151, 71, 255, 0.656);
+  filter: blur(200px);
+  position: absolute;
+  bottom: -698px;
+  right: -100px;
+  z-index: -1;
 }
 main .about-us {
   margin-bottom: 145px;
+}
+main .about-us .about-us_container {
+  position: relative;
 }
 main .about-us .about-us_container h2 {
   line-height: 67.5px;
@@ -105,8 +128,33 @@ main .about-us .about-us_container .about-us-block .about-us-text p {
   font-size: 26px;
   line-height: 150%;
 }
+main .about-us .about-us_container .bg-turquoise-circle {
+  padding: 300px;
+  border-radius: 979px;
+  background: rgba(50, 232, 232, 0.628);
+  filter: blur(200px);
+  position: absolute;
+  overflow: hidden;
+  bottom: -242px;
+  left: -320px;
+  z-index: -1;
+}
 main .services {
   margin-bottom: 100px;
+}
+main .services .services_container {
+  position: relative;
+}
+main .services .services_container .bg-purple-circle {
+  padding: 300px;
+  border-radius: 979px;
+  background: rgba(151, 71, 255, 0.656);
+  filter: blur(200px);
+  position: absolute;
+  overflow: hidden;
+  top: -23px;
+  right: 625px;
+  z-index: -1;
 }
 main .services .services_container .services-cards {
   display: flex;
@@ -148,8 +196,36 @@ main .services .services_container .services-cards .services-card-3 {
   border-radius: 45px;
   background: linear-gradient(0deg, rgba(198, 110, 238, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
 }
+main .price .price_container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+main .price .bg-purple-circle {
+  padding: 250px;
+  border-radius: 979px;
+  background: rgba(151, 71, 255, 0.656);
+  filter: blur(200px);
+  position: absolute;
+  bottom: -16px;
+  right: -114px;
+  z-index: -1;
+}
 main .gallery {
   margin-bottom: 100px;
+  position: relative;
+}
+main .gallery .bg-turquoise-circle {
+  padding: 300px;
+  border-radius: 979px;
+  background: rgba(50, 232, 232, 0.628);
+  filter: blur(200px);
+  position: absolute;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
 }
 main .gallery .gallery_container .gallery-block {
   position: relative;
@@ -227,6 +303,27 @@ main .form {
 main .form .form_container {
   display: flex;
   justify-content: space-around;
+  position: relative;
+}
+main .form .form_container .bg-yel-circle {
+  padding: 200px;
+  border-radius: 979px;
+  background: rgba(255, 204, 0, 0.749);
+  filter: blur(180px);
+  position: absolute;
+  top: -339px;
+  right: -109px;
+  z-index: -1;
+}
+main .form .form_container .bg-purple-circle {
+  padding: 300px;
+  border-radius: 979px;
+  background: rgba(151, 71, 255, 0.542);
+  filter: blur(200px);
+  position: absolute;
+  top: 172px;
+  left: 390px;
+  z-index: -1;
 }
 main .form .form_container ::-webkit-input-placeholder { /* Для Chrome и Safari */
   opacity: 80%;
@@ -307,10 +404,11 @@ main .contact-us .contact-us_container .contact-us-all .contact-us-left li img {
 }
 main .contact-us .contact-us_container .contact-us-all .contact-us-left li a {
   max-width: 530px;
-  padding: 22px 0 22px 22px;
+  padding: 20px 0 20px 22px;
   border-radius: 20px;
-  background: rgba(75, 54, 8, 0.548);
+  background: rgba(255, 255, 255, 0.215);
   width: 100%;
+  margin-bottom: 30px;
 }
 main .contact-us .contact-us_container .contact-us-all .contat-us-map {
   width: 50%;
@@ -321,7 +419,7 @@ main .contact-us .contact-us_container .contact-us-all .contat-us-map iframe {
 }
 
 footer {
-  background: rgba(160, 40, 10, 0.7450980392);
+  background: rgba(158, 50, 99, 0.461);
   padding: 0px 0px 30px;
 }
 footer .footer_container .footer-links {

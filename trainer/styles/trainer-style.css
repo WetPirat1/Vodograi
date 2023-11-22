@@ -3,6 +3,19 @@
   margin: 0 auto;
 }
 
+main .trainer-cards .trainer-cards_container {
+  position: relative;
+}
+main .trainer-cards .trainer-cards_container .bg-turquoise-circle {
+  padding: 300px;
+  border-radius: 979px;
+  background: rgba(50, 232, 232, 0.628);
+  filter: blur(200px);
+  position: absolute;
+  bottom: -135px;
+  left: 684px;
+  z-index: -1;
+}
 main .trainer-cards .trainer-cards_container h1 {
   line-height: 150%;
   font-size: 70px;
@@ -44,6 +57,7 @@ main .trainer-cards .trainer-cards_container ul li {
   max-width: 450px;
   max-height: 600px;
   margin-bottom: 100px;
+  padding-bottom: 50px;
 }
 main .trainer-cards .trainer-cards_container ul li img {
   max-width: 450px;
@@ -56,9 +70,13 @@ main .trainer-cards .trainer-cards_container ul li h2 {
   margin-bottom: 20px;
 }
 main .trainer-cards .trainer-cards_container ul li p {
-  margin-bottom: 40px;
   max-width: 410px;
   margin: 0 auto;
+}
+main .requirements .requirements_container h2 {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 90px;
 }
 main .requirements .requirements_container ul {
   display: flex;
@@ -74,7 +92,7 @@ main .requirements .requirements_container ul li {
   background: #C66EEE;
   border-radius: 15%;
   width: 300px;
-  height: 200px;
+  height: 220px;
   max-width: 370px;
   display: flex;
   flex-direction: column;
@@ -85,7 +103,16 @@ main .requirements .requirements_container ul li img {
 }
 main .requirements .requirements_container ul li h3 {
   font-size: 30px;
+  max-width: 260px;
+  font-weight: 400;
   text-align: center;
+}
+main .requirements .requirements_container ul li h3 span {
+  font-size: 20px;
+  font-weight: 300;
+}
+main .attention {
+  margin-bottom: 100px;
 }
 main .attention .attention_container {
   display: flex;
