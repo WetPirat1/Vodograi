@@ -32,11 +32,20 @@ header .header_container nav ul {
 header .header_container nav ul li a {
   font-size: 22px;
   line-height: 33px;
+  transition: font-size 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }
 header .header_container nav ul li .header-btn {
   padding: 20px 47px;
   border-radius: 15px;
   background: #C66EEE;
+}
+header .header_container nav ul li a:hover {
+  font-size: 24px;
+  color: rgb(218, 218, 218);
+}
+header .header_container nav ul li .header-btn:hover {
+  color: white;
+  background: #a95ace;
 }
 header .header_container nav ul .header-logo {
   font-size: 36px;
@@ -166,6 +175,7 @@ main .services .services_container .services-cards li {
   flex: 1 1 auto;
   text-align: center;
   max-width: 400px;
+  padding-bottom: 20px;
 }
 main .services .services_container .services-cards li img {
   max-height: 300px;
@@ -195,6 +205,58 @@ main .services .services_container .services-cards .services-card-2 {
 main .services .services_container .services-cards .services-card-3 {
   border-radius: 45px;
   background: linear-gradient(0deg, rgba(198, 110, 238, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
+}
+main .services .popup-services-card-1-container {
+  width: 100%;
+  height: 2000px;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+}
+main .services .popup-services-card-1-container .popup-services-card-1 {
+  width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+  margin-top: 15px;
+  background: rgb(66, 49, 7);
+}
+main .services .popup-services-card-1-container .popup-services-card-1 .popup-services-card-1-body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+}
+main .services .popup-services-card-1-container .popup-services-card-1 .popup-services-card-1-body h2 {
+  padding-top: 20px;
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+main .services .popup-services-card-1-container .popup-services-card-1 .popup-services-card-1-body img {
+  width: 100%;
+  max-height: 300px;
+  margin-bottom: 25px;
+}
+main .services .popup-services-card-1-container .popup-services-card-1 .popup-services-card-1-body p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+main .services .popup-services-card-1-container .popup-services-card-1 .popup-services-card-1-body p span {
+  font-weight: 700;
+}
+main .services .popup-services-card-1-container .popup-services-card-1 .popup-services-card-1-body .popup-form {
+  padding: 20px 47px;
+  border-radius: 15px;
+  background: #C66EEE;
+}
+main .services .popup-services-card-1-container .popup-services-card-1 .popup-services-card-1-body .popup-hide-btn {
+  position: absolute;
+  top: 39px;
+  right: 290px;
 }
 main .price .price_container {
   position: relative;
@@ -384,8 +446,14 @@ main .form .form_container .form-right-part form input {
 main .form .form_container .form-right-part form input[type=submit] {
   margin-top: 60px;
   font-size: 26px;
-  background: #C66EEE;
-  max-width: 30%;
+  padding: 10px 60px 20px 60px;
+  max-width: 50%;
+  background: none;
+  background-color: #C66EEE;
+  transition: font-size 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+main .form .form_container .form-right-part form input[type=submit]:hover {
+  background: #a95ace;
 }
 main .contact-us .contact-us_container .contact-us-all {
   display: flex;
@@ -406,9 +474,13 @@ main .contact-us .contact-us_container .contact-us-all .contact-us-left li a {
   max-width: 530px;
   padding: 20px 0 20px 22px;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.215);
+  background: rgba(255, 255, 255, 0.106);
   width: 100%;
   margin-bottom: 30px;
+  transition: font-size 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+main .contact-us .contact-us_container .contact-us-all .contact-us-left li a:hover {
+  color: rgba(192, 192, 192, 0.267);
 }
 main .contact-us .contact-us_container .contact-us-all .contat-us-map {
   width: 50%;
@@ -438,6 +510,10 @@ footer .footer_container .footer-links ul li {
 }
 footer .footer_container .footer-links ul li a {
   margin-bottom: 15px;
+  transition: font-size 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+footer .footer_container .footer-links ul li a:hover {
+  color: rgb(218, 218, 218);
 }
 footer .footer_container p {
   font-size: 12px;

@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>vodo.grai</title>
 
     <link rel="stylesheet" href="styles/responsive.css">
     <link rel="stylesheet" href="styles/style.css">
 
+    
+    <script src="javaScript/jquery.js"></script>
     <script src="javaScript/main.js"></script>
 </head>
 <body>
@@ -17,7 +19,7 @@
             <nav>
                 <ul>
                     <li class="header-logo"><a href="">ЛОГО</a></li>
-                    <li><a href="">Головна</a></li>
+                    <li><a class="nav-btn" href="">Головна</a></li>
                     <li><a href="">Послуги</a></li>
                     <li><a href="trainer/trainers.html">Тренери</a></li>
                     <li><a href="">Прайс</a></li>
@@ -75,26 +77,49 @@
                 <h2>ПОСЛУГИ</h2>
 
                     <ul class="services-cards">
-                        <li class="services-card-1">
-                            <img src="images/services-card1-img.png" alt="">
-                            <h3>Вільне плавання</h3>
-                            <p>Самостійне плавання: ваші правила, ваша швидкість. Відкрийте світ водних пригод на свій лад!</p>
-                        </li>
 
-                        <li class="services-card-2">
-                            <img src="images/services-card2-img.png" alt="">
-                            <h3>Індивідуальне плавання</h3>
-                            <p>Ця послуга передбачає індивідуальне заняття з однією дитиною. Особлива увага та розвиток плавання з власним інструктором. Максимум користі для вашого малятка!</p>
-                        </li>
+                            <a href="javascript:PopUpShow()">
+                                <li class="services-card-1">
+                                    <img src="images/services-card1-img.png" alt="">
+                                    <h3>Вільне плавання</h3>
+                                    <p>Самостійне плавання: ваші правила, ваша швидкість. Відкрийте світ водних пригод на свій лад!</p>
+                                </li>
+                            </a>
 
-                        <li class="services-card-3">
-                            <img src="images/services-card3-img.png" alt="">
-                            <h3>Групове плавання</h3>
-                            <p>Ця послуга передбачає заняття у групі. Веселі та навчальні заняття в невеликих групах. Сприяємо командній роботі та особистісному зростанню вашої дитини!</p>
-                        </li>
+                            <a href="javascript:PopUpShow()">
+                                <li class="services-card-2">
+                                    <img src="images/services-card2-img.png" alt="">
+                                    <h3>Індивідуальне плавання</h3>
+                                    <p>Ця послуга передбачає індивідуальне заняття з однією дитиною. Особлива увага та розвиток плавання з власним інструктором. Максимум користі для вашого малятка!</p>
+                                </li>
+                            </a>
+
+                            <a href="javascript:PopUpShow()">
+                                <li class="services-card-3">
+                                    <img src="images/services-card3-img.png" alt="">
+                                    <h3>Групове плавання</h3>
+                                    <p>Ця послуга передбачає заняття у групі. Веселі та навчальні заняття в невеликих групах. Сприяємо командній роботі та особистісному зростанню вашої дитини!</p>
+                                </li>
+                            </a>
                     </ul>
+                    
+                </div>
 
-            </div>
+                <div class="popup-services-card-1-container" id="popup-service-card-1">
+                    <div class="popup-services-card-1">
+                        <div class="popup-services-card-1-body">
+
+                            <h2>Індивідуальне заняття</h2>
+                            <img src="images/popup.png" alt="">
+                            <p>Індивідуальні заняття з плавання - це особлива увага та занурення в світ водних пригод для вашої дитини. Кожен урок проводиться з власним професійним інструктором, який враховує потреби та можливості кожного. Ми розуміємо, що кожна дитина унікальна, тому підходимо до кожного уроку індивідуально. Обирайте індивідуальні заняття з плавання для вашого малюка, і ми гарантуємо вам якісне навчання та незабутні враження від кожного візиту до нашого басейну. Наша мета - розвивати у дітях любов до води та навчити їх плавати з задоволенням та впевненістю. <span>Тривалість одного занятя - 45 хвилин.</span></p>
+    
+                            <a class="popup-form" href="">Записатися</a>
+    
+                            <a class="popup-hide-btn" href="javascript:PopUpHide()">&#10007;</a>
+                        </div>
+                    </div>
+                </div>
+
         </section>
 
         <section class="price">
