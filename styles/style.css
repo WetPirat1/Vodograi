@@ -8,7 +8,13 @@
 * {
   font-weight: 400;
   font-size: 24px;
+  font-family: "Montserrat";
+  transition-duration: 0.3s ease-in-out;
   color: #FFFFFF;
+}
+
+.txt-headline {
+  font-family: "Unbounded";
 }
 
 h2 {
@@ -174,7 +180,8 @@ main .services .services_container .services-cards {
 main .services .services_container .services-cards li {
   flex: 1 1 auto;
   text-align: center;
-  max-width: 400px;
+  max-width: 600px;
+  height: 700px;
   padding-bottom: 20px;
 }
 main .services .services_container .services-cards li img {
@@ -325,7 +332,8 @@ main .gallery .gallery_container .gallery-block .next {
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
-  user-select: none;
+  -moz-user-select: none;
+       user-select: none;
   -webkit-user-select: none;
 }
 main .gallery .gallery_container .gallery-block .next {

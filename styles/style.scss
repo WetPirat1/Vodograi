@@ -1,15 +1,21 @@
 [class*="_container"]{
     max-width: 1500px;
     margin: 0 auto;
-    
+
     padding: 0 20px;
 }
 
-*{
-    font-weight: 400;
-    font-size: 24px;
+* {
+  font-weight: 400;
+  font-size: 24px;
+  font-family: 'Montserrat';
+  transition-duration: 0.3s ease-in-out;
 
-    color: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.txt-headline {
+  font-family: 'Unbounded';
 }
 
 h2{
@@ -29,7 +35,7 @@ header{
     margin: 60px 0;
 
     .header_container{
-    
+
         nav{
             ul{
                 display: flex;
@@ -46,7 +52,7 @@ header{
                         border-radius: 15px;
                         background: #C66EEE;
                     }
-                    
+
                     a:hover{
                         font-size: 24px;
                         color: rgb(218, 218, 218);
@@ -75,18 +81,18 @@ main{
 
         .hero_container{
             position: relative;
-            
+
             .hero-title{
                 display: flex;
                 h1{
                     font-size: 70px;
                     line-height: 120%;
-                    
+
                     max-width: 450px;
-                    
+
                     margin-right: 100px;
                 }
-                
+
                 p{
                     font-size: 36px;
                     line-height: 54px;
@@ -110,14 +116,14 @@ main{
                     padding:300px;
                     border-radius: 979px;
                     background: rgba(255, 204, 0, 0.661);
-                    
+
                     filter: blur(200px);
-    
+
                     position: absolute;
-    
+
                     top: -188px;
                     left: -112px;
-    
+
                     z-index: -1;
             }
 
@@ -129,7 +135,7 @@ main{
                 filter: blur(200px);
 
                 position: absolute;
-                
+
                 bottom: -698px;
                 right: -100px;
 
@@ -184,7 +190,7 @@ main{
 
                 position: absolute;
                 overflow: hidden;
-                
+
                 bottom: -242px;
                 left: -320px;
 
@@ -209,7 +215,7 @@ main{
 
                 position: absolute;
                 overflow: hidden;
-                
+
                 top: -23px;
                 right: 625px;
 
@@ -226,7 +232,8 @@ main{
                     flex: 1 1 auto;
                     text-align: center;
 
-                    max-width: 400px;
+                    max-width: 600px;
+                    height: 700px;
 
                     padding-bottom: 20px;
                     img{
@@ -282,7 +289,7 @@ main{
             .popup-services-card-1{
                 width:1200px;
                 height: 800px;
-                
+
                 margin: 0 auto;
                 margin-top: 15px;
 
@@ -290,12 +297,12 @@ main{
 
                 .popup-services-card-1-body{
                     margin: 0 auto;
-                    
+
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     max-width: 800px;
-                    
+
                     h2{
                         padding-top: 20px;
                         margin-bottom: 10px;
@@ -324,7 +331,7 @@ main{
                     .popup-form{
                         padding: 20px 47px;
                         border-radius: 15px;
-                        
+
 
                         background: #C66EEE;
                     }
@@ -357,7 +364,7 @@ main{
             filter: blur(200px);
 
             position: absolute;
-            
+
             bottom: -16px;
             right: -114px;
 
@@ -378,7 +385,7 @@ main{
 
             position: absolute;
             overflow: hidden;
-            
+
             top: 0px;
             left: 0px;
 
@@ -392,9 +399,9 @@ main{
                     * {
                         box-sizing: border-box;
                     }
-    
 
-    
+
+
                     /* Hide the images by default */
                     .mySlides {
                         display: none;
@@ -405,12 +412,12 @@ main{
                             border-radius: 3%;
                         }
                     }
-    
+
                     /* Add a pointer when hovering over the thumbnail images */
                     .cursor {
                         cursor: pointer;
                     }
-    
+
                     /* Next & previous buttons */
                     .prev,
                     .next {
@@ -427,19 +434,19 @@ main{
                         user-select: none;
                         -webkit-user-select: none;
                     }
-    
+
                     /* Position the "next button" to the right */
                     .next {
                         right: 0;
                         border-radius: 3px 0 0 3px;
                     }
-    
+
                     /* On hover, add a black background color with a little bit see-through */
                     .prev:hover,
                     .next:hover {
                         background-color: rgba(0, 0, 0, 0.8);
                     }
-    
+
                     /* Number text (1/3 etc) */
                     .numbertext {
                         color: #f2f2f2;
@@ -448,24 +455,24 @@ main{
                         position: absolute;
                         top: 0;
                     }
-    
+
                     .row:after {
                         content: "";
                         display: table;
                         clear: both;
                     }
-    
+
                     /* Six columns side by side */
                     .column {
                         float: left;
                         width: 16.66%;
                     }
-    
+
                     /* Add a transparency effect for thumnbail images */
                     .demo {
                         opacity: 0.6;
                     }
-    
+
                     .active,
                     .demo:hover {
                         opacity: 1;
@@ -480,14 +487,14 @@ main{
         .form_container{
             display: flex;
             justify-content: space-around;
-            
+
             position: relative;
 
             .bg-yel-circle{
                 padding:200px;
                 border-radius: 979px;
                 background: rgba(255, 204, 0, 0.749);
-                
+
                 filter: blur(180px);
 
                 position: absolute;
@@ -506,7 +513,7 @@ main{
                 filter: blur(200px);
 
                 position: absolute;
-                
+
                 top: 172px;
                 left: 390px;
 
@@ -583,8 +590,8 @@ main{
                     input[type="submit"] {
                         margin-top: 60px;
 
-                        font-size: 26px; 
-                        
+                        font-size: 26px;
+
                         padding: 10px 60px 20px 60px;
 
                         max-width: 50%;
@@ -596,7 +603,7 @@ main{
                     }
 
                     input[type="submit"]:hover{
-                        
+
                         background: #a95ace;
                     }
                 }
@@ -604,7 +611,7 @@ main{
 
         }
     }
-    
+
     .contact-us{
         .contact-us_container{
             .contact-us-all{
@@ -634,7 +641,7 @@ main{
                                 transition: font-size 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
                             }
 
-                            
+
                             a:hover{
                                 color: rgba(192, 192, 192, 0.267);
                             }
@@ -692,9 +699,9 @@ footer{
                 content: "";
                 position: absolute;
                 top: -15px;
-                left: 10%; 
+                left: 10%;
                 width: 80%;
-                border-top: 1px solid #ffffff; 
+                border-top: 1px solid #ffffff;
             }
     }
-}                                                                                                                                                                              
+}
