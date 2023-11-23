@@ -1,0 +1,138 @@
+[class*=_container] {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+main .trainer-cards .trainer-cards_container {
+  position: relative;
+}
+main .trainer-cards .trainer-cards_container .bg-turquoise-circle {
+  padding: 300px;
+  border-radius: 979px;
+  background: rgba(50, 232, 232, 0.628);
+  filter: blur(200px);
+  position: absolute;
+  bottom: -135px;
+  left: 684px;
+  z-index: -1;
+}
+main .trainer-cards .trainer-cards_container h1 {
+  line-height: 150%;
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 90px;
+}
+main .trainer-cards .trainer-cards_container ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .trainer-cards .trainer-cards_container ul .card-1 {
+  border-radius: 45px;
+  background: linear-gradient(0deg, rgba(255, 205, 41, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
+}
+main .trainer-cards .trainer-cards_container ul .card-2 {
+  border-radius: 45px;
+  background: linear-gradient(0deg, rgba(50, 232, 232, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
+}
+main .trainer-cards .trainer-cards_container ul .card-3 {
+  border-radius: 45px;
+  background: linear-gradient(0deg, rgba(198, 110, 238, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
+}
+main .trainer-cards .trainer-cards_container ul .card-4 {
+  border-radius: 45px;
+  background: linear-gradient(0deg, rgba(50, 232, 232, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
+}
+main .trainer-cards .trainer-cards_container ul .card-5 {
+  border-radius: 45px;
+  background: linear-gradient(0deg, rgba(198, 110, 238, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
+}
+main .trainer-cards .trainer-cards_container ul .card-6 {
+  border-radius: 45px;
+  background: linear-gradient(0deg, rgba(255, 205, 41, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
+}
+main .trainer-cards .trainer-cards_container ul li {
+  flex: 1 1;
+  text-align: center;
+  max-width: 450px;
+  max-height: 600px;
+  margin-bottom: 100px;
+  padding-bottom: 50px;
+}
+main .trainer-cards .trainer-cards_container ul li img {
+  max-width: 450px;
+  height: auto;
+  margin-bottom: 20px;
+}
+main .trainer-cards .trainer-cards_container ul li h2 {
+  font-size: 26px;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+main .trainer-cards .trainer-cards_container ul li p {
+  max-width: 410px;
+  margin: 0 auto;
+}
+main .requirements .requirements_container h2 {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+main .requirements .requirements_container ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 0;
+  border-radius: 45px;
+  background: linear-gradient(90deg, #5A5454 0.08%, rgba(90, 84, 84, 0) 99.9%);
+  margin-bottom: 90px;
+}
+main .requirements .requirements_container ul li {
+  background: #C66EEE;
+  border-radius: 15%;
+  width: 300px;
+  height: 220px;
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .requirements .requirements_container ul li img {
+  margin: 20px 0 10px 0;
+}
+main .requirements .requirements_container ul li h3 {
+  font-size: 30px;
+  max-width: 260px;
+  font-weight: 400;
+  text-align: center;
+}
+main .requirements .requirements_container ul li h3 span {
+  font-size: 20px;
+  font-weight: 300;
+}
+main .attention {
+  margin-bottom: 100px;
+}
+main .attention .attention_container {
+  display: flex;
+  align-items: center;
+  height: 250px;
+  position: relative;
+  gap: 30px;
+  border-radius: 45px;
+  background: linear-gradient(90deg, #5A5454 0.08%, rgba(90, 84, 84, 0) 99.9%);
+}
+main .attention .attention_container img {
+  width: 50%;
+  height: 100%;
+}
+main .attention .attention_container h2 {
+  position: absolute;
+  top: 76px;
+  left: 105px;
+}
+main .attention .attention_container p {
+  width: 50%;
+  font-size: 30px;
+}/*# sourceMappingURL=trainer-style.css.map */
