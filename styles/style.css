@@ -412,7 +412,10 @@ main .gallery .gallery_container .gallery-block .mySlides {
 }
 main .gallery .gallery_container .gallery-block .mySlides img {
   max-height: 800px;
-  border-radius: 3%;
+  width: 100%;
+  padding: 20px;
+  border-radius: 9%;
+  background-size: cover;
 }
 main .gallery .gallery_container .gallery-block .cursor {
   cursor: pointer;

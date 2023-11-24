@@ -158,6 +158,7 @@ main{
 
                     max-width: 50%;
                 }
+
                 .about-us-text{
                     width: 100%;
                     h3{
@@ -512,6 +513,7 @@ main{
         margin-bottom: 100px;
 
         position: relative;
+
         .bg-turquoise-circle{
             padding:300px;
             border-radius: 979px;
@@ -528,7 +530,7 @@ main{
             z-index: -1;
         }
 
-            .gallery_container {
+        .gallery_container {
 
                 .gallery-block {
                     position: relative;
@@ -544,8 +546,11 @@ main{
 
                         img{
                             max-height: 800px;
+                            width: 100%;
+                            padding: 20px;
+                            border-radius: 9%;
 
-                            border-radius: 3%;
+                            background-size: cover;
                         }
                     }
     
@@ -614,7 +619,7 @@ main{
                         opacity: 1;
                     }
                 }
-            }
+        }
     }
 
     .form{

@@ -1,0 +1,117 @@
+@media (max-width: 1730px) {
+  main .hero .hero_container .bg-purple-circle {
+    bottom: -561px;
+    right: 120px;
+    padding: 150px;
+    filter: blur(90px);
+  }
+  main .price .price_container .bg-purple-circle {
+    padding: 200px;
+    filter: blur(200px);
+    right: 199px;
+  }
+  main .form .form_container .bg-yel-circle {
+    padding: 150px;
+    top: -339px;
+    right: 218px;
+    filter: blur(150px);
+  }
+}
+@media (max-width: 1500px) {
+  [class*=_container] {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  h2 {
+    font-size: 50px;
+    margin-bottom: 70px;
+  }
+  * {
+    font-size: 22px;
+  }
+  header .header_container nav ul {
+    justify-content: center;
+    gap: 50px;
+  }
+  main [class*=_container] {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  main .hero .hero_container {
+    display: flex;
+    justify-content: center;
+  }
+  main .hero .hero_container .hero-title h1 {
+    font-size: 60px;
+    margin-right: 30px;
+  }
+  main .hero .hero_container img {
+    padding: 100px;
+    top: -30px;
+    left: 10px;
+  }
+  main .about-us .about-us_container .about-us-block .about-us-text h3 {
+    font-size: 35px;
+  }
+  main .about-us .about-us_container .about-us-block .about-us-text p {
+    font-size: 24px;
+  }
+  main .gallery .gallery_container .gallery-block .mySlides img {
+    max-height: 700px;
+  }
+  main .price .price_container img {
+    height: 800px;
+  }
+  main .form .form_container .form-left-part {
+    width: 45%;
+  }
+  main .form .form_container .form-left-part h3 {
+    font-size: 35px;
+  }
+  main .form .form_container .form-right-part {
+    width: 35%;
+  }
+  main .form .form_container .form-right-part h2 {
+    font-size: 40px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  main .contact-us .contact-us_container .contact-us-all {
+    gap: 20px;
+  }
+  main .contact-us .contact-us_container .contact-us-all .contact-us-left {
+    width: 50%;
+  }
+  main .contact-us .contact-us_container .contact-us-all .contat-us-map {
+    width: 50%;
+  }
+  main .contact-us .contact-us_container .contact-us-all .contat-us-map iframe {
+    width: 100%;
+  }
+  footer .footer_container .footer-links {
+    padding: 50px 20px;
+  }
+}
+@media (max-width: 1300px) {
+  main .hero {
+    margin-bottom: 430px;
+  }
+  main .about-us .about-us_container .about-us-block {
+    gap: 20px;
+  }
+  main .about-us .about-us_container .about-us-block img {
+    margin-right: 0;
+    width: 50%;
+  }
+  main .about-us .about-us_container .about-us-block .about-us-text {
+    width: 50%;
+  }
+  main .about-us .about-us_container .about-us-block .about-us-text h3 {
+    left: 534px;
+  }
+  main .about-us .about-us_container .about-us-block .about-us-text p {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=adap.css.map */
