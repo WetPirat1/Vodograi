@@ -1,5 +1,5 @@
 [class*="_container"]{
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 0 auto;
 
     padding: 0 20px;
@@ -19,7 +19,7 @@
 }
 
 h2{
-    font-size: 70px;
+    font-size: 60px;
     line-height: 105px;
 
     text-align: center;
@@ -32,7 +32,8 @@ body{
 }
 
 header{
-    margin: 60px 0;
+    margin: 40px 0;
+    margin-bottom: 70px;
 
     .header_container{
 
@@ -42,7 +43,7 @@ header{
                 justify-content: space-between;
                 li{
                     a{
-                        font-size: 22px;
+                        font-size: 18px;
                         line-height: 33px;
 
                         transition: font-size 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
@@ -50,51 +51,58 @@ header{
                     .header-btn{
                         padding: 20px 47px;
                         border-radius: 15px;
-                        background: #C66EEE;
+                        transition: 0.3s;
+                        background: #a631dc;
                     }
 
                     a:hover{
-                        font-size: 24px;
+                      font-size: 20px;
                         color: rgb(218, 218, 218);
                     }
 
                     .header-btn:hover{
+                      font-size: 18px;
                         color: white;
-                        background: #a95ace;
+                        background: rgb(120, 34, 160);
                     }
                 }
 
 
                 .header-logo{
-                    font-size: 36px;
+
+                  font-size: 28px;
                 }
+
             }
         }
     }
 }
 
+// MAKE HEADER FIXED!!!!
+
+
 main{
     margin-bottom: 190px;
 
     .hero{
-        margin-bottom: 600px;
-
+      margin-bottom: 580px;
         .hero_container{
+
             position: relative;
 
             .hero-title{
                 display: flex;
                 h1{
-                    font-size: 70px;
+                    font-size: 58px;
                     line-height: 120%;
 
-                    max-width: 450px;
+                    max-width: 410px;
 
-                    margin-right: 100px;
+                    margin-right: 110px;
                 }
 
                 p{
-                    font-size: 36px;
+                    font-size: 25px;
                     line-height: 54px;
 
                     max-height: 100px;
@@ -110,6 +118,7 @@ main{
                 position: absolute;
                 top: 70px;
                 left: 0px;
+
             }
 
             .bg-yel-circle{
@@ -143,66 +152,80 @@ main{
             }
         }
     }
+    // check HERO IMAGE
 
     .about-us{
+
         margin-bottom: 145px;
 
-        .about-us_container{
-            position: relative;
+        .about-us_container {
+          position: relative;
 
-            h2{
-                line-height: 67.5px;
-            }
-            .about-us-block{
-                border-radius: 45px;
-                background: linear-gradient(90deg, #5A5454 0.08%, rgba(90, 84, 84, 0.00) 99.9%);
-
-                display: flex;
-                position: relative;
-                img{
-                    margin-right: 30px;
-
-                    max-width: 50%;
-                }
-                .about-us-text{
-                    width: 100%;
-                    h3{
-                        position: absolute;
-                        font-size: 45px;
-                        line-height: 150%;
-                        left: 653px;
-                        top: 22px;
-                    }
-                    p{
-                        margin-top: 110px;
-                        font-size: 26px;
-                        line-height: 150%;
-                    }
-                }
-            }
-
-            .bg-turquoise-circle{
-                padding:300px;
-                border-radius: 979px;
-                background: rgba(50, 232, 232, 0.628);
-
-                filter: blur(200px);
-
-                position: absolute;
-                overflow: hidden;
-
-                bottom: -242px;
-                left: -320px;
-
-                z-index: -1;
-            }
         }
+
+        .about-us_container h2 {
+          line-height: 67.5px;
+        }
+
+        .about-us_container .about-us-block {
+          box-shadow: 0 10px 15px rgba(0, 0, 0, 0.117);
+          border-radius: 45px;
+          background: linear-gradient(
+            90deg,
+            #5a5454 0.08%,
+            rgba(90, 84, 84, 0.00) 99.9%
+          );
+          max-height: 450px;
+          display: flex;
+        }
+
+        .about-us_container .about-us-block .about-us-text {
+          width: 0%;
+        }
+
+        .about-us_container .about-us-block .about-us-text h3 {
+          width: 600px;
+          position: relative;
+          font-size: 24px;
+          line-height: 129%;
+          top: 0px;
+          left: -133px;
+        }
+
+        .about-us_container .about-us-block .about-us-text p {
+          position: relative;
+          font-size: 16px;
+          line-height: 150%;
+          margin-top: 20px;
+          width: 360px;
+        }
+
+        .about-us_container .about-us-block img {
+          margin-right: 30px;
+          max-width: 100%;
+          height: auto;
+        }
+
+        .about-us_container .bg-turquoise-circle {
+          padding: 50px;
+          border-radius: 50%;
+          background: rgba(50, 232, 232, 0.628);
+          filter: blur(10px);
+          position: absolute;
+          overflow: hidden;
+          bottom: -50px;
+          left: -50px;
+          z-index: -1;
+        }
+
+
     }
 
     .services{
         margin-bottom: 100px;
 
         .services_container{
+
 
             position: relative;
 
@@ -229,10 +252,11 @@ main{
 
                 gap: 40px;
                 li{
+                  transition: 0.2s ease-in-out;
                     flex: 1 1 auto;
                     text-align: center;
 
-                    max-width: 600px;
+                    max-width: 350px;
                     height: 700px;
 
                     padding-bottom: 20px;
@@ -251,11 +275,12 @@ main{
 
                     }
                     p{
-                        line-height: 33px;
+                        line-height: 27px;
                         font-size: 22px;
 
                         margin: 0 auto;
                         width: 80%;
+                        max-height: 300px;
 
                     }
                 }
@@ -263,16 +288,23 @@ main{
                 .services-card-1{
                     border-radius: 45px;
                     background: linear-gradient(0deg, rgba(255, 205, 41, 0.23) 0%, rgba(217, 217, 217, 0.00) 100%);
+                    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.207);
                 }
                 .services-card-2{
                     border-radius: 45px;
                     background: linear-gradient(0deg, rgba(50, 232, 232, 0.23) 0%, rgba(217, 217, 217, 0.00) 100%);
+                    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.207);
                 }
                 .services-card-3{
                     border-radius: 45px;
                     background: linear-gradient(0deg, rgba(198, 110, 238, 0.23) 0%, rgba(217, 217, 217, 0.00) 100%);
+                    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.207);
                 }
-            }
+                .card-shadow:hover {
+                  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.207);
+                }
+              }
+
 
         }
 

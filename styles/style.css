@@ -1,6 +1,6 @@
 @charset "UTF-8";
 [class*=_container] {
-  max-width: 1500px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -18,7 +18,7 @@
 }
 
 h2 {
-  font-size: 70px;
+  font-size: 60px;
   line-height: 105px;
   text-align: center;
   margin-bottom: 90px;
@@ -29,39 +29,42 @@ body {
 }
 
 header {
-  margin: 60px 0;
+  margin: 40px 0;
+  margin-bottom: 70px;
 }
 header .header_container nav ul {
   display: flex;
   justify-content: space-between;
 }
 header .header_container nav ul li a {
-  font-size: 22px;
+  font-size: 18px;
   line-height: 33px;
   transition: font-size 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }
 header .header_container nav ul li .header-btn {
   padding: 20px 47px;
   border-radius: 15px;
-  background: #C66EEE;
+  transition: 0.3s;
+  background: #a631dc;
 }
 header .header_container nav ul li a:hover {
-  font-size: 24px;
+  font-size: 20px;
   color: rgb(218, 218, 218);
 }
 header .header_container nav ul li .header-btn:hover {
+  font-size: 18px;
   color: white;
-  background: #a95ace;
+  background: rgb(120, 34, 160);
 }
 header .header_container nav ul .header-logo {
-  font-size: 36px;
+  font-size: 28px;
 }
 
 main {
   margin-bottom: 190px;
 }
 main .hero {
-  margin-bottom: 600px;
+  margin-bottom: 580px;
 }
 main .hero .hero_container {
   position: relative;
@@ -70,13 +73,13 @@ main .hero .hero_container .hero-title {
   display: flex;
 }
 main .hero .hero_container .hero-title h1 {
-  font-size: 70px;
+  font-size: 58px;
   line-height: 120%;
-  max-width: 450px;
-  margin-right: 100px;
+  max-width: 410px;
+  margin-right: 110px;
 }
 main .hero .hero_container .hero-title p {
-  font-size: 36px;
+  font-size: 25px;
   line-height: 54px;
   max-height: 100px;
 }
@@ -119,39 +122,44 @@ main .about-us .about-us_container h2 {
   line-height: 67.5px;
 }
 main .about-us .about-us_container .about-us-block {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.117);
   border-radius: 45px;
-  background: linear-gradient(90deg, #5A5454 0.08%, rgba(90, 84, 84, 0) 99.9%);
+  background: linear-gradient(90deg, #5a5454 0.08%, rgba(90, 84, 84, 0) 99.9%);
+  max-height: 450px;
   display: flex;
+}
+main .about-us .about-us_container .about-us-block .about-us-text {
+  width: 0%;
+}
+main .about-us .about-us_container .about-us-block .about-us-text h3 {
+  width: 600px;
   position: relative;
+  font-size: 24px;
+  line-height: 129%;
+  top: 0px;
+  left: -133px;
+}
+main .about-us .about-us_container .about-us-block .about-us-text p {
+  position: relative;
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 20px;
+  width: 360px;
 }
 main .about-us .about-us_container .about-us-block img {
   margin-right: 30px;
-  max-width: 50%;
-}
-main .about-us .about-us_container .about-us-block .about-us-text {
-  width: 100%;
-}
-main .about-us .about-us_container .about-us-block .about-us-text h3 {
-  position: absolute;
-  font-size: 45px;
-  line-height: 150%;
-  left: 653px;
-  top: 22px;
-}
-main .about-us .about-us_container .about-us-block .about-us-text p {
-  margin-top: 110px;
-  font-size: 26px;
-  line-height: 150%;
+  max-width: 100%;
+  height: auto;
 }
 main .about-us .about-us_container .bg-turquoise-circle {
-  padding: 300px;
-  border-radius: 979px;
+  padding: 50px;
+  border-radius: 50%;
   background: rgba(50, 232, 232, 0.628);
-  filter: blur(200px);
+  filter: blur(10px);
   position: absolute;
   overflow: hidden;
-  bottom: -242px;
-  left: -320px;
+  bottom: -50px;
+  left: -50px;
   z-index: -1;
 }
 main .services {
@@ -178,9 +186,10 @@ main .services .services_container .services-cards {
   gap: 40px;
 }
 main .services .services_container .services-cards li {
+  transition: 0.2s ease-in-out;
   flex: 1 1 auto;
   text-align: center;
-  max-width: 600px;
+  max-width: 350px;
   height: 700px;
   padding-bottom: 20px;
 }
@@ -196,22 +205,29 @@ main .services .services_container .services-cards li h3 {
   margin-bottom: 30px;
 }
 main .services .services_container .services-cards li p {
-  line-height: 33px;
+  line-height: 27px;
   font-size: 22px;
   margin: 0 auto;
   width: 80%;
+  max-height: 300px;
 }
 main .services .services_container .services-cards .services-card-1 {
   border-radius: 45px;
   background: linear-gradient(0deg, rgba(255, 205, 41, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.207);
 }
 main .services .services_container .services-cards .services-card-2 {
   border-radius: 45px;
   background: linear-gradient(0deg, rgba(50, 232, 232, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.207);
 }
 main .services .services_container .services-cards .services-card-3 {
   border-radius: 45px;
   background: linear-gradient(0deg, rgba(198, 110, 238, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.207);
+}
+main .services .services_container .services-cards .card-shadow:hover {
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.207);
 }
 main .services .popup-services-card-1-container {
   width: 100%;
