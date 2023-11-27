@@ -8,15 +8,28 @@
 
     <link rel="stylesheet" href="styles/responsive.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/adap.css">
 
+    <!-- fonts -->
+    <!-- font-family: "Unbounded" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Unbounded:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
     <script src="javaScript/jquery.js"></script>
     <script src="javaScript/main.js"></script>
+    <script src="/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+
 </head>
 
 <body>
-
     <header>
 
         <div class="header_container">
@@ -44,7 +57,7 @@
                 <span class="bg-yel-circle"></span>
 
                 <div class="hero-title">
-                    <h1>ДИТЯЧИЙ БАСЕЙН VODO.GRAI</h1>
+                    <h1 class="txt-headline">ДИТЯЧИЙ БАСЕЙН VODO.GRAI</h1>
                     <p>Плавання - це просто, весело та безпечно.</p>
                 </div>
                 <img src="images/hero-img.png" alt="тут має бути тематичне фото">
@@ -55,18 +68,15 @@
 
         <section class="about-us">
             <div class="about-us_container">
-                <h2>ПРО НАС</h2>
+                <h2 class="txt-headline">ПРО НАС</h2>
 
                 <div class="about-us-block">
 
                     <img src="images/about-us-img.png" alt="тут має бути тематичне фото">
 
                     <div class="about-us-text">
-                        <h3>Дружній простір для Ваших дітей</h3>
-                        <p>Наш басейн - це місце, де кожна дитина навчиться плавати з комфортом та впевненістю. У нас
-                            працюють висококваліфіковані фахівці, які проводять індивідуальні і групові заняття. А також
-                            заняття для дітей з особливими потребами. Ми допомагаємо подолати страх перед водою,
-                            коригуємо психоемоційний стан. Ми прагнемо забезпечити найкращий досвід для вашої сім'ї!</p>
+                        <h3 class="txt-headline" style="font-size: 37px;">Дружній простір для Ваших дітей</h3>
+                        <p>Наш басейн - це місце, де кожна дитина навчиться плавати з комфортом та впевненістю. У нас працюють висококваліфіковані фахівці, які проводять індивідуальні і групові заняття. А також заняття для дітей з особливими потребами. Ми допомагаємо подолати страх перед водою, коригуємо психоемоційний стан. Ми прагнемо забезпечити найкращий досвід для вашої сім'ї!</p>
                     </div>
 
 
@@ -81,106 +91,57 @@
 
                 <span class="bg-purple-circle"></span>
 
-                <h2>ПОСЛУГИ</h2>
+                <h2 class="txt-headline">ПОСЛУГИ</h2>
 
-                <ul class="services-cards">
-                    
-                    <a href="javascript:PopUpShow()">
-                        <li class="services-card-1">
-                            <img src="images/services-card1-img.png" alt="">
-                            <h3>Вільне плавання</h3>
-                            <p>Самостійне плавання: ваші правила, ваша швидкість. Відкрийте світ водних пригод на свій
-                                лад!</p>
-                        </li>
-                    </a>
+                    <ul class="services-cards">
 
-                    <a href="javascript:PopUpShow2()">
-                        <li class="services-card-2">
-                            <img src="images/services-card2-img.png" alt="">
-                            <h3>Індивідуальне плавання</h3>
-                            <p>Ця послуга передбачає індивідуальне заняття з однією дитиною. Особлива увага та розвиток
-                                плавання з власним інструктором. Максимум користі для вашого малятка!</p>
-                        </li>
-                    </a>
+                            <a href="javascript:PopUpShow()">
+                                <li class="services-card-1 card-shadow">
+                                    <img src="images/services-card1-img.png" alt="">
+                                    <h3 class="txt-headline">Вільне плавання</h3>
+                                    <p>Самостійне плавання: ваші правила, ваша швидкість. Відкрийте світ водних пригод на свій лад!</p>
+                                </li>
+                            </a>
 
-                    <a href="javascript:PopUpShow3()">
-                        <li class="services-card-3">
-                            <img src="images/services-card3-img.png" alt="">
-                            <h3>Групове плавання</h3>
-                            <p>Ця послуга передбачає заняття у групі. Веселі та навчальні заняття в невеликих групах.
-                                Сприяємо командній роботі та особистісному зростанню вашої дитини!</p>
-                        </li>
-                    </a>
+                            <a href="javascript:PopUpShow()">
+                                <li class="services-card-2 card-shadow">
+                                    <img src="images/services-card2-img.png" alt="">
+                                    <h3 class="txt-headline">Індивідуальне плавання</h3>
+                                    <p>Iндивідуальне заняття з однією дитиною. Особлива увага та розвиток плавання з власним інструктором. Максимум користі для вашого малятка!</p>
+                                </li>
+                            </a>
 
-                </ul>
+                            <a href="javascript:PopUpShow()">
+                                <li class="services-card-3 card-shadow">
+                                    <img src="images/services-card3-img.png" alt="">
+                                    <h3 class="txt-headline">Групове плавання</h3>
+                                    <p>Заняття у групі. Веселі та навчальні заняття в невеликих групах. Сприяємо командній роботі та особистісному зростанню вашої дитини!</p>
+                                </li>
+                            </a>
+                    </ul>
 
-            </div>
+                </div>
 
-            <div class="popup-services-card-1-container" id="popup-service-card-1">
-                <div class="popup-services-card-1">
-                    <div class="popup-services-card-1-body">
-                        <h2>Вільне плавання</h2>
-                        <img src="images/popup.png" alt="">
-                        <p>ага та занурення в світ водних пртини. Кожен урок проводиться з власним професійним
-                            інструктором, який враховує потреби та можливості кожного. Ми розуміємо, що кожна дитина
-                            унікальна, тому підходимо до кожного уроку індивідуально. Обирайте індивідуальні заняття з
-                            плавання для вашого малюка, і ми гарантуємо вам якісне навчання та незабутні враження від
-                            кожного візиту до нашого басейну. Наша мета - розвивати у дітях любов до води та навчити їх
-                            плавати з задоволенням та впевненістю. <span>Тривалість о- 45 хвилин.</span></p>
+                <div class="popup-services-card-1-container" id="popup-service-card-1">
+                    <div class="popup-services-card-1">
+                        <div class="popup-services-card-1-body">
 
-                        <a class="popup-form" href="">Записатися</a>
+                            <h2 class="txt-headline">Індивідуальне заняття</h2>
+                            <img src="images/popup.png" alt="">
+                            <p>Індивідуальні заняття з плавання - це особлива увага та занурення в світ водних пригод для вашої дитини. Кожен урок проводиться з власним професійним інструктором, який враховує потреби та можливості кожного. Ми розуміємо, що кожна дитина унікальна, тому підходимо до кожного уроку індивідуально. Обирайте індивідуальні заняття з плавання для вашого малюка, і ми гарантуємо вам якісне навчання та незабутні враження від кожного візиту до нашого басейну. Наша мета - розвивати у дітях любов до води та навчити їх плавати з задоволенням та впевненістю. <span>Тривалість одного занятя - 45 хвилин.</span></p>
 
-                        <a class="popup-hide-btn" href="javascript:PopUpHide()">&#10007;</a>
+                            <a class="popup-form" href="">Записатися</a>
+
+                            <a class="popup-hide-btn" href="javascript:PopUpHide()">&#10007;</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="popup-services-card-2-container" id="popup-service-card-2">
-                <div class="popup-services-card-2">
-                    <div class="popup-services-card-2-body">
-
-                        <h2>Індивідуальне заняття</h2>
-                        <img src="images/popup.png" alt="">
-                        <p>Індивідуальні заняття з та занурення в світ водних пригод для вашої дитини. Кожен уроя з
-                            власним професійним інструктором, який враховує потреби та можливості кожного. Ми розуміємо,
-                            що кожна дитина унікальна, тому підходимо до кожного уроку індивідуально. Обирайте
-                            індивідуальні заняття з плавання для вашого малта незабутні враження від кожного візиту до
-                            нашого басейну. Наша мета - розвивати у дітях любов до води та навчити їх плавати з
-                            задоволенням та впевненістю. <span> одного - 45 хвилин.</span></p>
-
-                        <a class="popup-form" href="">Записатися</a>
-
-                        <a class="popup-hide-btn" href="javascript:PopUpHide2()">&#10007;</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="popup-services-card-3-container" id="popup-service-card-3">
-                <div class="popup-services-card-3">
-                    <div class="popup-services-card-3-body">
-
-                        <h2>Групове плавання</h2>
-                        <img src="images/popup.png" alt="">
-                        <p>Індивідуальні зива увага тих пригод для вашої дитини. Кожен урок проводиться з власним
-                            професійним інструктором, який враховує потреби та можливості кожного. Ми розуміємо, що
-                            кожна дитина унікальна, тому підходимо до кожного уроку індивідуально. Обирайте
-                            індивідуальні заняття з плавання для вашого малюка, і ми гарантвраження від кожного візиту
-                            до нашого басейну. Наша мета - розвивати у дітях любов до води та навчити їх плавати з
-                            задоволенням та . <span>Тривалість одного занятя - 45 хвилин.</span></p>
-
-                        <a class="popup-form" href="">Записатися</a>
-
-                        <a class="popup-hide-btn" href="javascript:PopUpHide3()">&#10007;</a>
-                    </div>
-                </div>
-            </div>
-
 
         </section>
 
         <section class="price">
 
-            <h2>ПРАЙС</h2>
+            <h2 class="txt-headline">ПРАЙС</h2>
 
             <div class="price_container">
                 <span class="bg-purple-circle"></span>
@@ -192,58 +153,40 @@
         <section class="gallery">
             <span class="bg-turquoise-circle"></span>
             <div class="gallery_container">
-                <h2>ГАЛЕРЕЯ</h2>
+                <h2 class="txt-headline">ГАЛЕРЕЯ</h2>
+
+
 
                 <div class="gallery-block">
                     <!-- Full-width images with number text -->
                     <div class="mySlides">
-                        <div class="numbertext">1 / 10</div>
-                        <img src="images/galery/galery-1.jpg" style="width:100%">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="images/gallery-1.jpg" style="width:100%">
                     </div>
 
                     <div class="mySlides">
-                        <div class="numbertext">2 / 10</div>
-                        <img src="images/galery/galery-2.jpeg" style="width:100%">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="images/gallery-2.jpg" style="width:100%">
                     </div>
 
                     <div class="mySlides">
-                        <div class="numbertext">3 / 10</div>
-                        <img src="images/galery/galery-3.jpg" style="width:100%">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="images/gallery-3.jpg" style="width:100%">
                     </div>
 
                     <div class="mySlides">
-                        <div class="numbertext">4 / 10</div>
-                        <img src="images/galery/galery-4.jpg" style="width:100%">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="images/gallery-1.jpg" style="width:100%">
                     </div>
 
                     <div class="mySlides">
-                        <div class="numbertext">5 / 10</div>
-                        <img src="images/galery/galery-5.jpg" style="width:100%">
+                        <div class="numbertext">5 / 6</div>
+                        <img src="images/gallery-2.jpg" style="width:100%">
                     </div>
 
                     <div class="mySlides">
-                        <div class="numbertext">6 / 10</div>
-                        <img src="images/galery/galery-6.jpg" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">7 / 10</div>
-                        <img src="images/galery/galery-7.jpeg" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">8 / 10</div>
-                        <img src="images/galery/galery-8.jpeg" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">9 / 10</div>
-                        <img src="images/galery/galery-9.jpeg" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">10 / 10</div>
-                        <img src="images/galery/galery-10.jpg" style="width:100%">
+                        <div class="numbertext">6 / 6</div>
+                        <img src="images/gallery-3.jpg" style="width:100%">
                     </div>
 
                     <!-- Next and previous buttons -->
@@ -275,21 +218,21 @@
                     var slides = document.getElementsByClassName("mySlides");
                     var dots = document.getElementsByClassName("demo");
                     var captionText = document.getElementById("caption");
-                    if (n > slides.length) { slideIndex = 1 }
+                        if (n > slides.length) {slideIndex = 1}
 
-                    if (n < 1) { slideIndex = slides.length }
+                        if (n < 1) {slideIndex = slides.length}
 
-                    for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none";
-                    }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
 
-                    for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" active", "");
-                    }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
 
-                    slides[slideIndex - 1].style.display = "block";
-                    dots[slideIndex - 1].className += " active";
-                    captionText.innerHTML = dots[slideIndex - 1].alt;
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                    captionText.innerHTML = dots[slideIndex-1].alt;
                 }
             </script>
         </section>
@@ -301,11 +244,11 @@
 
                 <div class="form-left-part">
                     <img src="images/form-img.png" alt="">
-                    <h3>Заповнюйте форму і адміністратор з Вами зв’яжеться</h3>
+                    <h3 class="txt-headline">Заповнюйте форму і адміністратор з Вами зв’яжеться</h3>
                 </div>
 
                 <div class="form-right-part">
-                    <h2>ЗАПИС НА ЗАНЯТТЯ</h2>
+                    <h2 class="txt-headline">ЗАПИС НА ЗАНЯТТЯ</h2>
                     <form>
                         <label for="name"></label>
                         <input type="text" id="name" name="name" placeholder="Ім'я:" required><br><br>
@@ -325,36 +268,34 @@
 
         <section class="contact-us">
             <div class="contact-us_container">
-                <h2>КОНТАКТИ</h2>
+                <h2 class="txt-headline">КОНТАКТИ</h2>
 
                 <div class="contact-us-all">
                     <ul class="contact-us-left">
                         <li>
                             <img src="images/adress.svg" alt="">
-                            <a href="">вулиця Виконкомівська, 24, Дніпро, Дніпропетровська область, 49000</a>
+                                <a href="">вулиця Виконкомівська, 24, Дніпро, Дніпропетровська область, 49000</a>
                         </li>
 
                         <li>
                             <img src="images/Phone.svg" alt="">
-                            <a href="">+38(096)2344567</a>
+                                <a href="">+38(096)2344567</a>
                         </li>
 
                         <li>
                             <img src="images/Viber.svg" alt="">
-                            <a href="">+38(096)2344567</a>
+                                <a href="">+38(096)2344567</a>
                         </li>
 
                         <li>
                             <img src="images/Instagram.svg" alt="">
-                            <a href="">@vodo.grai</a>
+                                <a href="">@vodo.grai</a>
                         </li>
                     </ul>
 
                     <a class="contat-us-map" href="">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240018.4612590781!2d35.092973122740695!3d48.381397342292615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe303fd08468f%3A0xa1cf3d5f2c11aba!2z0JTQvdGW0L_RgNC-LCDQlNC90ZbQv9GA0L7Qv9C10YLRgNC-0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNDkwMDA!5e0!3m2!1suk!2sua!4v1698775769925!5m2!1suk!2sua"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240018.4612590781!2d35.092973122740695!3d48.381397342292615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe303fd08468f%3A0xa1cf3d5f2c11aba!2z0JTQvdGW0L_RgNC-LCDQlNC90ZbQv9GA0L7Qv9C10YLRgNC-0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNDkwMDA!5e0!3m2!1suk!2sua!4v1698775769925!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </a>
                 </div>
