@@ -1,1 +1,554 @@
-/*# sourceMappingURL=scss.css.map */
+@charset "UTF-8";
+[class*=_container] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+* {
+  font-weight: 400;
+  font-size: 24px;
+  font-family: "Montserrat";
+  transition-duration: 0.3s ease-in-out;
+  color: #FFFFFF;
+}
+
+.txt-headline {
+  font-family: "Unbounded";
+}
+
+h2 {
+  font-size: 60px;
+  line-height: 105px;
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+body {
+  background: rgba(69, 26, 0, 0.91);
+}
+
+header {
+  margin: 40px 0;
+  margin-bottom: 70px;
+}
+header .header_container nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+header .header_container nav ul li a {
+  font-size: 18px;
+  line-height: 33px;
+  transition: font-size 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+header .header_container nav ul li .header-btn {
+  padding: 20px 47px;
+  border-radius: 15px;
+  transition: 0.3s;
+  background: #a631dc;
+}
+header .header_container nav ul li a:hover {
+  font-size: 20px;
+  color: rgb(218, 218, 218);
+}
+header .header_container nav ul li .header-btn:hover {
+  font-size: 18px;
+  color: white;
+  background: rgb(120, 34, 160);
+}
+header .header_container nav ul .header-logo {
+  font-size: 28px;
+}
+
+main {
+  margin-bottom: 190px;
+}
+main .hero {
+  margin-bottom: 580px;
+}
+main .hero .hero_container {
+  position: relative;
+}
+main .hero .hero_container .hero-title {
+  display: flex;
+}
+main .hero .hero_container .hero-title h1 {
+  font-size: 58px;
+  line-height: 120%;
+  max-width: 410px;
+  margin-right: 110px;
+}
+main .hero .hero_container .hero-title p {
+  font-size: 25px;
+  line-height: 54px;
+  max-height: 100px;
+}
+main .hero .hero_container img {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 70px;
+  left: 0px;
+}
+main .hero .hero_container .bg-yel-circle {
+  padding: 300px;
+  border-radius: 979px;
+  background: rgba(255, 204, 0, 0.661);
+  filter: blur(200px);
+  position: absolute;
+  top: -188px;
+  left: -112px;
+  z-index: -1;
+}
+main .hero .hero_container .bg-purple-circle {
+  padding: 300px;
+  border-radius: 979px;
+  background: rgba(151, 71, 255, 0.656);
+  filter: blur(200px);
+  position: absolute;
+  bottom: -698px;
+  right: -100px;
+  z-index: -1;
+}
+main .about-us {
+  margin-bottom: 145px;
+}
+main .about-us .about-us_container {
+  position: relative;
+}
+main .about-us .about-us_container h2 {
+  line-height: 67.5px;
+}
+main .about-us .about-us_container .about-us-block {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.117);
+  border-radius: 45px;
+  background: linear-gradient(90deg, #5a5454 0.08%, rgba(90, 84, 84, 0) 99.9%);
+  max-height: 450px;
+  display: flex;
+}
+main .about-us .about-us_container .about-us-block .about-us-text {
+  width: 0%;
+}
+main .about-us .about-us_container .about-us-block .about-us-text h3 {
+  width: 600px;
+  position: relative;
+  font-size: 24px;
+  line-height: 129%;
+  top: 0px;
+  left: -133px;
+}
+main .about-us .about-us_container .about-us-block .about-us-text p {
+  position: relative;
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 20px;
+  width: 360px;
+}
+main .about-us .about-us_container .about-us-block img {
+  margin-right: 30px;
+  max-width: 100%;
+  height: auto;
+}
+main .about-us .about-us_container .bg-turquoise-circle {
+  padding: 50px;
+  border-radius: 50%;
+  background: rgba(50, 232, 232, 0.628);
+  filter: blur(10px);
+  position: absolute;
+  overflow: hidden;
+  bottom: -50px;
+  left: -50px;
+  z-index: -1;
+}
+main .services {
+  margin-bottom: 100px;
+}
+main .services .services_container {
+  position: relative;
+}
+main .services .services_container .bg-purple-circle {
+  padding: 300px;
+  border-radius: 979px;
+  background: rgba(151, 71, 255, 0.656);
+  filter: blur(200px);
+  position: absolute;
+  overflow: hidden;
+  top: -23px;
+  right: 625px;
+  z-index: -1;
+}
+main .services .services_container .services-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+main .services .services_container .services-cards li {
+  transition: 0.2s ease-in-out;
+  flex: 1 1 auto;
+  text-align: center;
+  max-width: 350px;
+  height: 700px;
+  padding-bottom: 20px;
+}
+main .services .services_container .services-cards li img {
+  max-height: 300px;
+  max-width: 80%;
+  margin-bottom: 75px;
+}
+main .services .services_container .services-cards li h3 {
+  font-size: 26px;
+  line-height: 39px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+main .services .services_container .services-cards li p {
+  line-height: 27px;
+  font-size: 22px;
+  margin: 0 auto;
+  width: 80%;
+  max-height: 300px;
+}
+main .services .services_container .services-cards .services-card-1 {
+  border-radius: 45px;
+  background: linear-gradient(0deg, rgba(255, 205, 41, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.207);
+}
+main .services .services_container .services-cards .services-card-2 {
+  border-radius: 45px;
+  background: linear-gradient(0deg, rgba(50, 232, 232, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.207);
+}
+main .services .services_container .services-cards .services-card-3 {
+  border-radius: 45px;
+  background: linear-gradient(0deg, rgba(198, 110, 238, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.207);
+}
+main .services .services_container .services-cards .card-shadow:hover {
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.207);
+}
+main .services .popup-services-card-1-container {
+  width: 100%;
+  height: 2000px;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+}
+main .services .popup-services-card-1-container .popup-services-card-1 {
+  width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+  margin-top: 15px;
+  background: rgb(66, 49, 7);
+}
+main .services .popup-services-card-1-container .popup-services-card-1 .popup-services-card-1-body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+}
+main .services .popup-services-card-1-container .popup-services-card-1 .popup-services-card-1-body h2 {
+  padding-top: 20px;
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+main .services .popup-services-card-1-container .popup-services-card-1 .popup-services-card-1-body img {
+  width: 100%;
+  max-height: 300px;
+  margin-bottom: 25px;
+}
+main .services .popup-services-card-1-container .popup-services-card-1 .popup-services-card-1-body p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+main .services .popup-services-card-1-container .popup-services-card-1 .popup-services-card-1-body p span {
+  font-weight: 700;
+}
+main .services .popup-services-card-1-container .popup-services-card-1 .popup-services-card-1-body .popup-form {
+  padding: 20px 47px;
+  border-radius: 15px;
+  background: #C66EEE;
+}
+main .services .popup-services-card-1-container .popup-services-card-1 .popup-services-card-1-body .popup-hide-btn {
+  position: absolute;
+  top: 39px;
+  right: 290px;
+}
+main .price .price_container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+main .price .bg-purple-circle {
+  padding: 250px;
+  border-radius: 979px;
+  background: rgba(151, 71, 255, 0.656);
+  filter: blur(200px);
+  position: absolute;
+  bottom: -16px;
+  right: -114px;
+  z-index: -1;
+}
+main .gallery {
+  margin-bottom: 100px;
+  position: relative;
+}
+main .gallery .bg-turquoise-circle {
+  padding: 300px;
+  border-radius: 979px;
+  background: rgba(50, 232, 232, 0.628);
+  filter: blur(200px);
+  position: absolute;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+main .gallery .gallery_container .gallery-block {
+  position: relative;
+  /* Hide the images by default */
+  /* Add a pointer when hovering over the thumbnail images */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* Number text (1/3 etc) */
+  /* Six columns side by side */
+  /* Add a transparency effect for thumnbail images */
+}
+main .gallery .gallery_container .gallery-block * {
+  box-sizing: border-box;
+}
+main .gallery .gallery_container .gallery-block .mySlides {
+  display: none;
+}
+main .gallery .gallery_container .gallery-block .mySlides img {
+  max-height: 800px;
+  border-radius: 3%;
+}
+main .gallery .gallery_container .gallery-block .cursor {
+  cursor: pointer;
+}
+main .gallery .gallery_container .gallery-block .prev,
+main .gallery .gallery_container .gallery-block .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+main .gallery .gallery_container .gallery-block .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+main .gallery .gallery_container .gallery-block .prev:hover,
+main .gallery .gallery_container .gallery-block .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+main .gallery .gallery_container .gallery-block .numbertext {
+  color: #f2f2f2;
+  font-size: 22px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+main .gallery .gallery_container .gallery-block .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+main .gallery .gallery_container .gallery-block .column {
+  float: left;
+  width: 16.66%;
+}
+main .gallery .gallery_container .gallery-block .demo {
+  opacity: 0.6;
+}
+main .gallery .gallery_container .gallery-block .active,
+main .gallery .gallery_container .gallery-block .demo:hover {
+  opacity: 1;
+}
+main .form {
+  margin-bottom: 100px;
+}
+main .form .form_container {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+main .form .form_container .bg-yel-circle {
+  padding: 200px;
+  border-radius: 979px;
+  background: rgba(255, 204, 0, 0.749);
+  filter: blur(180px);
+  position: absolute;
+  top: -339px;
+  right: -109px;
+  z-index: -1;
+}
+main .form .form_container .bg-purple-circle {
+  padding: 300px;
+  border-radius: 979px;
+  background: rgba(151, 71, 255, 0.542);
+  filter: blur(200px);
+  position: absolute;
+  top: 172px;
+  left: 390px;
+  z-index: -1;
+}
+main .form .form_container ::-webkit-input-placeholder { /* Для Chrome и Safari */
+  opacity: 80%;
+  color: #FFFFFF;
+  padding-left: 10px; /* Отступ слева */
+  font-size: 16px; /* Размер шрифта */
+}
+main .form .form_container :-moz-placeholder { /* Для Firefox 4-18 */
+  color: #FFFFFF;
+  padding-left: 10px;
+  font-size: 16px;
+}
+main .form .form_container ::-moz-placeholder { /* Для Firefox 19+ */
+  color: #FFFFFF;
+  padding-left: 10px;
+  font-size: 16px;
+}
+main .form .form_container :-ms-input-placeholder { /* Для IE */
+  color: #FFFFFF;
+  padding-left: 10px;
+  font-size: 16px;
+}
+main .form .form_container .form-left-part {
+  max-width: 50%;
+  border-radius: 45px;
+  background: linear-gradient(0deg, rgba(90, 84, 84, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
+}
+main .form .form_container .form-left-part h3 {
+  font-size: 45px;
+  line-height: 150%;
+  max-width: 70%;
+  margin: 0 auto;
+}
+main .form .form_container .form-left-part img {
+  width: 100%;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+main .form .form_container .form-right-part {
+  max-width: 50%;
+  background-color: rgba(34, 34, 34, 0.4039215686);
+  text-align: center;
+}
+main .form .form_container .form-right-part h2 {
+  max-width: 500px;
+  border-radius: 45px;
+  background: linear-gradient(0deg, rgba(90, 84, 84, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
+}
+main .form .form_container .form-right-part form {
+  fill: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, rgba(217, 217, 217, 0.23) 97%);
+}
+main .form .form_container .form-right-part form input {
+  width: 65%;
+  height: 45px;
+  border-radius: 35px;
+  background: rgba(255, 255, 255, 0.47);
+}
+main .form .form_container .form-right-part form input[type=submit] {
+  margin-top: 60px;
+  font-size: 26px;
+  padding: 10px 60px 20px 60px;
+  max-width: 50%;
+  background: none;
+  background-color: #C66EEE;
+  transition: font-size 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+main .form .form_container .form-right-part form input[type=submit]:hover {
+  background: #a95ace;
+}
+main .contact-us .contact-us_container .contact-us-all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .contact-us .contact-us_container .contact-us-all .contact-us-left {
+  width: 50%;
+}
+main .contact-us .contact-us_container .contact-us-all .contact-us-left li {
+  display: flex;
+  align-items: center;
+}
+main .contact-us .contact-us_container .contact-us-all .contact-us-left li img {
+  margin-right: 30px;
+}
+main .contact-us .contact-us_container .contact-us-all .contact-us-left li a {
+  max-width: 530px;
+  padding: 20px 0 20px 22px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.106);
+  width: 100%;
+  margin-bottom: 30px;
+  transition: font-size 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+main .contact-us .contact-us_container .contact-us-all .contact-us-left li a:hover {
+  color: rgba(192, 192, 192, 0.267);
+}
+main .contact-us .contact-us_container .contact-us-all .contat-us-map {
+  width: 50%;
+}
+main .contact-us .contact-us_container .contact-us-all .contat-us-map iframe {
+  width: 100%;
+  border-radius: 45px;
+}
+
+footer {
+  background: rgba(158, 50, 99, 0.461);
+  padding: 0px 0px 30px;
+}
+footer .footer_container .footer-links {
+  padding: 50px 0 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer_container .footer-links ul {
+  display: flex;
+  gap: 90px;
+}
+footer .footer_container .footer-links ul li {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer_container .footer-links ul li a {
+  margin-bottom: 15px;
+  transition: font-size 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+footer .footer_container .footer-links ul li a:hover {
+  color: rgb(218, 218, 218);
+}
+footer .footer_container p {
+  font-size: 12px;
+  text-align: center;
+  position: relative;
+}
+footer .footer_container p::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 10%;
+  width: 80%;
+  border-top: 1px solid #ffffff;
+}/*# sourceMappingURL=style.css.map */
