@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="styles/responsive.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/adap.css">
 
     <!-- fonts -->
     <!-- font-family: "Unbounded" -->
@@ -24,7 +25,7 @@
     <script src="javaScript/main.js"></script>
     <script src="/wow.min.js"></script>
     <script>
-      new WOW().init();
+        new WOW().init();
     </script>
 
 </head>
@@ -75,7 +76,7 @@
                     <img src="images/about-us-img.png" alt="тут має бути тематичне фото">
 
                     <div class="about-us-text">
-                        <h3 class="txt-headline" style="font-size: 37px;">Дружній простір для Ваших дітей</h3>
+                        <h3 class="txt-headline">Дружній простір для Ваших дітей</h3>
                         <p>Наш басейн - це місце, де кожна дитина навчиться плавати з комфортом та впевненістю. У нас працюють висококваліфіковані фахівці, які проводять індивідуальні і групові заняття. А також заняття для дітей з особливими потребами. Ми допомагаємо подолати страх перед водою, коригуємо психоемоційний стан. Ми прагнемо забезпечити найкращий досвід для вашої сім'ї!</p>
                     </div>
 
@@ -94,37 +95,55 @@
                 <h2 class="txt-headline">ПОСЛУГИ</h2>
 
                     <ul class="services-cards">
-
-                            <a href="javascript:PopUpShow()">
-                                <li class="services-card-1 card-shadow">
-                                    <img src="images/services-card1-img.png" alt="">
-                                    <h3 class="txt-headline">Вільне плавання</h3>
-                                    <p>Самостійне плавання: ваші правила, ваша швидкість. Відкрийте світ водних пригод на свій лад!</p>
-                                </li>
-                            </a>
-
-                            <a href="javascript:PopUpShow()">
-                                <li class="services-card-2 card-shadow">
-                                    <img src="images/services-card2-img.png" alt="">
-                                    <h3 class="txt-headline">Індивідуальне плавання</h3>
-                                    <p>Iндивідуальне заняття з однією дитиною. Особлива увага та розвиток плавання з власним інструктором. Максимум користі для вашого малятка!</p>
-                                </li>
-                            </a>
-
-                            <a href="javascript:PopUpShow()">
-                                <li class="services-card-3 card-shadow">
-                                    <img src="images/services-card3-img.png" alt="">
-                                    <h3 class="txt-headline">Групове плавання</h3>
-                                    <p>Заняття у групі. Веселі та навчальні заняття в невеликих групах. Сприяємо командній роботі та особистісному зростанню вашої дитини!</p>
-                                </li>
-                            </a>
+                    
+                        <a href="javascript:PopUpShow()">
+                            <li class="services-card-1 card-shadow">
+                                <img src="images/services-card1-img.png" alt="">
+                                <h3 class="txt-headline">Вільне плавання</h3>
+                                <p>Самостійне плавання: ваші правила, ваша швидкість. Відкрийте світ водних пригод на свій лад!</p>
+                            </li>
+                        </a>
+                    
+                        <a href="javascript:PopUpShow2()">
+                            <li class="services-card-2 card-shadow">
+                                <img src="images/services-card2-img.png" alt="">
+                                <h3 class="txt-headline">Індивідуальне плавання</h3>
+                                <p>Iндивідуальне заняття з однією дитиною. Особлива увага та розвиток плавання з власним інструктором.
+                                    Максимум користі для вашого малятка!</p>
+                            </li>
+                        </a>
+                    
+                        <a href="javascript:PopUpShow3()">
+                            <li class="services-card-3 card-shadow">
+                                <img src="images/services-card3-img.png" alt="">
+                                <h3 class="txt-headline">Групове плавання</h3>
+                                <p>Заняття у групі. Веселі та навчальні заняття в невеликих групах. Сприяємо командній роботі та
+                                    особистісному зростанню вашої дитини!</p>
+                            </li>
+                        </a>
+                        
                     </ul>
 
                 </div>
 
-                <div class="popup-services-card-1-container" id="popup-service-card-1">
-                    <div class="popup-services-card-1">
-                        <div class="popup-services-card-1-body">
+                <div class="popup-service-card-1-container" id="popup-service-card-1">
+                    <div class="popup-service-card-1">
+                        <div class="popup-service-card-1-body">
+
+                            <h2 class="txt-headline">Вільне плавання</h2>
+                            <img src="images/popup.png" alt="">
+                            <p>Самостійне плавання: ваші правила, ваша швидкість. Відкрийте світ водних пригод на свій лад!</p>
+
+                            <a class="popup-form" href="">Записатися</a>
+
+                            <a class="popup-hide-btn" href="javascript:PopUpHide()">&#10007;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup-service-card-2-container" id="popup-service-card-2">
+                    <div class="popup-service-card-2">
+                        <div class="popup-service-card-2-body">
 
                             <h2 class="txt-headline">Індивідуальне заняття</h2>
                             <img src="images/popup.png" alt="">
@@ -132,7 +151,22 @@
 
                             <a class="popup-form" href="">Записатися</a>
 
-                            <a class="popup-hide-btn" href="javascript:PopUpHide()">&#10007;</a>
+                            <a class="popup-hide-btn" href="javascript:PopUpHide2()">&#10007;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup-service-card-3-container" id="popup-service-card-3">
+                    <div class="popup-service-card-3">
+                        <div class="popup-service-card-3-body">
+
+                            <h2 class="txt-headline">Групове плавання</h2>
+                            <img src="images/popup.png" alt="">
+                            <p>Ця послуга передбачає заняття у групі. Веселі та навчальні заняття в невеликих групах. Сприяємо командній роботі та особистісному зростанню вашої дитини!</p>
+
+                            <a class="popup-form" href="">Записатися</a>
+
+                            <a class="popup-hide-btn" href="javascript:PopUpHide3()">&#10007;</a>
                         </div>
                     </div>
                 </div>
