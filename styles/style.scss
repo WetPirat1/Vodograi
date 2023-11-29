@@ -85,7 +85,8 @@ main{
     margin-bottom: 190px;
 
     .hero{
-      margin-bottom: 580px;
+        margin-bottom: 580px;
+        //dont forot about mb in this position. That have done for correct visual adap for sections
         .hero_container{
 
             position: relative;
@@ -137,16 +138,16 @@ main{
             }
 
             .bg-purple-circle{
-                padding:300px;
+                padding: 150px;
                 border-radius: 979px;
                 background: rgba(151, 71, 255, 0.656);
 
-                filter: blur(200px);
+                filter: blur(150px);
 
                 position: absolute;
 
-                bottom: -698px;
-                right: -100px;
+                bottom: -616px;
+                right: -16px;
 
                 z-index: -1;
             }
@@ -165,6 +166,7 @@ main{
 
         .about-us_container h2 {
           line-height: 67.5px;
+          
         }
 
         .about-us_container .about-us-block {
@@ -190,6 +192,8 @@ main{
           line-height: 129%;
           top: 0px;
           left: -133px;
+
+          font-size: 37px;
         }
 
         .about-us_container .about-us-block .about-us-text p {
@@ -207,10 +211,10 @@ main{
         }
 
         .about-us_container .bg-turquoise-circle {
-          padding: 50px;
+          padding: 150px;
           border-radius: 50%;
           background: rgba(50, 232, 232, 0.628);
-          filter: blur(10px);
+          filter: blur(100px);
           position: absolute;
           overflow: hidden;
           bottom: -50px;
@@ -252,7 +256,7 @@ main{
 
                 gap: 40px;
                 li{
-                  transition: 0.2s ease-in-out;
+                    transition: 0.2s ease-in-out;
                     flex: 1 1 auto;
                     text-align: center;
 
@@ -303,12 +307,10 @@ main{
                 .card-shadow:hover {
                   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.207);
                 }
-              }
-
-
+                }
         }
 
-        .popup-services-card-1-container{
+        .popup-service-card-1-container{
             width:100%;
             height: 2000px;
             background-color: rgba(0,0,0,0.5);
@@ -318,7 +320,7 @@ main{
 
             z-index: 999;
 
-            .popup-services-card-1{
+            .popup-service-card-1{
                 width:1200px;
                 height: 800px;
 
@@ -327,7 +329,145 @@ main{
 
                 background: rgb(66, 49, 7);
 
-                .popup-services-card-1-body{
+                .popup-service-card-1-body{
+                    margin: 0 auto;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    max-width: 800px;
+
+                    h2{
+                        padding-top: 20px;
+                        margin-bottom: 10px;
+
+                        font-size: 50px;
+                    }
+
+                    img{
+                        width: 100%;
+                        max-height: 300px;
+
+                        margin-bottom: 25px;
+                    }
+
+                    p{
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 150%;
+
+                        margin-bottom: 20px;
+
+                        span{
+                            font-weight: 700;
+                        }
+                    }
+                    .popup-form{
+                        padding: 20px 47px;
+                        border-radius: 15px;
+
+
+                        background: #C66EEE;
+                    }
+
+                    .popup-hide-btn{
+                        position: absolute;
+
+                        top: 39px;
+                        right: 290px;
+                    }
+                }
+            }
+        }
+        .popup-service-card-2-container{
+            width:100%;
+            height: 2000px;
+            background-color: rgba(0,0,0,0.5);
+            overflow:hidden;
+            position:fixed;
+            top:0px;
+
+            z-index: 999;
+
+            .popup-service-card-2{
+                width:1200px;
+                height: 800px;
+
+                margin: 0 auto;
+                margin-top: 15px;
+
+                background: rgb(66, 49, 7);
+
+                .popup-service-card-2-body{
+                    margin: 0 auto;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    max-width: 800px;
+
+                    h2{
+                        padding-top: 20px;
+                        margin-bottom: 10px;
+
+                        font-size: 50px;
+                    }
+
+                    img{
+                        width: 100%;
+                        max-height: 300px;
+
+                        margin-bottom: 25px;
+                    }
+
+                    p{
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 150%;
+
+                        margin-bottom: 20px;
+
+                        span{
+                            font-weight: 700;
+                        }
+                    }
+                    .popup-form{
+                        padding: 20px 47px;
+                        border-radius: 15px;
+
+
+                        background: #C66EEE;
+                    }
+
+                    .popup-hide-btn{
+                        position: absolute;
+
+                        top: 39px;
+                        right: 290px;
+                    }
+                }
+            }
+        }
+        .popup-service-card-3-container{
+            width:100%;
+            height: 2000px;
+            background-color: rgba(0,0,0,0.5);
+            overflow:hidden;
+            position:fixed;
+            top:0px;
+
+            z-index: 999;
+
+            .popup-service-card-3{
+                width:1200px;
+                height: 800px;
+
+                margin: 0 auto;
+                margin-top: 15px;
+
+                background: rgb(66, 49, 7);
+
+                .popup-service-card-3-body{
                     margin: 0 auto;
 
                     display: flex;
@@ -397,8 +537,8 @@ main{
 
             position: absolute;
 
-            bottom: -16px;
-            right: -114px;
+            bottom: -135px;
+            right: 144px;
 
             z-index: -1;
         }
@@ -523,16 +663,16 @@ main{
             position: relative;
 
             .bg-yel-circle{
-                padding:200px;
+                padding: 150px;
                 border-radius: 979px;
                 background: rgba(255, 204, 0, 0.749);
 
-                filter: blur(180px);
+                filter: blur(150px);
 
                 position: absolute;
 
-                top: -339px;
-                right: -109px;
+                top: -401px;
+                right: 120px;
 
                 z-index: -1;
             }
@@ -648,8 +788,8 @@ main{
         .contact-us_container{
             .contact-us-all{
                 display: flex;
-                justify-content: space-between;
-
+                justify-content: center;
+                gap: 30px;
                 align-items: center;
                 .contact-us-left{
                     width: 50%;

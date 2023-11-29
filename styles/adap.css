@@ -1,0 +1,233 @@
+@media (max-width: 1337px) {
+  main .about-us .about-us_container .about-us-block .about-us-text .txt-headline {
+    width: 400px;
+  }
+  main .form .form_container .bg-purple-circle {
+    padding: 250px;
+    border-radius: 979px;
+    background: rgba(151, 71, 255, 0.542);
+    filter: blur(200px);
+    position: absolute;
+    top: 233px;
+    left: 225px;
+    z-index: -1;
+  }
+}
+@media (max-width: 1300px) {
+  main h2 {
+    font-size: 45px;
+    margin-bottom: 80px;
+  }
+  main .hero {
+    margin-bottom: 490px;
+  }
+  main .hero .hero_container .hero-title h1 {
+    font-size: 40px;
+    margin-right: -60px;
+    margin-left: 50px;
+  }
+  main .hero .hero_container .hero-title p {
+    line-height: 20px;
+  }
+  main .hero .hero_container img {
+    width: 90%;
+    top: 70px;
+    left: 46px;
+  }
+  main .hero .hero_container .bg-purple-circle {
+    bottom: -474px;
+    right: 146px;
+  }
+  main .about-us .about-us_container .about-us-block .about-us-text .txt-headline {
+    font-size: 30px;
+  }
+  main .about-us .about-us_container .about-us-block img {
+    width: 60%;
+  }
+  main .services .services_container .services-cards li h3 {
+    font-size: 24px;
+  }
+  main .services .services_container .services-cards li p {
+    font-size: 20px;
+  }
+  main .form .form_container .form-left-part h3 {
+    font-size: 35px;
+  }
+  main .form .form_container .form-right-part h2 {
+    font-size: 40px;
+    line-height: 150%;
+  }
+  main .contact-us .contact-us_container .contact-us-all .contact-us-left li a {
+    font-size: 22px;
+  }
+  footer .footer_container .footer-links ul li a {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1000px) {
+  main .hero {
+    margin-bottom: 350px;
+  }
+  main .hero .hero_container img {
+    width: 80%;
+    top: 39px;
+    left: 100px;
+  }
+  main .hero .hero_container .hero-title h1 {
+    margin-right: -100px;
+  }
+  main .about-us .about-us_container .about-us-block img {
+    width: 55%;
+    margin-right: 10px;
+  }
+  main .about-us .about-us_container .about-us-block .about-us-text .txt-headline {
+    top: 13px;
+    left: -59px;
+    font-size: 25px;
+  }
+  main .services .services_container .services-cards li {
+    height: 650px;
+  }
+  main .services .services_container .services-cards li img {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    max-height: 200px;
+    max-width: 50%;
+  }
+  main .services .services_container .services-cards li h3 {
+    font-size: 22px;
+  }
+  main .services .services_container .services-cards li p {
+    font-size: 20px;
+  }
+  main .price .price_container img {
+    width: 100%;
+  }
+  main .form .form_container .bg-yel-circle {
+    right: 286px;
+  }
+}
+@media (max-width: 900px) {
+  header {
+    display: none;
+  }
+  main .hero .hero_container img {
+    top: 77px;
+  }
+  main .hero .hero_container .hero-title h1 {
+    font-size: 30px;
+    max-width: 300px;
+    margin-right: -40px;
+    margin-left: 50px;
+  }
+  main .about-us {
+    margin-bottom: 55px;
+  }
+  main .about-us .about-us_container .about-us-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 800px;
+    height: 650px;
+  }
+  main .about-us .about-us_container .about-us-block img {
+    margin: 60px 0 50px 0;
+  }
+  main .about-us .about-us_container .about-us-block .about-us-text {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  main .about-us .about-us_container .about-us-block .about-us-text .txt-headline {
+    position: inherit;
+    margin: 0;
+  }
+  main .about-us .about-us_container .about-us-block .about-us-text p {
+    width: 80%;
+  }
+  main .services .services_container .services-cards li {
+    max-width: 450px;
+  }
+  main .form .form_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  main .form .form_container .form-left-part {
+    max-width: 80%;
+    margin-bottom: 50px;
+  }
+  main .form .form_container .form-left-part h3 {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  main .form .form_container .form-right-part {
+    max-width: 100%;
+  }
+  main .contact-us .contact-us_container .contact-us-all .contact-us-left li img {
+    margin-right: 5px;
+    max-width: 70px;
+    max-height: 70px;
+  }
+  main .contact-us .contact-us_container .contact-us-all .contact-us-left li a {
+    font-size: 18px;
+  }
+  footer .footer_container .footer-links ul {
+    gap: 40px;
+  }
+  footer .footer_container .footer-links ul li a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 740px) {
+  main [class*=_container] .bg-yel-circle, main [class*=_container] .bg-purple-circle, main [class*=_container] .bg-turquoise-circle {
+    display: none;
+  }
+  main .hero {
+    margin-bottom: 250px;
+  }
+  main .hero .hero_container .hero-title {
+    display: block;
+  }
+  main .hero .hero_container .hero-title h1 {
+    margin: 0;
+  }
+  main .hero .hero_container .hero-title p {
+    font-size: 15px;
+  }
+  main .hero .hero_container img {
+    left: 38px;
+    top: 146px;
+  }
+  main .gallery .bg-turquoise-circle {
+    display: none;
+  }
+  main .contact-us .contact-us_container .contact-us-all {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .contact-us .contact-us_container .contact-us-all .contact-us-left {
+    width: 90%;
+  }
+  main .contact-us .contact-us_container .contact-us-all .contat-us-map {
+    width: 90%;
+  }
+  footer .footer_container .footer-links {
+    justify-content: center;
+    gap: 100px;
+  }
+  footer .footer_container .footer-links ul {
+    display: block;
+    align-items: center;
+  }
+  footer .footer_container .footer-links ul li a {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=adap.css.map */
