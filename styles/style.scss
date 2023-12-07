@@ -31,52 +31,68 @@ body{
     background: rgba(69, 26, 0, 0.91)
 }
 
-header{
-    margin: 40px 0;
-    margin-bottom: 70px;
+header {
+    padding: 30px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(20, 28, 44, 0.679);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
 
-    .header_container{
+    &.scrolled {
+        background-color: rgba(0, 0, 0, 0.548);
+    }
 
-        nav{
-            ul{
+    .header_container {
+        nav {
+            .header-logo {
+                color: #a631dc;
+                width: 140px;
+                height: 25px;
+                
+            }
+
+            ul {
                 display: flex;
                 justify-content: space-between;
-                li{
-                    a{
+
+                li {
+                    a {
                         font-size: 18px;
                         line-height: 33px;
-
                         transition: font-size 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
                     }
-                    .header-btn{
+
+                    .header-btn {
                         padding: 20px 47px;
                         border-radius: 15px;
                         transition: 0.3s;
                         background: #a631dc;
                     }
 
-                    a:hover{
-                      font-size: 20px;
-                        color: rgb(218, 218, 218);
-                    }
+                    a:hover {
+                            transform: scale(0.4);
+                            color: rgb(218, 218, 218);
+                        }
 
-                    .header-btn:hover{
-                      font-size: 18px;
-                        color: white;
-                        background: rgb(120, 34, 160);
-                    }
+                        .header-btn:hover {
+                            font-size: 18px;
+                            color: white;
+                            background: rgb(120, 34, 160);
+                        }
+                    
                 }
 
-
-                .header-logo{
-
-                  font-size: 28px;
+                .header-logo {
+                    font-size: 28px;
                 }
-
             }
         }
     }
 }
+
 
 // MAKE HEADER FIXED!!!!
 
@@ -85,6 +101,7 @@ main{
     margin-bottom: 190px;
 
     .hero{
+        margin-top: 160px;
         margin-bottom: 580px;
         //dont forot about mb in this position. That have done for correct visual adap for sections
         .hero_container{
@@ -100,6 +117,13 @@ main{
                     max-width: 410px;
 
                     margin-right: 110px;
+                    
+                    span {
+                        font-size: 58px;
+                        line-height: 120%;
+                        font-family: 'Montserrat';
+                        font-weight: 600;
+                    }
                 }
 
                 p{
@@ -306,6 +330,7 @@ main{
                 }
                 .card-shadow:hover {
                   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.207);
+                  scale: (1.05);
                 }
                 }
         }
@@ -653,136 +678,135 @@ main{
             }
     }
 
-    .form{
+    .form {
         margin-bottom: 100px;
-
-        .form_container{
+    
+        .form_container {
             display: flex;
             justify-content: space-around;
-
             position: relative;
-
-            .bg-yel-circle{
+    
+            .bg-yel-circle {
                 padding: 150px;
                 border-radius: 979px;
                 background: rgba(255, 204, 0, 0.749);
-
                 filter: blur(150px);
-
                 position: absolute;
-
                 top: -401px;
                 right: 120px;
-
                 z-index: -1;
             }
-
-            .bg-purple-circle{
-                padding:300px;
+    
+            .bg-purple-circle {
+                padding: 300px;
                 border-radius: 979px;
                 background: rgba(151, 71, 255, 0.542);
-
                 filter: blur(200px);
-
                 position: absolute;
-
                 top: 172px;
                 left: 390px;
-
                 z-index: -1;
             }
 
-
-            ::-webkit-input-placeholder { /* Для Chrome и Safari */
-                opacity: 80%;
-                color: #FFFFFF;
-                padding-left: 10px; /* Отступ слева */
-                font-size: 16px; /* Размер шрифта */
-            }
-            :-moz-placeholder { /* Для Firefox 4-18 */
-                color: #FFFFFF;
-                padding-left: 10px;
-                font-size: 16px;
-            }
-            ::-moz-placeholder { /* Для Firefox 19+ */
-                color: #FFFFFF;
-                padding-left: 10px;
-                font-size: 16px;
-            }
-            :-ms-input-placeholder { /* Для IE */
-                color: #FFFFFF;
-                padding-left: 10px;
-                font-size: 16px;
+            .input-field:hover {
+                outline: 1px solid #d4d4d4;
             }
 
+            .input-field:focus {
+                outline: 2px solid #00bfe6;
+            }
+    
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
 
-            .form-left-part{
+            input[type=number] {
+                -moz-appearance: textfield;
+            }
+
+            input {
+                width: 65%;
+                height: 45px;
+                border-radius: 18px;
+                background: rgba(255, 255, 255, 0.47);
+                
+                text-align: center;
+
+    
+
+    
+                &::placeholder {
+                    
+
+                    text-align: center;
+                    color: #FFFFFF;
+                    opacity: 80%;
+                    padding-left: 10px; /* Отступ слева */
+                    font-size: 16px; /* Размер шрифта */
+                    line-height: 45px; /* Выравнивание по высоте с полем ввода */
+                }
+            }
+    
+            .form-left-part {
                 max-width: 50%;
-
+                padding-bottom: 25px;
                 border-radius: 45px;
                 background: linear-gradient(0deg, rgba(90, 84, 84, 0.23) 0%, rgba(217, 217, 217, 0.00) 100%);
-                h3{
-                    font-size: 45px;
+    
+                h3 {
+                    font-size: 35px;
                     line-height: 150%;
-
                     max-width: 70%;
                     margin: 0 auto;
-
                 }
-                img{
+    
+                img {
                     width: 100%;
                     background-size: cover;
-
-                    margin-bottom: 30px;
+                    margin-bottom: 20px;
                 }
             }
-
-            .form-right-part{
+    
+            .form-right-part {
                 max-width: 50%;
                 background-color: #22222267;
                 text-align: center;
-
-                h2{
+                border-radius: 45px;
+    
+                h2 {
                     max-width: 500px;
-
                     border-radius: 45px;
                     background: linear-gradient(0deg, rgba(90, 84, 84, 0.23) 0%, rgba(217, 217, 217, 0.00) 100%);
                 }
-
-                form{
+    
+                form {
                     fill: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, rgba(217, 217, 217, 0.23) 97%);
-                    input{
-                        width: 65%;
-
-                        height: 45px;
-                        border-radius: 35px;
-                        background: rgba(255, 255, 255, 0.47);
-                    }
-
+    
                     input[type="submit"] {
-                        margin-top: 60px;
 
                         font-size: 26px;
-
-                        padding: 10px 60px 20px 60px;
-
-                        max-width: 50%;
-
+                        padding: 30px 10px;
+                        margin-top: 35px;
+                        text-align: center;
+                        max-width: 100%;
+                        border-radius: 20px;
                         background: none;
-                        background-color: #C66EEE;
-
-                        transition: font-size 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+                        background-color: #bb4dee;
+                        transition: 0.3s ease-in-out;
                     }
-
-                    input[type="submit"]:hover{
-
-                        background: #a95ace;
+    
+                    input[type="submit"]:hover {
+                    
+                        cursor: pointer;
+                        background: #8432ab;
                     }
                 }
             }
-
         }
     }
+    
 
     .contact-us{
         .contact-us_container{
@@ -833,22 +857,34 @@ main{
 }
 
 footer{
-    background: rgba(158, 50, 99, 0.461);
+    background: rgb(117, 19, 64);
+    
     padding: 0px 0px 30px ;
     .footer_container{
+
             .footer-links{
+                
+                .footer-logo {
+                    
+
+                    width: 170px;
+                    height: 30px;
+
+                }
                 padding: 50px 0 50px 0;
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-evenly;
 
                 align-items: center;
                 ul{
+                    
                     display: flex;
                     gap: 90px;
                     li{
                         display: flex;
                         flex-direction: column;
                         a{
+                            font-size: 20px;
                             margin-bottom: 15px;
 
                             transition: font-size 0.3s ease-in-out, text-shadow 0.3s ease-in-out;

@@ -1,3 +1,10 @@
+document.addEventListener("DOMContentLoaded", function() {
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 200, // Установите желаемую скорость в миллисекундах (меньше значение - медленнее)
+    });
+});
+
+
 $(document).ready(function(){
     //Скрыть PopUp 1 при загрузке страницы    
     PopUpHide();
@@ -42,3 +49,16 @@ function PopUpHide3(){
     $("#popup-service-card-3").hide();
 }
 
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var header = document.querySelector('header');
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+});

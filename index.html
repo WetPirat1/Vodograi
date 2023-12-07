@@ -21,8 +21,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
-    <script src="javaScript/jquery.js"></script>
-    <script src="javaScript/main.js"></script>
+    <script src="/javaScript/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="/javaScript/main.js"></script>
     <script src="/wow.min.js"></script>
     <script>
         new WOW().init();
@@ -35,8 +36,9 @@
 
         <div class="header_container">
             <nav>
+
                 <ul>
-                    <li class="header-logo"><a href="">ЛОГО</a></li>
+                    <a class="header-link" href="#"><img class="header-logo" src="/images/vglogo.png" alt="logo"></a>
                     <li><a class="nav-btn" href="">Головна</a></li>
                     <li><a href="">Послуги</a></li>
                     <li><a href="trainer/trainers.html">Тренери</a></li>
@@ -58,7 +60,7 @@
                 <span class="bg-yel-circle"></span>
 
                 <div class="hero-title">
-                    <h1 class="txt-headline">ДИТЯЧИЙ БАСЕЙН VODO.GRAI</h1>
+                    <h1 class="txt-headline wow fadeIn ">ДИТЯЧИЙ БАСЕЙН <span style="color: rgb(0, 234, 255);">VODO</span>.<span style="color: rgb(164, 9, 225);">GRAI</span></h1>
                     <p>Плавання - це просто, весело та безпечно.</p>
                 </div>
                 <img src="images/hero-img.png" alt="тут має бути тематичне фото">
@@ -232,6 +234,27 @@
 
             </div>
 
+            <!-- Ваш код HTML и стили здесь -->
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                window.addEventListener("scroll", function() {
+                    parallaxScroll(".bg-yel-circle", 0.9);
+                    parallaxScroll(".bg-purple-circle", 0.7);
+                    parallaxScroll(".bg-turquoise-circle", 0.8);
+                    // Добавьте другие элементы, если необходимо
+                });
+            
+                function parallaxScroll(selector, speed) {
+                    var scroll = window.pageYOffset || document.documentElement.scrollTop;
+                    var element = document.querySelector(selector);
+            
+                    if (element) {
+                    element.style.transform = 'translateY(' + -scroll * speed + 'px)';
+                    }
+                }
+                });
+            </script>
             <script>
 
                 var slideIndex = 1;
@@ -285,15 +308,15 @@
                     <h2 class="txt-headline">ЗАПИС НА ЗАНЯТТЯ</h2>
                     <form>
                         <label for="name"></label>
-                        <input type="text" id="name" name="name" placeholder="Ім'я:" required><br><br>
+                        <input class="input-field" type="text" id="name" name="name" placeholder="Ваше iм'я" maxlength="12" autocomplete="off" required><br><br>
 
                         <label for="phone"></label>
-                        <input type="tel" id="phone" name="phone" placeholder="Номер телефона:" required><br><br>
+                        <input class="input-field" type="tel" id="phone" name="phone" placeholder="Номер телефону" pattern="[0-9+]*" maxlength="13" autocomplete="off" required><br><br>
 
                         <label for="age"></label>
-                        <input type="number" id="age" name="age" placeholder="Вік дитини:" required><br><br>
+                        <input class="input-field" type="number" id="age" name="age" placeholder="Вік дитини" autocomplete="off" pattern="[0-9]"" max="14" maxlength="2" required><br><br>
 
-                        <input type="submit" value="Записатися">
+                        <input type="submit" value="">
                     </form>
                 </div>
 
@@ -344,7 +367,7 @@
         <div class="footer_container">
             <div class="footer-links">
 
-                <img src="images/adress.svg" alt="logo">
+                <a href="index.html"><img class="footer-logo" src="/images/vglogo.png" alt="logo"></a>
                 <ul>
                     <li>
                         <a href="">Головна</a>
