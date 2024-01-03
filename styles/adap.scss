@@ -1,0 +1,566 @@
+@media (max-width: 1337px){
+    main{
+        .about-us{
+            .about-us_container{
+                .about-us-block{
+                    .about-us-text{
+                        .txt-headline{
+                            width: 400px;
+                        }
+                    }
+                }
+            }
+        }
+        .form{
+            .form_container{
+                .bg-purple-circle{
+                    padding: 250px;
+                    border-radius: 979px;
+                    background: rgba(151, 71, 255, 0.542);
+                    filter: blur(200px);
+                    position: absolute;
+                    top: 233px;
+                    left: 225px;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px){
+    main{
+        h2{
+            font-size: 45px;
+            margin-bottom: 80px;
+            
+        }
+        .hero{
+
+            .hero_container{
+
+                .hero-title{
+                    h1{
+                        font-size: 40px;
+                        margin-right: -60px;
+
+                        margin-left: 50px;
+                    }
+
+                    p{
+                        line-height: 20px;
+                    }
+                }
+
+                img{
+                    width: 90%;
+
+                    top: 70px;
+                    left: 46px;
+                }
+
+                .bg-purple-circle{
+                    bottom: -474px;
+                    right: 146px;
+                }
+            }
+        }
+
+        .about-us{
+            .about-us_container{
+                .about-us-block{
+                    .about-us-text{
+                        .txt-headline{
+                            font-size: 30px;
+                        }
+                    }
+
+                    img{
+                        width: 60%;
+                    }
+                }
+            }
+        }
+
+        .services{
+            .services_container{
+                .services-cards{
+                    li{
+                        h3{
+                            font-size: 24px;
+                        }
+
+                        p{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .form{
+            .form_container{
+                .form-left-part{
+                    h3{
+                        font-size: 35px;
+                    }
+                }
+                .form-right-part{
+                    h2{
+                        font-size: 40px;
+                        line-height: 150%;
+                    }
+
+                    form {
+                        input[type="submit"] {
+                            margin-top: 100px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact-us{
+            .contact-us_container{
+                .contact-us-all{
+                    .contact-us-left{
+                        li{
+                            a{
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px){
+
+    header {
+        padding: 20px 0;
+    }
+
+    main {
+        .hero {
+            padding-top: 180px;
+
+
+            background-image: url("/images/hero-adapt-bg.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            border-radius: 0 0 35px 35px;
+            height: 700px;
+            margin-bottom: 120px;
+
+            position: relative;
+
+            hero::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: rgb(0, 0, 0); /* цвет и прозрачность фильтра */
+                pointer-events: none; 
+            }
+            
+
+            .hero_container {
+                
+                position: relative;
+
+                /* Добавлены стили для центрирования кнопки */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end;
+
+                .hero-btn {
+                    display: flex;
+
+                    
+                }
+
+                
+
+                margin: 0;
+                .hero-title{
+                    display: block;
+                    text-align: center;
+                    margin: 0;
+                    
+                    h1 {
+                       text-align: center;
+                       display: -webkit-inline-box;
+                       margin: 0;
+                    }
+                }
+
+                img {
+                    display: none;
+                }
+
+                .bg-yel-circle {
+                    display: none;
+                }
+
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1000px){
+    main{
+        .hero{
+
+
+            .hero_container{
+                img{
+                    width: 80%;
+
+                    top: 39px;
+                    left: 100px;
+                }
+                .hero-title{
+                    h1{
+
+                    }
+                }
+            }
+        }
+        .about-us{
+            .about-us_container{
+                .about-us-block{
+                    img{
+                        width: 55%;
+                        margin-right: 10px;
+                    }
+                    .about-us-text{
+                        .txt-headline{
+                            top: 13px;
+                            left: -59px;
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .services{
+            .services_container{
+                .services-cards{
+                    li{
+                        height: 600px;
+                        img{
+                            margin-top: 50px;
+                            margin-bottom: 40px;
+
+                            max-height: 200px;
+                            max-width: 50%;
+                        }
+                        h3{
+                            font-size: 22px;
+                        }
+                        p{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .price{
+            .price_container{
+                img{
+                    width: 85%;
+                }
+            }
+        }
+
+        .form{
+            .form_container{
+                .bg-yel-circle{
+                    right: 286px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px){
+
+    main{
+        .hero{
+            .hero_container{
+                img{
+                    top: 77px;
+                }
+                .hero-title{
+                    max-width: 330px;
+                    h1{
+                        font-size: 30px;
+
+                        max-width: 500px;
+
+
+                    }
+
+                    p {
+                        margin-top: 20px;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        .about-us{
+            margin-bottom: 55px;
+            .about-us_container{
+
+                .about-us-block{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    max-height: 800px;
+                    height: 650px;
+
+                    img{
+                        margin: 60px 0 50px 0;
+                        width: 70%;
+                    }
+                    .about-us-text{
+                        text-align: center;
+                        align-items: center;
+
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        
+                        width: 100%;
+
+                        .txt-headline{
+                            position: inherit;
+                            margin: 0;
+                        }
+                        p{
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .services{
+            .services_container{
+                .services-cards{
+                    li{
+                        padding: 0 20px;
+                        max-width: 370px;
+                    }
+                }
+            }
+        }
+
+        .form{
+            .form_container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                align-items: center;
+                text-align: center;
+
+                .form-left-part{
+                    max-width: 80%;
+
+                    margin-bottom: 50px;
+                    h3{
+                        font-size: 25px;
+
+                        margin-bottom: 30px;
+                    }
+                }
+                .form-right-part{
+                    max-width: 100%;
+
+                    form {
+                        input[type="submit"] {
+                            margin-top: 20px;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact-us{
+            .contact-us_container{
+                .contact-us-all{
+                    .contact-us-left{
+                        li{
+                            img{
+                                margin-right: 5px;
+
+                                max-width: 70px;
+                                max-height: 70px;
+                            }
+                            a{
+                                font-size: 18px;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 740px){
+    main {
+
+        .about-us {
+            .about-us_container {
+                .about-us-block {
+
+                }
+            }
+        }
+
+
+        .hero{
+            margin-bottom: 100px;
+            .hero_container{
+                .hero-title{
+
+                }
+                img{
+                    left: 38px;
+                    top: 146px;
+                }
+            }
+        }
+
+        .gallery{
+            .bg-turquoise-circle{
+                display: none;
+            }
+        }
+        .contact-us{
+            .contact-us_container{
+                .contact-us-all{
+                    flex-direction: column;
+                    justify-content: center;
+
+                    align-items: center;
+
+                    .contact-us-left{
+                        width: 90%;
+                    }
+                    .contat-us-map{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    
+    }
+}
+
+@media (max-width: 501px) {
+    .services {
+        .services_container {
+            .popup-service-card-1-container {
+                .popup-service-card-1 {
+                    max-width: 400px;
+                }
+            }
+            .popup-service-card-2-container {
+                .popup-service-card-2 {
+                    max-width: 400px;
+                }
+            }
+            .popup-service-card-3-container {
+                .popup-service-card-3 {
+                    max-width: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        .services {
+            .popup-service-card-1-container {
+                .popup-service-card-1 {
+                    height: 650px;
+                    max-width: 400px;
+                
+                    .popup-service-card-1-body {
+                        h2 {
+                            font-size: 27px;
+                        }
+
+                        img {
+                            max-width: 350px;
+                            height: 150px;
+                        }
+                    }
+                }
+
+            }
+
+            .popup-service-card-2-container {
+                .popup-service-card-2 {
+                    max-width: 400px;
+                
+                    .popup-service-card-2-body {
+                        h2 {
+                            font-size: 23px;
+                        }
+
+                        img {
+                            max-width: 350px;
+                            height: 150px;
+                        }
+
+                        p span {
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+            }
+
+            .popup-service-card-3-container {
+                .popup-service-card-3 {
+                    max-width: 400px;
+                
+                    .popup-service-card-3-body {
+                        h2 {
+                            font-size: 23px;
+                        }
+
+                        img {
+                            max-width: 350px;
+                            height: 150px;
+                        }
+
+                        p span {
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

@@ -1,8 +1,33 @@
+@charset "UTF-8";
 [class*=_container] {
-  max-width: 1500px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
+html {
+  overflow-x: hidden;
+}
+
+.popup-open {
+  overflow: hidden;
+}
+
+.bg-yel-circle {
+  padding: 300px;
+  border-radius: 979px;
+  background: rgba(124, 117, 18, 0.687);
+  filter: blur(200px);
+  position: absolute;
+  z-index: -11;
+}
+
+.txt-headline {
+  font-family: "Unbounded";
+}
+
+main .trainer-cards {
+  padding-top: 140px;
+}
 main .trainer-cards .trainer-cards_container {
   position: relative;
 }
@@ -18,49 +43,61 @@ main .trainer-cards .trainer-cards_container .bg-turquoise-circle {
 }
 main .trainer-cards .trainer-cards_container h1 {
   line-height: 150%;
-  font-size: 70px;
+  font-size: 60px;
   text-align: center;
   margin-bottom: 90px;
 }
 main .trainer-cards .trainer-cards_container ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 2em;
 }
 main .trainer-cards .trainer-cards_container ul .card-1 {
   border-radius: 45px;
   background: linear-gradient(0deg, rgba(255, 205, 41, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.207);
 }
 main .trainer-cards .trainer-cards_container ul .card-2 {
   border-radius: 45px;
   background: linear-gradient(0deg, rgba(50, 232, 232, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.207);
 }
 main .trainer-cards .trainer-cards_container ul .card-3 {
   border-radius: 45px;
   background: linear-gradient(0deg, rgba(198, 110, 238, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.207);
 }
 main .trainer-cards .trainer-cards_container ul .card-4 {
   border-radius: 45px;
   background: linear-gradient(0deg, rgba(50, 232, 232, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.207);
 }
 main .trainer-cards .trainer-cards_container ul .card-5 {
   border-radius: 45px;
   background: linear-gradient(0deg, rgba(198, 110, 238, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.207);
 }
 main .trainer-cards .trainer-cards_container ul .card-6 {
   border-radius: 45px;
   background: linear-gradient(0deg, rgba(255, 205, 41, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.207);
+}
+main .trainer-cards .trainer-cards_container ul .card-shadow:hover {
+  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.207);
+  scale: 1.05;
 }
 main .trainer-cards .trainer-cards_container ul li {
+  transition: 0.2s ease-in-out;
   flex: 1 1;
   text-align: center;
-  max-width: 450px;
+  max-width: 350px;
   max-height: 600px;
   margin-bottom: 100px;
   padding-bottom: 50px;
 }
 main .trainer-cards .trainer-cards_container ul li img {
-  max-width: 450px;
+  max-width: 350px;
   height: auto;
   margin-bottom: 20px;
 }
@@ -70,30 +107,35 @@ main .trainer-cards .trainer-cards_container ul li h2 {
   margin-bottom: 20px;
 }
 main .trainer-cards .trainer-cards_container ul li p {
+  font-size: 18px;
+  padding: 0 15px;
   max-width: 410px;
   margin: 0 auto;
 }
 main .requirements .requirements_container h2 {
   max-width: 1000px;
+  font-size: 50px;
+  line-height: 60px;
   margin: 0 auto;
   margin-bottom: 90px;
 }
 main .requirements .requirements_container ul {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.207);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 20px;
   padding: 60px 0;
   border-radius: 45px;
   background: linear-gradient(90deg, #5A5454 0.08%, rgba(90, 84, 84, 0) 99.9%);
   margin-bottom: 90px;
 }
 main .requirements .requirements_container ul li {
-  background: #C66EEE;
+  background: #c548ff;
   border-radius: 15%;
-  width: 300px;
+  padding: 15px;
+  width: 250px;
   height: 220px;
-  max-width: 370px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,37 +144,158 @@ main .requirements .requirements_container ul li img {
   margin: 20px 0 10px 0;
 }
 main .requirements .requirements_container ul li h3 {
-  font-size: 30px;
-  max-width: 260px;
+  max-width: 370px;
+  font-size: 25px;
   font-weight: 400;
   text-align: center;
 }
 main .requirements .requirements_container ul li h3 span {
-  font-size: 20px;
+  color: #e3e3e3;
+  font-size: 18px;
   font-weight: 300;
 }
 main .attention {
   margin-bottom: 100px;
+  padding: 0 20px;
 }
 main .attention .attention_container {
+  padding: 20px;
   display: flex;
   align-items: center;
-  height: 250px;
   position: relative;
+  max-height: 500px;
   gap: 30px;
-  border-radius: 45px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.207);
+  border-radius: 30px;
   background: linear-gradient(90deg, #5A5454 0.08%, rgba(90, 84, 84, 0) 99.9%);
 }
 main .attention .attention_container img {
-  width: 50%;
-  height: 100%;
+  max-width: 50%;
+  max-height: 100%;
 }
 main .attention .attention_container h2 {
   position: absolute;
-  top: 76px;
-  left: 105px;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 25px;
+  font-size: 50px;
 }
 main .attention .attention_container p {
   width: 50%;
-  font-size: 30px;
+  font-size: 23px;
+}
+main .form {
+  margin-bottom: 100px;
+}
+main .form .form_container {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+main .form .form_container .bg-yel-circle {
+  padding: 150px;
+  border-radius: 979px;
+  background: rgba(255, 204, 0, 0.749);
+  filter: blur(150px);
+  position: absolute;
+  z-index: -1;
+}
+main .form .form_container .bg-purple-circle {
+  padding: 300px;
+  border-radius: 979px;
+  background: rgba(151, 71, 255, 0.542);
+  filter: blur(200px);
+  position: absolute;
+  top: 172px;
+  left: 390px;
+  z-index: -11;
+}
+main .form .form_container .input-field:hover {
+  outline: 1px solid #d4d4d4;
+}
+main .form .form_container .input-field:focus {
+  outline: 2px solid #00bfe6;
+}
+main .form .form_container input::-webkit-outer-spin-button,
+main .form .form_container input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+main .form .form_container input[type=number] {
+  -moz-appearance: textfield;
+}
+main .form .form_container input {
+  width: 65%;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.47);
+  text-align: center;
+}
+main .form .form_container input::-moz-placeholder {
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 80%;
+  padding-left: 10px; /* Отступ слева */
+  font-size: 16px; /* Размер шрифта */
+  line-height: 45px; /* Выравнивание по высоте с полем ввода */
+}
+main .form .form_container input::placeholder {
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 80%;
+  padding-left: 10px; /* Отступ слева */
+  font-size: 16px; /* Размер шрифта */
+  line-height: 45px; /* Выравнивание по высоте с полем ввода */
+}
+main .form .form_container .form-left-part {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.207);
+  max-width: 50%;
+  padding-bottom: 25px;
+  border-radius: 45px;
+  background: linear-gradient(0deg, rgba(90, 84, 84, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
+}
+main .form .form_container .form-left-part h3 {
+  font-size: 35px;
+  line-height: 150%;
+  max-width: 70%;
+  margin: 0 auto;
+}
+main .form .form_container .form-left-part img {
+  width: 100%;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+main .form .form_container .form-right-part {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.207);
+  max-width: 50%;
+  background-color: rgba(34, 34, 34, 0.4039215686);
+  text-align: center;
+  border-radius: 45px;
+}
+main .form .form_container .form-right-part h2 {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.207);
+  max-width: 500px;
+  border-radius: 45px;
+  background: linear-gradient(0deg, rgba(90, 84, 84, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
+}
+main .form .form_container .form-right-part form {
+  fill: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, rgba(217, 217, 217, 0.23) 97%);
+}
+main .form .form_container .form-right-part form .input-field {
+  height: 45px;
+}
+main .form .form_container .form-right-part form input[type=submit] {
+  font-size: 26px;
+  padding: 20px 10px;
+  margin-top: 35px;
+  text-align: center;
+  max-width: 100%;
+  border-radius: 20px;
+  background: none;
+  background-color: #bb4dee;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.207);
+}
+main .form .form_container .form-right-part form input[type=submit]:hover {
+  cursor: pointer;
+  background: #8432ab;
 }/*# sourceMappingURL=trainer-style.css.map */

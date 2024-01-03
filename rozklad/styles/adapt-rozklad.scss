@@ -1,0 +1,137 @@
+/* Default styles for screens up to 1200px */
+@media (max-width: 1200px) {
+    main {
+        .schedule-section {
+            margin: 150px 0;
+            h2 {
+                font-size: 60px;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+
+            .schedule__container {
+                .bg-blue-circle {
+                    padding: 300px;
+                    border-radius: 979px;
+                    background: rgba(39, 199, 180, 0.659);
+                    filter: blur(200px);
+                    position: absolute;
+                    top: -188px;
+                    left: -112px;
+                    z-index: -1;
+                }
+
+
+                table {
+                    border: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                th, td {
+                    padding: 10px;
+                    border: 0.2px solid rgb(175, 175, 175);
+                }
+
+                th {
+                    padding: 18px 0;
+                }
+
+                thead {
+                    background-color: #16afce;
+                }
+            }
+            
+        }
+    }
+    
+main .schedule-section .schedule__container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+table {
+    border-collapse: collapse;
+    white-space: nowrap; /* Prevent line break  within cells */
+    margin-bottom: 15px;
+}
+
+th, td {
+    min-width: 150px; /* Set a minimum width for cells to prevent squeezing */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Custom scrollbar styles */
+main .schedule-section .schedule__container::-webkit-scrollbar {
+    width: 80%; /* Set the width of the scrollbar */
+    height: 10px;
+    transition: 0.3s ease-in-out;
+
+
+}
+
+main .schedule-section .schedule__container::-webkit-scrollbar-thumb {
+    background-color: #747474; /* Set the color of the scrollbar thumb */
+    border-radius: 25px; /* Set the border-radius of the scrollbar thumb */
+    
+}
+main .schedule-section .schedule__container::-webkit-scrollbar:hover {
+    height: 15px;
+}
+
+main .schedule-section .schedule__container::-webkit-scrollbar-track {
+    height: 15px;
+    background-color: rgba(234, 234, 234, 0.841);
+    border-radius: 25px;
+
+}
+
+/* Optional: Adjustments for better styling */
+
+
+}
+
+/* Responsive styles for screens up to 768px */
+@media (max-width: 768px) {
+    main .schedule-section .schedule__container {
+        h2 {
+            font-size: 40px; /* Adjust font size for smaller screens */
+        }
+
+        th, td {
+            padding: 8px; /* Adjust cell padding for smaller screens */
+        }
+    }
+
+    
+}
+
+
+@media (max-width: 768px) {
+
+    
+    main .schedule-section .schedule__container {
+        h2 {
+            font-size: 40px; /* Adjust font size for smaller screens */
+        }
+
+        th, td {
+            padding: 8px; /* Adjust cell padding for smaller screens */
+        }
+    }
+}
+
+/* Responsive styles for screens up to 480px (phones) */
+@media (max-width: 480px) {
+    main .schedule-section .schedule__container {
+        h2 {
+            font-size: 30px; /* Further adjust font size for phones */
+        }
+
+        th, td {
+            padding: 6px; /* Further adjust cell padding for phones */
+        }
+    }
+}
+
+/* Additional media queries for smaller screen sizes if needed */
+/* For example: @media (max-width: 480px) { ... } */

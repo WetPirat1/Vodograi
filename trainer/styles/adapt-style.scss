@@ -1,0 +1,103 @@
+@media (max-width: 680px) {
+    main {
+        .trainer-cards {
+            padding-top: 110px;
+        }
+
+    .requirements{
+        .requirements_container{
+            h2{
+                max-width: 1000px;
+                font-size: 45px;
+                line-height: 60px;
+                margin: 0 auto;
+
+                margin-bottom: 90px;
+
+            }
+
+            ul{
+                li{
+                    align-items: center;
+                    
+                    background: #c548ff;
+                    border-radius: 15%;
+                    padding: 0;
+
+
+                    width: 160px;
+                    height: 130px;
+
+                    
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    img{
+                        width: 50px;
+                        height: 50px;
+                        margin: 0;
+                        margin: 10px 0;
+                    }
+
+                    h3{
+                        max-width: 370px;
+                        font-size: 18px;
+                        font-weight: 400;
+                        text-align: center;
+                        span{
+                            color: #e3e3e3;
+                            font-size: 13px;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .attention {
+        .attention_container {
+            h2 {
+                font-size: 35px;
+            }
+        }
+    }
+}
+}
+
+@media (max-width: 1120px) {
+    main {
+
+        .attention {
+            .attention_container{
+
+                display: block;
+                text-align: center;
+    
+    
+                gap: 30px;
+    
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.207);
+                border-radius: 30px;
+                background: linear-gradient(90deg, #5A5454 0.08%, rgba(90, 84, 84, 0.00) 99.9%);
+                img{
+                    width: 50%;
+                    height: 100%;
+                    display: none;
+                }
+                h2 {
+                    position: relative;
+                }
+                p{
+                    padding-bottom: 20px;
+                    font-size: 23px;
+                    margin: 0 auto;
+                    width: 90%;
+                }
+            }
+        }
+
+    }
+}
+
