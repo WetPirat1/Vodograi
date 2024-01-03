@@ -33,7 +33,6 @@
   main .schedule-section .schedule__container thead {
     background-color: #16afce;
   }
-  /* Add this CSS to your existing styles */
   main .schedule-section .schedule__container {
     overflow-x: auto; /* Enable horizontal scrolling */
   }

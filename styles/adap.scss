@@ -146,6 +146,7 @@
         .hero {
             padding-top: 180px;
 
+
             background-image: url("/images/hero-adapt-bg.png");
             background-position: center;
             background-size: cover;
@@ -170,6 +171,7 @@
             
 
             .hero_container {
+                
                 position: relative;
 
                 /* Добавлены стили для центрирования кнопки */
@@ -200,6 +202,10 @@
                 }
 
                 img {
+                    display: none;
+                }
+
+                .bg-yel-circle {
                     display: none;
                 }
 
@@ -386,7 +392,8 @@
 
                     form {
                         input[type="submit"] {
-                            margin-bottom: 70px;
+                            margin-top: 20px;
+                            margin-bottom: 10px;
                         }
                     }
                 }
@@ -414,16 +421,6 @@
             }
         }
     }
-    footer{
-        .footer_container{
-            .footer-links{
-                ul{
-                    gap: 40px;
-                }
-            }
-        }
-    }
-
 }
 
 @media (max-width: 740px){
@@ -475,24 +472,6 @@
         }
     
     }
-    footer{
-        .footer_container{
-            .footer-links{
-                justify-content: center;
-                gap: 100px;
-                ul{
-                    display: block;
-                    align-items: center;
-                    li{
-                        a{
-                            margin-bottom: 30px;
-                            text-align: center;
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 
 @media (max-width: 501px) {
@@ -512,6 +491,75 @@
                 .popup-service-card-3 {
                     max-width: 400px;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        .services {
+            .popup-service-card-1-container {
+                .popup-service-card-1 {
+                    height: 650px;
+                    max-width: 400px;
+                
+                    .popup-service-card-1-body {
+                        h2 {
+                            font-size: 27px;
+                        }
+
+                        img {
+                            max-width: 350px;
+                            height: 150px;
+                        }
+                    }
+                }
+
+            }
+
+            .popup-service-card-2-container {
+                .popup-service-card-2 {
+                    max-width: 400px;
+                
+                    .popup-service-card-2-body {
+                        h2 {
+                            font-size: 23px;
+                        }
+
+                        img {
+                            max-width: 350px;
+                            height: 150px;
+                        }
+
+                        p span {
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+            }
+
+            .popup-service-card-3-container {
+                .popup-service-card-3 {
+                    max-width: 400px;
+                
+                    .popup-service-card-3-body {
+                        h2 {
+                            font-size: 23px;
+                        }
+
+                        img {
+                            max-width: 350px;
+                            height: 150px;
+                        }
+
+                        p span {
+                            font-size: 20px;
+                        }
+                    }
+                }
+
             }
         }
     }

@@ -9,15 +9,8 @@ html {
   overflow-x: hidden;
 }
 
-.bg-yel-circle {
-  padding: 150px;
-  border-radius: 979px;
-  background: rgba(255, 204, 0, 0.749);
-  filter: blur(150px);
-  position: absolute;
-  top: -401px;
-  right: 120px;
-  z-index: -1;
+.open {
+  display: flex !important;
 }
 
 * {
@@ -41,194 +34,6 @@ h2 {
 
 body {
   background: rgba(69, 26, 0, 0.91);
-}
-
-header {
-  padding: 20px 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: rgba(20, 28, 44, 0.679);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  z-index: 1000;
-  transition: background-color 0.3s ease-in-out;
-}
-header.scrolled {
-  background-color: rgba(0, 0, 0, 0.548);
-}
-header .header_container {
-  position: relative;
-  /* Добавляем класс active для анимации иконки бургера */
-  /* При разрешении экрана 900px и ниже, выводим на экран иконку бургера */
-}
-header .header_container nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .header_container nav .header-logo {
-  color: #a631dc;
-  width: 140px;
-  height: 25px;
-  transition: 0.2s ease-in-out;
-}
-header .header_container nav .header-logo:hover {
-  transform: scale(0.95);
-}
-header .header_container nav ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  gap: 35px;
-}
-header .header_container nav ul li a {
-  font-size: 16px;
-  line-height: 33px;
-  position: relative;
-  transition: width 0.3s ease-in-out;
-}
-header .header_container nav ul li a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background-color: rgba(144, 144, 144, 0.6941176471);
-  transition: width 0.3s ease-in-out;
-}
-header .header_container nav ul li a:hover {
-  transform: scale(1.2);
-  color: rgb(218, 218, 218);
-}
-header .header_container nav ul li a:hover::after {
-  width: 100%;
-}
-header .header_container nav .header-btn {
-  padding: 15px 25px;
-  border-radius: 10px;
-  transition: 0.3s;
-  background: #a631dc;
-}
-header .header_container nav .header-btn::after {
-  display: none;
-}
-header .header_container nav .header-btn:hover {
-  background-color: #9621cd;
-  color: rgb(218, 218, 218);
-  transform: scale(0.9);
-}
-header .header_container .burger-menu {
-  display: none;
-  cursor: pointer;
-  font-size: 25px;
-  width: 30px;
-}
-header .header_container .burger-menu.active {
-  content: "✕";
-}
-@media screen and (max-width: 1200px) {
-  header .header_container .burger-menu {
-    display: block;
-  }
-}
-header .header_container .burger {
-  display: none;
-  position: relative;
-  z-index: 50;
-  align-items: center;
-  justify-content: flex-end;
-  width: 30px;
-  height: 18px;
-}
-header .header_container .burger span {
-  height: 1px;
-  width: 100%;
-  transform: scale(1);
-  background-color: #FAF6F2;
-}
-header .header_container .burger::before, header .header_container .burger::after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  width: 100%;
-  background-color: #FAF6F2;
-  transition: all 0.3s ease 0s;
-}
-header .header_container .burger::before {
-  top: 0;
-}
-header .header_container .burger::after {
-  bottom: 0;
-}
-header .header_container .burger.active span {
-  transform: scale(0);
-}
-header .header_container .burger.active::before {
-  top: 50%;
-  transform: rotate(-45deg) translate(0, -50%);
-}
-header .header_container .burger.active::after {
-  bottom: 50%;
-  transform: rotate(45deg) translate(0, 50%);
-}
-@media (max-width: 1200px) {
-  header .header_container .burger {
-    display: flex;
-  }
-  header .header_container .nav {
-    display: none;
-    flex-direction: column;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 50;
-    overflow-y: auto;
-    padding: 50px 40px;
-    background-color: black;
-    animation: burgerAnimation 0.4s;
-  }
-  header .header_container .nav ul {
-    flex-direction: column;
-    row-gap: 30px;
-  }
-}
-@keyframes burgerAnimation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@media screen and (max-width: 1200px) {
-  header header {
-    background-color: rgb(0, 0, 0);
-  }
-  header .header_container nav ul {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 5px;
-    height: 100vh;
-    left: 0;
-    width: 100%;
-    background-color: rgba(16, 21, 31, 0.831);
-    z-index: 999;
-  }
-  header .header_container nav ul li {
-    margin: 10px 0;
-    text-align: center;
-  }
-  header .header_container nav .burger-menu {
-    display: block;
-  }
 }
 
 main .hero {
@@ -275,7 +80,7 @@ main .hero .hero_container .bg-yel-circle {
   position: absolute;
   top: -188px;
   left: -112px;
-  z-index: -1;
+  z-index: -12;
 }
 main .hero .hero_container .bg-purple-circle {
   padding: 150px;
@@ -371,6 +176,17 @@ main .services .services_container .services-cards {
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
+}
+main .services .services_container .services-cards .bg-turquoise-circle {
+  padding: 300px;
+  border-radius: 979px;
+  background: rgba(8, 184, 131, 0.319);
+  filter: blur(200px);
+  position: absolute;
+  overflow: hidden;
+  top: 0px;
+  left: 200px;
+  z-index: -1;
 }
 main .services .services_container .services-cards li {
   transition: 0.2s ease-in-out;
@@ -742,16 +558,16 @@ main .form .form_container {
   display: flex;
   justify-content: space-around;
   position: relative;
+  /* Добавленные стили для чекбокса и метки */
 }
-main .form .form_container .bg-yel-circle {
+main .form .form_container .bg-blue-circle {
   padding: 150px;
   border-radius: 979px;
-  background: rgba(255, 204, 0, 0.749);
+  background: rgba(0, 255, 208, 0.652);
   filter: blur(150px);
   position: absolute;
-  top: -401px;
   right: 120px;
-  z-index: -1;
+  z-index: -11;
 }
 main .form .form_container .bg-purple-circle {
   padding: 300px;
@@ -787,17 +603,23 @@ main .form .form_container input::-moz-placeholder {
   text-align: center;
   color: #FFFFFF;
   opacity: 80%;
-  padding-left: 10px; /* Отступ слева */
-  font-size: 16px; /* Размер шрифта */
-  line-height: 45px; /* Выравнивание по высоте с полем ввода */
+  padding-left: 10px;
+  font-size: 16px;
+  line-height: 45px;
 }
 main .form .form_container input::placeholder {
   text-align: center;
   color: #FFFFFF;
   opacity: 80%;
-  padding-left: 10px; /* Отступ слева */
-  font-size: 16px; /* Размер шрифта */
-  line-height: 45px; /* Выравнивание по высоте с полем ввода */
+  padding-left: 10px;
+  font-size: 16px;
+  line-height: 45px;
+}
+main .form .form_container #agreement + label {
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  display: block;
 }
 main .form .form_container .form-left-part {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.207);
@@ -831,6 +653,7 @@ main .form .form_container .form-right-part h2 {
   background: linear-gradient(0deg, rgba(90, 84, 84, 0.23) 0%, rgba(217, 217, 217, 0) 100%);
 }
 main .form .form_container .form-right-part form {
+  padding-bottom: 40px;
   fill: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, rgba(217, 217, 217, 0.23) 97%);
 }
 main .form .form_container .form-right-part form .input-field {
@@ -839,7 +662,7 @@ main .form .form_container .form-right-part form .input-field {
 main .form .form_container .form-right-part form input[type=submit] {
   font-size: 26px;
   padding: 20px 10px;
-  margin-top: 35px;
+  margin-top: 15px;
   text-align: center;
   max-width: 100%;
   border-radius: 20px;
@@ -847,6 +670,25 @@ main .form .form_container .form-right-part form input[type=submit] {
   background-color: #bb4dee;
   transition: 0.2s ease-in-out;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.207);
+}
+main .form .form_container .form-right-part form input[type=checkbox] {
+  font-size: 14px;
+}
+main .form .form_container .form-right-part form input[type=checkbox] .policy-agree {
+  font-size: 14px;
+}
+main .form .form_container .form-right-part form .agree {
+  display: flex;
+  margin: 0 auto;
+}
+main .form .form_container .form-right-part form .agree .check {
+  width: 30%;
+}
+main .form .form_container .form-right-part form .agree .txt {
+  width: 30%;
+}
+main .form .form_container .form-right-part form .agree .txt label {
+  font-size: 14px;
 }
 main .form .form_container .form-right-part form input[type=submit]:hover {
   cursor: pointer;
@@ -863,6 +705,16 @@ main .contact-us .contact-us_container .contact-us-all {
 }
 main .contact-us .contact-us_container .contact-us-all .contact-us-left {
   width: 50%;
+}
+main .contact-us .contact-us_container .contact-us-all .contact-us-left .bg-turquoise-circle {
+  padding: 150px;
+  border-radius: 50%;
+  background: rgba(0, 255, 255, 0.183);
+  filter: blur(100px);
+  position: absolute;
+  overflow: hidden;
+  left: -100px;
+  z-index: -11;
 }
 main .contact-us .contact-us_container .contact-us-all .contact-us-left li {
   display: flex;
@@ -896,18 +748,18 @@ main .contact-us .contact-us_container .contact-us-all .contat-us-map iframe {
 main .faq .faq_container {
   margin-bottom: 170px;
 }
-main .faq .faq_container .bg-yel-circle {
-  padding: 150px;
-  border-radius: 979px;
-  background: rgba(255, 204, 0, 0.749);
-  filter: blur(150px);
-  position: absolute;
-  top: -401px;
-  right: 120px;
-  z-index: -1;
-}
 main .faq .faq_container .accordion {
   width: 100%;
+}
+main .faq .faq_container .accordion .bg-purple-circle {
+  padding: 150px;
+  border-radius: 979px;
+  background: rgba(255, 208, 0, 0.715);
+  filter: blur(150px);
+  position: relative;
+  top: -200px;
+  right: 20px;
+  z-index: -10;
 }
 main .faq .faq_container .accordion-item {
   display: flex;

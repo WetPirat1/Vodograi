@@ -112,6 +112,9 @@
   main .hero .hero_container img {
     display: none;
   }
+  main .hero .hero_container .bg-yel-circle {
+    display: none;
+  }
 }
 @media (max-width: 1000px) {
   main .hero .hero_container img {
@@ -217,7 +220,8 @@
     max-width: 100%;
   }
   main .form .form_container .form-right-part form input[type=submit] {
-    margin-bottom: 70px;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
   main .contact-us .contact-us_container .contact-us-all .contact-us-left li img {
     margin-right: 5px;
@@ -226,9 +230,6 @@
   }
   main .contact-us .contact-us_container .contact-us-all .contact-us-left li a {
     font-size: 18px;
-  }
-  footer .footer_container .footer-links ul {
-    gap: 40px;
   }
 }
 @media (max-width: 740px) {
@@ -253,18 +254,6 @@
   main .contact-us .contact-us_container .contact-us-all .contat-us-map {
     width: 90%;
   }
-  footer .footer_container .footer-links {
-    justify-content: center;
-    gap: 100px;
-  }
-  footer .footer_container .footer-links ul {
-    display: block;
-    align-items: center;
-  }
-  footer .footer_container .footer-links ul li a {
-    margin-bottom: 30px;
-    text-align: center;
-  }
 }
 @media (max-width: 501px) {
   .services .services_container .popup-service-card-1-container .popup-service-card-1 {
@@ -275,5 +264,44 @@
   }
   .services .services_container .popup-service-card-3-container .popup-service-card-3 {
     max-width: 400px;
+  }
+}
+@media (max-width: 600px) {
+  main .services .popup-service-card-1-container .popup-service-card-1 {
+    height: 650px;
+    max-width: 400px;
+  }
+  main .services .popup-service-card-1-container .popup-service-card-1 .popup-service-card-1-body h2 {
+    font-size: 27px;
+  }
+  main .services .popup-service-card-1-container .popup-service-card-1 .popup-service-card-1-body img {
+    max-width: 350px;
+    height: 150px;
+  }
+  main .services .popup-service-card-2-container .popup-service-card-2 {
+    max-width: 400px;
+  }
+  main .services .popup-service-card-2-container .popup-service-card-2 .popup-service-card-2-body h2 {
+    font-size: 23px;
+  }
+  main .services .popup-service-card-2-container .popup-service-card-2 .popup-service-card-2-body img {
+    max-width: 350px;
+    height: 150px;
+  }
+  main .services .popup-service-card-2-container .popup-service-card-2 .popup-service-card-2-body p span {
+    font-size: 20px;
+  }
+  main .services .popup-service-card-3-container .popup-service-card-3 {
+    max-width: 400px;
+  }
+  main .services .popup-service-card-3-container .popup-service-card-3 .popup-service-card-3-body h2 {
+    font-size: 23px;
+  }
+  main .services .popup-service-card-3-container .popup-service-card-3 .popup-service-card-3-body img {
+    max-width: 350px;
+    height: 150px;
+  }
+  main .services .popup-service-card-3-container .popup-service-card-3 .popup-service-card-3-body p span {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=adap.css.map */

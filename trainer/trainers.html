@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../trainer/styles/trainer-style.css">
     <link rel="stylesheet" href="../trainer/styles/adapt-style.css">
     <link rel="stylesheet" href="../styles/adap.css">
+    <link rel="stylesheet" href="../styles/header-footer.css"">
     <link rel="stylesheet" href="../styles/responsive.css">
 
 
@@ -46,27 +47,30 @@
 <body>
     <header>
         <div class="header_container">
+            <a href="/index.html"><img class="header-logo" src="../images/vglogo.png" alt=""></a>
             <nav>
-                <a class="header-link" href="/index.html"><img class="header-logo" src="/images/vglogo.png" alt="logo"></a>
                 <ul>
-                    <li><a class="nav-btn" href="/index.html">Головна</a></li>
-                    <li><a href="">Послуги</a></li>
-                    <li><a href="../trainer/trainers.html">Тренери</a></li>
+                    <li><a class="nav-btn" href="">Головна</a></li>
+                    <li><a href="#services-id">Послуги</a></li>
+                    <li><a href="trainer/trainers.html">Тренери</a></li>
                     <li><a href="">Прайс</a></li>
-                    <li><a href="">Розклад</a></li>
+                    <li><a href="/rozklad/rozklad.html">Розклад</a></li>
                     <li><a href="">Галерея</a></li>
                     <li><a href="">Контакти</a></li>
-                    <li><a class="header-btn" href="">Записатися</a></li>
+                    <li><a class="header-btn" href="#form-id">Записатися</a></li>
                 </ul>
-                <span class="burger-menu">&#9776;</span>
             </nav>
+    
+            <div class="burger">
+                <span></span>
+            </div>
         </div>
     </header>
 
     <main>
         <section class="trainer-cards">
             <div class="trainer-cards_container">
-                <span class="bg-yel-circle"></span>
+                <span class="bg-yel-circle wow animate__animated animate__fadeInDown"></span>
                 
                 <h1 class="txt-headline wow animate__animated animate__fadeInUp">НАШІ ТРЕНЕРИ</h1>
                 <ul class="wow animate__animated animate__fadeInUpBig">
@@ -134,6 +138,7 @@
                         <img src="../trainer/images/card-3.png" alt="">
                         <h3>Довідка від лікаря</h3>
                     </li>
+                    <span class="bg-yel-circle wow animate__animated animate__fadeInUp"></span>
                     <li>
                         <img src="../trainer/images/card-4.png" alt="">
                         <h3>Купальний костюм</h3>
@@ -158,10 +163,12 @@
                         <span>(для дітей від 3 років)</span></h3>
                     </li>
                 </ul>
+                
             </div>
         </section>
 
         <section class="attention">
+            <span class="bg-yel-circle wow animate__animated animate__fadeInUp"></span>
             <div class="attention_container wow animate__animated animate__fadeInUp">
                 <img src="../trainer/images/attention.png" alt="" class="wow animate__animated animate__fadeInLeft">
                 <h2 class="wow animate__animated animate__fadeInLeft">ОБОВ’ЯЗКОВО!</h2>
@@ -171,42 +178,47 @@
                     <br>
                     Дуже дякуємо за розуміння,
                     Ваш дитячий басейн Vodo.Grai</p>
+                    
             </div>
         </section>
 
         <section id="form-id" class="form">
             <div class="form_container">
-                <span class="bg-purple-circle"></span>
-                <span class="bg-yel-circle"></span>
-
+                <span class="bg-purple-circle wow animate__animated animate__fadeInUp"></span>
+                <span class="bg-blue-circle wow animate__animated animate__fadeInUp"></span>
+        
                 <div class="form-left-part wow animate__animated animate__fadeInLeft">
                     <img src="../images/form-img.png" alt="">
-                    <h3 class="txt-headline">Заповнюйте форму і адміністратор з Вами зв’яжеться</h3>
+                    <h3 class="txt-headline">Заповнюйте форму і адміністратор зв’яжеться з Вами</h3>
                 </div>
-
+        
                 <div class="form-right-part wow animate__animated animate__fadeInRight">
                     <h2 class="txt-headline">ЗАПИС НА ЗАНЯТТЯ</h2>
                     <form>
                         <label for="name"></label>
                         <input class="input-field" type="text" id="name" name="name" placeholder="Ваше iм'я" maxlength="12" autocomplete="off" required><br><br>
-
+        
                         <label for="phone"></label>
                         <input class="input-field" type="tel" id="phone" name="phone" placeholder="Номер телефону" pattern="[0-9+]*" maxlength="13" autocomplete="off" required><br><br>
-
+        
                         <label for="age"></label>
-                        <input class="input-field" type="number" id="age" name="age" placeholder="Вік дитини" autocomplete="off" pattern="[0-9]"" max="14" maxlength="2" required><br><br>
-
+                        <input class="input-field" type="number" id="age" name="age" placeholder="Вік дитини" autocomplete="off" pattern="[0-9]" max="14" maxlength="2" required><br><br>
+        
+                        <input class="wow animate__animated animate__fadeInUp" type="checkbox" id="agreement" style="height: 15px; margin-bottom: 15px;" required>
+                        <label class="wow animate__animated animate__fadeInUp" for="agreement">Я погоджуюсь з <a class="policy-agree" href="" target="_blank" style="font-size: 14px; text-decoration: underline; ">обробкою моїх персональних даних</a></label><br><br>
+        
                         <input type="submit" value="Записатися">
                     </form>
+                    
+                    
                 </div>
-
+        
             </div>
         </section>
 
     </main>
 
     <footer>
-
         <div class="footer_container">
             <div class="footer-links">
 
@@ -231,9 +243,32 @@
 
             </div>
 
-            <p>© Усі права захищені</p>
+            <p>© Усі права захищені | <a href="" style="font-size: 10px; ">Полiтика конфiденцiйностi</a></p>
         </div>
 
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+        // Get the burger and navigation elements
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('nav');
+
+            // Toggle the 'active' class on burger and navigation on click
+            burger.addEventListener('click', function() {
+                this.classList.toggle('active');
+                nav.classList.toggle('open');
+
+            });
+
+            // Close the burger menu when any navigation link is clicked
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    burger.classList.remove('active');
+                    nav.classList.remove('open');
+                });
+            });
+            });
+        </script>
     </footer>
 </body>
 

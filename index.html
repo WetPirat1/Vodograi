@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vodo.grai</title>
 
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/adap.css">
     <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/header-footer.css"">
+    <link rel="stylesheet" href="styles/adap.css">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -42,25 +43,23 @@
 <body>
     <header>
         <div class="header_container">
+            <a href="#"><img class="header-logo" src="../images/vglogo.png" alt=""></a>
             <nav>
-                
                 <ul>
-                   
                     <li><a class="nav-btn" href="">Головна</a></li>
                     <li><a href="#services-id">Послуги</a></li>
                     <li><a href="trainer/trainers.html">Тренери</a></li>
-                    <li><a href="">Прайс</a></li>
+                    <li><a href="#price-id">Прайс</a></li>
                     <li><a href="/rozklad/rozklad.html">Розклад</a></li>
-                    <li><a href="">Галерея</a></li>
-                    <li><a href="">Контакти</a></li>
+                    <li><a href="#gallery-id">Галерея</a></li>
+                    <li><a href="#contact-us-id">Контакти</a></li>
                     <li><a class="header-btn" href="#form-id">Записатися</a></li>
-                </ul>                
+                </ul>
             </nav>
-            
+    
             <div class="burger">
                 <span></span>
             </div>
-
         </div>
     </header>
     
@@ -69,7 +68,7 @@
 
         <section class="hero  wow animate__animated animate__fadeInDown">
             <div class="hero_container">
-                <span class="bg-yel-circle"></span>
+                <span class="bg-yel-circle wow animate__animated animate__fadeInUp"></span>
 
                 <div class="hero-title wow animate__animated animate__fadeInUp">
                     <h1 class="txt-headline">ДИТЯЧИЙ БАСЕЙН <span style="color: rgb(0, 234, 255);">VODO</span>.<span style="color: rgb(149, 0, 218);">GRAI</span></h1>
@@ -111,24 +110,26 @@
                 <h2 class="txt-headline wow animate__animated animate__fadeInUp">ПОСЛУГИ</h2>
 
                     <ul class="services-cards">
-                    
-                        <a href="javascript:PopUpShow2()">
-                            <li class="services-card-2 card-shadow wow animate__animated animate__fadeInLeft">
-                                <img src="images/services-card2-img.png" alt="">
-                                <h3 class="txt-headline">Індивідуальне плавання</h3>
-                                <p>Iндивідуальне заняття з однією дитиною.<br>Особлива увага та розвиток плавання з власним інструктором.
-                                    Максимум користі для вашого малятка!</p>
-                            </li>
-                        </a>
 
                         <a href="javascript:PopUpShow()">
-                            <li class="services-card-1 card-shadow wow animate__animated animate__fadeInUp">
+                            <li class="services-card-1 card-shadow wow animate__animated animate__fadeInLeft">
                                 <img src="images/services-card1-img.png" alt="">
                                 <h3 class="txt-headline">Вільне плавання</h3>
                                 <p>Самостійне плавання:<br>ваші правила, ваша швидкість. Відкрийте світ водних пригод на свій лад!</p>
                             </li>
                         </a>
                     
+                        <a href="javascript:PopUpShow2()">
+                            <li class="services-card-2 card-shadow wow animate__animated animate__fadeInUp">
+                                <img src="images/services-card2-img.png" alt="">
+                                <h3 class="txt-headline">Індивідуальне</h3>
+                                <p>Iндивідуальне заняття з однією дитиною.<br>Особлива увага та розвиток плавання з власним інструктором.
+                                    Максимум користі для вашого малятка!</p>
+                            </li>
+                        </a>
+
+                        <span class="bg-turquoise-circle wow animate__animated animate__fadeInUp"></span>
+
                         <a href="javascript:PopUpShow3()">
                             <li class="services-card-3 card-shadow wow animate__animated animate__fadeInRight">
                                 <img src="images/services-card3-img.png" alt="">
@@ -162,7 +163,7 @@
                         <div class="popup-service-card-2-body">
                             <h2 class="txt-headline">Індивідуальне заняття</h2>
                             <img src="images/popup.png" alt="">
-                            <p>Кожен урок проводиться з власним професійним інструктором, який враховує потреби та можливості кожного. Ми розуміємо, що кожна дитина унікальна, тому підходимо до кожного уроку індивідуально. Обирайте індивідуальні заняття з плавання для вашого малюка, і ми гарантуємо вам якісне навчання та незабутні враження від кожного візиту до нашого басейну.<br><br><span>Тривалість одного занятя - 45 хвилин.</span></p>
+                            <p>Кожен урок проводиться з власним професійним інструктором, який враховує потреби та можливості кожного. Ми гарантуємо вам якісне навчання та незабутні враження від кожного візиту до нашого басейну.<br><br><span>Тривалість одного занятя - 45 хвилин.</span></p>
 
                             <a class="popup-form" href="">Записатися</a>
 
@@ -201,7 +202,7 @@
         </section>
 
         <section id="gallery-id" class="gallery">
-            <span class="bg-turquoise-circle"></span>
+            <span class="bg-turquoise-circle wow animate__animated animate__fadeInUp"></span>
             <div class="gallery_container">
                 <h2 class="txt-headline wow animate__animated animate__fadeInUp">ГАЛЕРЕЯ</h2>
 
@@ -251,25 +252,6 @@
             <!-- Ваш код HTML и стили здесь -->
 
             <script>
-                document.addEventListener("DOMContentLoaded", function() {
-                window.addEventListener("scroll", function() {
-                    parallaxScroll(".bg-yel-circle", 0.9);
-                    parallaxScroll(".bg-purple-circle", 0.7);
-                    parallaxScroll(".bg-turquoise-circle", 0.8);
-                    // Добавьте другие элементы, если необходимо
-                });
-            
-                function parallaxScroll(selector, speed) {
-                    var scroll = window.pageYOffset || document.documentElement.scrollTop;
-                    var element = document.querySelector(selector);
-            
-                    if (element) {
-                    element.style.transform = 'translateY(' + -scroll * speed + 'px)';
-                    }
-                }
-                });
-            </script>
-            <script>
 
                 var slideIndex = 1;
                 showSlides(slideIndex);
@@ -308,36 +290,40 @@
             </script>
         </section>
 
-        <section id="form-id" class="form">
-            <div class="form_container">
-                <span class="bg-purple-circle"></span>
-                <span class="bg-yel-circle"></span>
+<section id="form-id" class="form">
+    <div class="form_container">
+        <span class="bg-purple-circle wow animate__animated animate__fadeInUp"></span>
+        <span class="bg-blue-circle wow animate__animated animate__fadeInUp"></span>
 
-                <div class="form-left-part wow animate__animated animate__fadeInLeft">
-                    <img src="images/form-img.png" alt="">
-                    <h3 class="txt-headline">Заповнюйте форму і адміністратор з Вами зв’яжеться</h3>
-                </div>
+        <div class="form-left-part wow animate__animated animate__fadeInLeft">
+            <img src="images/form-img.png" alt="">
+            <h3 class="txt-headline">Заповнюйте форму і адміністратор зв’яжеться з Вами</h3>
+        </div>
 
-                <div class="form-right-part wow animate__animated animate__fadeInRight">
-                    <h2 class="txt-headline">ЗАПИС НА ЗАНЯТТЯ</h2>
-                    <form>
-                        <label for="name"></label>
-                        <input class="input-field" type="text" id="name" name="name" placeholder="Ваше iм'я" maxlength="12" autocomplete="off" required><br><br>
+        <div class="form-right-part wow animate__animated animate__fadeInRight">
+            <h2 class="txt-headline">ЗАПИС НА ЗАНЯТТЯ</h2>
+            <form>
+                <label for="name"></label>
+                <input class="input-field" type="text" id="name" name="name" placeholder="Ваше iм'я" maxlength="12" autocomplete="off" required><br><br>
 
-                        <label for="phone"></label>
-                        <input class="input-field" type="tel" id="phone" name="phone" placeholder="Номер телефону" pattern="[0-9+]*" maxlength="13" autocomplete="off" required><br><br>
+                <label for="phone"></label>
+                <input class="input-field" type="tel" id="phone" name="phone" placeholder="Номер телефону" pattern="[0-9+]*" maxlength="13" autocomplete="off" required><br><br>
 
-                        <label for="age"></label>
-                        <input class="input-field" type="number" id="age" name="age" placeholder="Вік дитини" autocomplete="off" pattern="[0-9]"" max="14" maxlength="2" required><br><br>
+                <label for="age"></label>
+                <input class="input-field" type="number" id="age" name="age" placeholder="Вік дитини" autocomplete="off" pattern="[0-9]" max="14" maxlength="2" required><br><br>
 
-                        <input type="submit" value="Записатися">
-                    </form>
-                    
-                    <span class="bg-yel-circle"></span>
-                </div>
+                <input class="wow animate__animated animate__fadeInUp" type="checkbox" id="agreement" style="height: 15px; margin-bottom: 15px;" required>
+                <label class="wow animate__animated animate__fadeInUp" for="agreement">Я погоджуюсь з <a class="policy-agree" href="" target="_blank" style="font-size: 14px; text-decoration: underline; ">обробкою моїх персональних даних</a></label><br><br>
 
-            </div>
-        </section>
+                <input type="submit" value="Записатися">
+            </form>
+            
+            <span class="bg-yel-circle wow animate__animated animate__fadeInUp"></span>
+        </div>
+
+    </div>
+</section>
+
 
         <section id="contact-us-id" class="contact-us">
             <div class="contact-us_container">
@@ -354,6 +340,8 @@
                             <img src="images/Phone.svg" alt="">
                                 <a href="">+38(096)2344567</a>
                         </li>
+
+                        <span class="bg-turquoise-circle"></span>
 
                         <li>
                             <img src="images/Viber.svg" alt="">
@@ -380,6 +368,7 @@
                 <h2 class="txt-headline wow animate__animated animate__fadeInUp" >FAQ</h2>
 
                 <div class="accordion wow animate__animated animate__fadeInUp"> 
+                    <span class="bg-purple-circle wow animate__animated animate__fadeInUp"></span>   
                     <div class="accordion-item">
                       <h3 class="accordion-title">Які умови безпеки дотримуються в басейні?</h3>
                       
@@ -439,7 +428,8 @@
                         <p>Медична служба складається з кваліфікованих фахівців, які мають досвід роботи з обслуговування басейнів.</p>
                       </div>
                     </div>
-                  </div>                  
+                  </div>  
+
             </div>
         </section>
 
@@ -471,14 +461,32 @@
 
             </div>
 
-            <p>© Усі права захищені</p>
+            <p>© Усі права захищені | <a href="" style="font-size: 10px; ">Полiтика конфiденцiйностi</a></p>
         </div>
 
         <script>
-        document.querySelector('.burger').addEventListener('click', function() {
-            this.classList.toggle('active');
-            document.querySelector('nav').classList.toggle('open');})
-            </script>
+            document.addEventListener('DOMContentLoaded', function() {
+        // Get the burger and navigation elements
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('nav');
+
+            // Toggle the 'active' class on burger and navigation on click
+            burger.addEventListener('click', function() {
+                this.classList.toggle('active');
+                nav.classList.toggle('open');
+
+            });
+
+            // Close the burger menu when any navigation link is clicked
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    burger.classList.remove('active');
+                    nav.classList.remove('open');
+                });
+            });
+            });
+        </script>
     </footer>
 </body>
 

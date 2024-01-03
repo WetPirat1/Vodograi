@@ -8,6 +8,10 @@ html {
     overflow-x: hidden;
 }
 
+.popup-open {
+    overflow: hidden;
+}
+
 .bg-yel-circle{
     padding:300px;
     border-radius: 979px;
@@ -17,149 +21,16 @@ html {
 
     position: absolute;
 
-    top: -188px;
-    left: -112px;
 
-    z-index: -1;
+    z-index: -11;
 }
 
     .txt-headline {
         font-family: "Unbounded";
     }
+            
 
-    header {
-        padding: 30px 0;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background-color: rgba(20, 28, 44, 0.679);
-        backdrop-filter: blur(10px);
-        z-index: 1000;
-        transition: background-color 0.3s ease-in-out;
-    
-        &.scrolled {
-            background-color: rgba(0, 0, 0, 0.548);
-        }
-    
-        .header_container {
-            position: relative;
-    
-            nav {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-    
-                .header-logo {
-                    color: #a631dc;
-                    width: 140px;
-                    height: 25px;
-                    transition: 0.2s ease-in-out;
-    
-                    &:hover {
-                        transform: scale(0.95);
-                    }
-                }
-    
-                ul {
-                    list-style: none;
-                    display: flex;
-                    margin: 0;
-                    gap: 35px;
-    
-                    li {
-                        a {
-                            font-size: 18px;
-                            line-height: 33px;
-                            position: relative;
-                            transition: width 0.3s ease-in-out;
-                        }
-                        a::after {
-                            content: "";
-                            position: absolute;
-                            bottom: 0;
-                            left: 0;
-                            width: 0%;
-                            height: 2px;
-                            background-color: #909090b1;
-                            transition: width 0.3s ease-in-out;
-                        }
-    
-                        a:hover {
-                            transform: scale(1.2);
-                            color: rgb(218, 218, 218);
-    
-                            &::after {
-                                width: 100%;
-                            }
-                        }
-                    }
-                }
-    
-                .header-btn {
-                    padding: 20px 47px;
-                    border-radius: 15px;
-                    transition: 0.3s;
-                    background: #a631dc;
-                }
-                .header-btn::after {
-                    display: none;
-                }
-                .header-btn:hover {
-                    background-color: #9621cd;
-                    color: rgb(218, 218, 218);
-                    transform: scale(0.9);
-                }
-    
-                .burger-menu {
-                    display: none;
-                    cursor: pointer;
-                    font-size: 25px;
-                    width: 30px;
-    
-                    &.active {
-                        content: "\2715"; // Иконка крестика
-                    }
-    
-                    @media screen and (max-width: 1200px) {
-                        display: block;
-                    }
-                }
-            }
-        }
-    
-        @media screen and (max-width: 1200px) {
-            header {
-                background-color: rgb(0, 0, 0);
-            }
-    
-            .header_container nav ul {
-                display: none;
-                flex-direction: column;
-                align-items: center;
-                position: absolute;
-                top: 5px;
-                height: 100vh;
-                left: 0;
-                width: 100%;
-               
-                background-color: rgba(16, 21, 31, 0.831);
-                z-index: 999;
-    
-                &.active {
-                    display: flex;
-                }
-    
-                li {
-                    margin: 10px 0;
-                    text-align: center;
-                }
-            }
-    
-            .header_container nav .burger-menu {
-                display: block;
-            }
-        }
-    }
+
 main{
 
     .trainer-cards{
@@ -389,8 +260,8 @@ main{
                 background: rgba(255, 204, 0, 0.749);
                 filter: blur(150px);
                 position: absolute;
-                top: -401px;
-                right: 120px;
+                // top: -401px;
+                // right: 120px;
                 z-index: -1;
             }
     
@@ -402,7 +273,7 @@ main{
                 position: absolute;
                 top: 172px;
                 left: 390px;
-                z-index: -1;
+                z-index: -11;
             }
 
             .input-field:hover {

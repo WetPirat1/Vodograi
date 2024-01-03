@@ -10,17 +10,10 @@ html {
     overflow-x: hidden;
 }
 
-.bg-yel-circle {
-    padding: 150px;
-    border-radius: 979px;
-    background: rgba(255, 204, 0, 0.749);
-    filter: blur(150px);
-    position: absolute;
-    top: -401px;
-    right: 120px;
-    z-index: -1;
-}
 
+.open{
+    display: flex !important;
+}
 
 
 * {
@@ -48,223 +41,6 @@ h2{
 body{
     background: rgba(69, 26, 0, 0.91)
 }
-
-header {
-    padding: 20px 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgba(20, 28, 44, 0.679);
-    backdrop-filter: blur(10px);
-    z-index: 1000;
-    transition: background-color 0.3s ease-in-out;
-
-    &.scrolled {
-        background-color: rgba(0, 0, 0, 0.548);
-    }
-
-    .header_container {
-        position: relative;
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            .header-logo {
-                color: #a631dc;
-                width: 140px;
-                height: 25px;
-                transition: 0.2s ease-in-out;
-
-                &:hover {
-                    transform: scale(0.95);
-                }
-            }
-
-            ul {
-                list-style: none;
-                display: flex;
-                margin: 0;
-                gap: 35px;
-
-                li {
-                    a {
-                        font-size: 16px;
-                        line-height: 33px;
-                        position: relative;
-                        transition: width 0.3s ease-in-out;
-                    }
-                    a::after {
-                        content: "";
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        width: 0%;
-                        height: 2px;
-                        background-color: #909090b1;
-                        transition: width 0.3s ease-in-out;
-                    }
-
-                    a:hover {
-                        transform: scale(1.2);
-                        color: rgb(218, 218, 218);
-
-                        &::after {
-                            width: 100%;
-                        }
-                    }
-                }
-            }
-
-            .header-btn {
-                padding: 15px 25px;
-                border-radius: 10px;
-                transition: 0.3s;
-                background: #a631dc;
-            }
-            .header-btn::after {
-                display: none;
-            }
-            .header-btn:hover {
-                background-color: #9621cd;
-                color: rgb(218, 218, 218);
-                transform: scale(0.9);
-            }
-        }
-
-        
-        .burger-menu {
-            display: none;
-            cursor: pointer;
-            font-size: 25px;
-            width: 30px;
-
-            &.active {
-                content: "\2715"; // Иконка крестика
-            }
-
-            @media screen and (max-width: 1200px) {
-                display: block;
-            }
-        }
-
-        .burger{
-            display: none;
-            position: relative;
-            z-index: 50;
-            align-items: center;
-            justify-content: flex-end;
-            width: 30px;
-            height: 18px;
-        }
-        
-        .burger span{
-            height: 1px;
-            width: 100%;
-            transform: scale(1);
-            background-color: #FAF6F2;
-        }
-        
-        .burger::before, .burger::after{
-            content: '';
-            position: absolute;
-            height: 1px;
-            width: 100%;
-            background-color: #FAF6F2;
-            transition: all 0.3s ease 0s;
-        }
-        
-        .burger::before { top: 0 }
-        
-        .burger::after { bottom: 0 }
-        
-        
-        /* Добавляем класс active для анимации иконки бургера */
-        .burger.active span { transform: scale(0) }
-        
-        .burger.active::before{
-            top: 50%;
-            transform: rotate(-45deg) translate(0, -50%);
-        }
-        
-        .burger.active::after{
-            bottom: 50%;
-            transform: rotate(45deg) translate(0, 50%);
-        }
-        
-        
-        /* При разрешении экрана 900px и ниже, выводим на экран иконку бургера */
-        @media (max-width: 1200px) {
-        
-            .burger { display: flex }
-        
-            .nav{
-                display: none;
-                flex-direction: column;
-                position: fixed;
-                height: 100%;
-                width: 100%;
-                top: 0; bottom: 0; left: 0; right: 0;
-                z-index: 50;
-                overflow-y: auto;
-                padding: 50px 40px;
-                background-color: black;
-                animation: burgerAnimation 0.4s;
-            }
-        
-            .nav ul{
-                flex-direction: column;
-                row-gap: 30px;
-            }
-        }
-        
-        @keyframes burgerAnimation {
-            from {opacity: 0}
-            to {opacity: 1}
-        }
-    }
-
-    @media screen and (max-width: 1200px) {
-        header {
-            background-color: rgb(0, 0, 0);
-        }
-
-        .header_container nav ul {
-            display: none;
-            flex-direction: column;
-            align-items: center;
-            position: absolute;
-            top: 5px;
-            height: 100vh;
-            left: 0;
-            width: 100%;
-           
-            background-color: rgba(16, 21, 31, 0.831);
-            z-index: 999;
-
-
-
-            li {
-                margin: 10px 0;
-                text-align: center;
-            }
-        }
-
-        .header_container nav .burger-menu {
-            display: block;
-        }
-    }
-}
-
-
-// ... (ваш текущий SCSS)
-
-
-
-
-// MAKE HEADER FIXED!!!!
-
 
 main{
 
@@ -327,7 +103,7 @@ main{
                     top: -188px;
                     left: -112px;
 
-                    z-index: -1;
+                    z-index: -12;
             }
 
             .bg-purple-circle{
@@ -462,6 +238,22 @@ main{
                 justify-content: center;
 
                 gap: 40px;
+
+                .bg-turquoise-circle {
+                    padding:300px;
+                    border-radius: 979px;
+                    background: rgba(8, 184, 131, 0.319);
+        
+                    filter: blur(200px);
+        
+                    position: absolute;
+                    overflow: hidden;
+        
+                    top: 0px;
+                    left: 200px;
+        
+                    z-index: -1;
+                }
                 li{
                     transition: 0.2s ease-in-out;
                     flex: 1 1 auto;
@@ -916,143 +708,168 @@ main{
             }
     }
 
-    .form {
-        margin-bottom: 100px;
-    
-        .form_container {
-            display: flex;
-            justify-content: space-around;
-            position: relative;
-    
-            .bg-yel-circle {
-                padding: 150px;
-                border-radius: 979px;
-                background: rgba(255, 204, 0, 0.749);
-                filter: blur(150px);
-                position: absolute;
-                top: -401px;
-                right: 120px;
-                z-index: -1;
-            }
-    
-            .bg-purple-circle {
-                padding: 300px;
-                border-radius: 979px;
-                background: rgba(151, 71, 255, 0.542);
-                filter: blur(200px);
-                position: absolute;
-                top: 172px;
-                left: 390px;
-                z-index: -1;
-            }
+.form {
+    margin-bottom: 100px;
 
-            .input-field:hover {
-                outline: 1px solid #d4d4d4;
-            }
 
-            .input-field:focus {
-                outline: 2px solid #00bfe6;
-            }
-    
-            input::-webkit-outer-spin-button,
-            input::-webkit-inner-spin-button {
-                -webkit-appearance: none;
-                margin: 0;
-            }
+    .form_container {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
 
-            input[type=number] {
-                -moz-appearance: textfield;
-            }
+        .bg-blue-circle {
+            padding: 150px;
+            border-radius: 979px;
+            background: rgba(0, 255, 208, 0.652);
+            filter: blur(150px);
+            position: absolute;
+            // top: -401px;
+            right: 120px;
+            z-index: -11;
+        }
 
-            input {
-                width: 65%;
+        .bg-purple-circle {
+            padding: 300px;
+            border-radius: 979px;
+            background: rgba(151, 71, 255, 0.542);
+            filter: blur(200px);
+            position: absolute;
+            top: 172px;
+            left: 390px;
+            z-index: -1;
+        }
 
-                border-radius: 18px;
-                background: rgba(255, 255, 255, 0.47);
-                
+        .input-field:hover {
+            outline: 1px solid #d4d4d4;
+        }
+
+        .input-field:focus {
+            outline: 2px solid #00bfe6;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        input {
+            width: 65%;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.47);
+            text-align: center;
+
+            &::placeholder {
                 text-align: center;
-
-    
-
-    
-                &::placeholder {
-                    
-
-                    text-align: center;
-                    color: #FFFFFF;
-                    opacity: 80%;
-                    padding-left: 10px; /* Отступ слева */
-                    font-size: 16px; /* Размер шрифта */
-                    line-height: 45px; /* Выравнивание по высоте с полем ввода */
-                }
+                color: #FFFFFF;
+                opacity: 80%;
+                padding-left: 10px;
+                font-size: 16px;
+                line-height: 45px;
             }
-    
-            .form-left-part {
+        }
+
+        /* Добавленные стили для чекбокса и метки */
+
+        
+
+        #agreement + label {
+            font-size: 14px;
+            color: #ffffff;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .form-left-part {
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.207);
+            max-width: 50%;
+            padding-bottom: 25px;
+            border-radius: 45px;
+            background: linear-gradient(0deg, rgba(90, 84, 84, 0.23) 0%, rgba(217, 217, 217, 0.00) 100%);
+
+            h3 {
+                font-size: 35px;
+                line-height: 150%;
+                max-width: 70%;
+                margin: 0 auto;
+            }
+
+            img {
+                width: 100%;
+                background-size: cover;
+                margin-bottom: 20px;
+            }
+        }
+
+        .form-right-part {
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.207);
+            max-width: 50%;
+            background-color: #22222267;
+            text-align: center;
+            border-radius: 45px;
+
+            h2 {
                 box-shadow: 0 10px 10px rgba(0, 0, 0, 0.207);
-                max-width: 50%;
-                padding-bottom: 25px;
+                max-width: 500px;
                 border-radius: 45px;
                 background: linear-gradient(0deg, rgba(90, 84, 84, 0.23) 0%, rgba(217, 217, 217, 0.00) 100%);
-    
-                h3 {
-                    
-                    font-size: 35px;
-                    line-height: 150%;
-                    max-width: 70%;
-                    margin: 0 auto;
-                }
-    
-                img {
-                    width: 100%;
-                    background-size: cover;
-                    margin-bottom: 20px;
-                }
             }
-    
-            .form-right-part {
-                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.207);
-                max-width: 50%;
-                background-color: #22222267;
-                text-align: center;
-                border-radius: 45px;
-    
-                h2 {
-                    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.207);
-                    max-width: 500px;
-                    border-radius: 45px;
-                    background: linear-gradient(0deg, rgba(90, 84, 84, 0.23) 0%, rgba(217, 217, 217, 0.00) 100%);
+
+            form {
+                padding-bottom: 40px;
+                fill: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, rgba(217, 217, 217, 0.23) 97%);
+
+                .input-field {
+                    height: 45px;
                 }
-    
-                form {
-                    fill: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, rgba(217, 217, 217, 0.23) 97%);
-    
-                    .input-field {
-                        height: 45px;
-                    }
 
-                    input[type="submit"] {
+                input[type="submit"] {
+                    font-size: 26px;
+                    padding: 20px 10px;
+                    margin-top: 15px;
+                    text-align: center;
+                    max-width: 100%;
+                    border-radius: 20px;
+                    background: none;
+                    background-color: #bb4dee;
+                    transition: 0.2s ease-in-out;
+                    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.207);
+                }
+                
+                input[type="checkbox"] {
+                    font-size: 14px;
+                    .policy-agree {
+                        font-size: 14px;
+                    }
+                }
 
-                        font-size: 26px;
-                        padding: 20px 10px;
-                        margin-top: 35px;
-                        text-align: center;
-                        max-width: 100%;
-                        border-radius: 20px;
-                        background: none;
-                        background-color: #bb4dee;
-                        transition: 0.2s ease-in-out;
-                        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.207);
+                .agree {
+                    display: flex;
+                    margin: 0 auto;
+                    .check {
+                        width: 30%;
                     }
-    
-                    input[type="submit"]:hover {
-                        
-                        cursor: pointer;
-                        background: #8432ab;
+                    .txt {
+                        width: 30%;
+                        label {
+                            font-size: 14px;
+                        }
                     }
+                }
+
+                input[type="submit"]:hover {
+                    cursor: pointer;
+                    background: #8432ab;
                 }
             }
         }
     }
+}
+
     
 
     .contact-us{
@@ -1065,6 +882,19 @@ main{
                 align-items: center;
                 .contact-us-left{
                     width: 50%;
+
+                    .bg-turquoise-circle {
+                        padding: 150px;
+                        border-radius: 50%;
+                        background: rgba(0, 255, 255, 0.183);
+                        filter: blur(100px);
+                        position: absolute;
+                        overflow: hidden;
+
+                        left: -100px;
+                        z-index: -11;
+                    }
+
                     li{
                         display: flex;
                         align-items: center;
@@ -1107,23 +937,24 @@ main{
 
     .faq {
         .faq_container {
-            .bg-yel-circle {
-                padding: 150px;
-                border-radius: 979px;
-                background: rgba(255, 204, 0, 0.749);
-                filter: blur(150px);
-                position: absolute;
-                top: -401px;
-                right: 120px;
-                z-index: -1;
-            }
+            
             
             margin-bottom: 170px;
-
             
-
+            
+            
             .accordion {
                 width: 100%;
+                .bg-purple-circle {
+                    padding: 150px;
+                    border-radius: 979px;
+                    background: rgba(255, 208, 0, 0.715);
+                    filter: blur(150px);
+                    position:relative;
+                    top: -200px;
+                    right: 20px;
+                    z-index: -10;
+                }
         
               }
               

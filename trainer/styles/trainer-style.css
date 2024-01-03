@@ -8,135 +8,21 @@ html {
   overflow-x: hidden;
 }
 
+.popup-open {
+  overflow: hidden;
+}
+
 .bg-yel-circle {
   padding: 300px;
   border-radius: 979px;
   background: rgba(124, 117, 18, 0.687);
   filter: blur(200px);
   position: absolute;
-  top: -188px;
-  left: -112px;
-  z-index: -1;
+  z-index: -11;
 }
 
 .txt-headline {
   font-family: "Unbounded";
-}
-
-header {
-  padding: 30px 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: rgba(20, 28, 44, 0.679);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  z-index: 1000;
-  transition: background-color 0.3s ease-in-out;
-}
-header.scrolled {
-  background-color: rgba(0, 0, 0, 0.548);
-}
-header .header_container {
-  position: relative;
-}
-header .header_container nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .header_container nav .header-logo {
-  color: #a631dc;
-  width: 140px;
-  height: 25px;
-  transition: 0.2s ease-in-out;
-}
-header .header_container nav .header-logo:hover {
-  transform: scale(0.95);
-}
-header .header_container nav ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  gap: 35px;
-}
-header .header_container nav ul li a {
-  font-size: 18px;
-  line-height: 33px;
-  position: relative;
-  transition: width 0.3s ease-in-out;
-}
-header .header_container nav ul li a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background-color: rgba(144, 144, 144, 0.6941176471);
-  transition: width 0.3s ease-in-out;
-}
-header .header_container nav ul li a:hover {
-  transform: scale(1.2);
-  color: rgb(218, 218, 218);
-}
-header .header_container nav ul li a:hover::after {
-  width: 100%;
-}
-header .header_container nav .header-btn {
-  padding: 20px 47px;
-  border-radius: 15px;
-  transition: 0.3s;
-  background: #a631dc;
-}
-header .header_container nav .header-btn::after {
-  display: none;
-}
-header .header_container nav .header-btn:hover {
-  background-color: #9621cd;
-  color: rgb(218, 218, 218);
-  transform: scale(0.9);
-}
-header .header_container nav .burger-menu {
-  display: none;
-  cursor: pointer;
-  font-size: 25px;
-  width: 30px;
-}
-header .header_container nav .burger-menu.active {
-  content: "✕";
-}
-@media screen and (max-width: 1200px) {
-  header .header_container nav .burger-menu {
-    display: block;
-  }
-}
-@media screen and (max-width: 1200px) {
-  header header {
-    background-color: rgb(0, 0, 0);
-  }
-  header .header_container nav ul {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 5px;
-    height: 100vh;
-    left: 0;
-    width: 100%;
-    background-color: rgba(16, 21, 31, 0.831);
-    z-index: 999;
-  }
-  header .header_container nav ul.active {
-    display: flex;
-  }
-  header .header_container nav ul li {
-    margin: 10px 0;
-    text-align: center;
-  }
-  header .header_container nav .burger-menu {
-    display: block;
-  }
 }
 
 main .trainer-cards {
@@ -312,8 +198,6 @@ main .form .form_container .bg-yel-circle {
   background: rgba(255, 204, 0, 0.749);
   filter: blur(150px);
   position: absolute;
-  top: -401px;
-  right: 120px;
   z-index: -1;
 }
 main .form .form_container .bg-purple-circle {
@@ -324,7 +208,7 @@ main .form .form_container .bg-purple-circle {
   position: absolute;
   top: 172px;
   left: 390px;
-  z-index: -1;
+  z-index: -11;
 }
 main .form .form_container .input-field:hover {
   outline: 1px solid #d4d4d4;
