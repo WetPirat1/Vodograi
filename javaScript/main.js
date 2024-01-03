@@ -62,3 +62,35 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+function toggleBurgerMenu() {
+    var burgerMenu = document.querySelector('.burger-menu');
+    var navUl = document.querySelector('.header_container nav ul');
+
+    // Переключаем класс у иконки бургера
+    burgerMenu.classList.toggle('active');
+
+    // Переключаем класс у списка навигации
+    navUl.classList.toggle('active');
+}
+
+// accordeon
+document.addEventListener('DOMContentLoaded', function () {
+    const accordionTitles = document.querySelectorAll('.accordion-title');
+
+    accordionTitles.forEach(title => {
+        title.addEventListener('click', function () {
+            // Toggle the active class on the clicked title
+            title.classList.toggle('active');
+
+            // Toggle the active class on the corresponding body
+            const body = title.nextElementSibling;
+            body.classList.toggle('active');
+        });
+    });
+});
+
+document.querySelector('.burger').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.querySelector('.nav').classList.toggle('open');
+})

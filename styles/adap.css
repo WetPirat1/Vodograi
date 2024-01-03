@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media (max-width: 1337px) {
   main .about-us .about-us_container .about-us-block .about-us-text .txt-headline {
     width: 400px;
@@ -17,9 +18,6 @@
   main h2 {
     font-size: 45px;
     margin-bottom: 80px;
-  }
-  main .hero {
-    margin-bottom: 490px;
   }
   main .hero .hero_container .hero-title h1 {
     font-size: 40px;
@@ -57,24 +55,69 @@
     font-size: 40px;
     line-height: 150%;
   }
+  main .form .form_container .form-right-part form input[type=submit] {
+    margin-top: 100px;
+  }
   main .contact-us .contact-us_container .contact-us-all .contact-us-left li a {
     font-size: 22px;
   }
-  footer .footer_container .footer-links ul li a {
-    font-size: 22px;
+}
+@media (max-width: 1200px) {
+  header {
+    padding: 20px 0;
+  }
+  main .hero {
+    padding-top: 180px;
+    background-image: url("/images/hero-adapt-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0 0 35px 35px;
+    height: 700px;
+    margin-bottom: 120px;
+    position: relative;
+  }
+  main .hero hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgb(0, 0, 0); /* цвет и прозрачность фильтра */
+    pointer-events: none;
+  }
+  main .hero .hero_container {
+    position: relative;
+    /* Добавлены стили для центрирования кнопки */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+  }
+  main .hero .hero_container .hero-btn {
+    display: flex;
+  }
+  main .hero .hero_container .hero-title {
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
+  main .hero .hero_container .hero-title h1 {
+    text-align: center;
+    display: -webkit-inline-box;
+    margin: 0;
+  }
+  main .hero .hero_container img {
+    display: none;
   }
 }
 @media (max-width: 1000px) {
-  main .hero {
-    margin-bottom: 350px;
-  }
   main .hero .hero_container img {
     width: 80%;
     top: 39px;
     left: 100px;
-  }
-  main .hero .hero_container .hero-title h1 {
-    margin-right: -100px;
   }
   main .about-us .about-us_container .about-us-block img {
     width: 55%;
@@ -86,7 +129,7 @@
     font-size: 25px;
   }
   main .services .services_container .services-cards li {
-    height: 650px;
+    height: 600px;
   }
   main .services .services_container .services-cards li img {
     margin-top: 50px;
@@ -101,24 +144,26 @@
     font-size: 20px;
   }
   main .price .price_container img {
-    width: 100%;
+    width: 85%;
   }
   main .form .form_container .bg-yel-circle {
     right: 286px;
   }
 }
 @media (max-width: 900px) {
-  header {
-    display: none;
-  }
   main .hero .hero_container img {
     top: 77px;
   }
+  main .hero .hero_container .hero-title {
+    max-width: 330px;
+  }
   main .hero .hero_container .hero-title h1 {
     font-size: 30px;
-    max-width: 300px;
-    margin-right: -40px;
-    margin-left: 50px;
+    max-width: 500px;
+  }
+  main .hero .hero_container .hero-title p {
+    margin-top: 20px;
+    font-size: 18px;
   }
   main .about-us {
     margin-bottom: 55px;
@@ -132,6 +177,7 @@
   }
   main .about-us .about-us_container .about-us-block img {
     margin: 60px 0 50px 0;
+    width: 70%;
   }
   main .about-us .about-us_container .about-us-block .about-us-text {
     text-align: center;
@@ -149,7 +195,8 @@
     width: 80%;
   }
   main .services .services_container .services-cards li {
-    max-width: 450px;
+    padding: 0 20px;
+    max-width: 370px;
   }
   main .form .form_container {
     display: flex;
@@ -169,6 +216,9 @@
   main .form .form_container .form-right-part {
     max-width: 100%;
   }
+  main .form .form_container .form-right-part form input[type=submit] {
+    margin-bottom: 70px;
+  }
   main .contact-us .contact-us_container .contact-us-all .contact-us-left li img {
     margin-right: 5px;
     max-width: 70px;
@@ -180,25 +230,10 @@
   footer .footer_container .footer-links ul {
     gap: 40px;
   }
-  footer .footer_container .footer-links ul li a {
-    font-size: 18px;
-  }
 }
 @media (max-width: 740px) {
-  main [class*=_container] .bg-yel-circle, main [class*=_container] .bg-purple-circle, main [class*=_container] .bg-turquoise-circle {
-    display: none;
-  }
   main .hero {
-    margin-bottom: 250px;
-  }
-  main .hero .hero_container .hero-title {
-    display: block;
-  }
-  main .hero .hero_container .hero-title h1 {
-    margin: 0;
-  }
-  main .hero .hero_container .hero-title p {
-    font-size: 15px;
+    margin-bottom: 100px;
   }
   main .hero .hero_container img {
     left: 38px;
@@ -229,5 +264,16 @@
   footer .footer_container .footer-links ul li a {
     margin-bottom: 30px;
     text-align: center;
+  }
+}
+@media (max-width: 501px) {
+  .services .services_container .popup-service-card-1-container .popup-service-card-1 {
+    max-width: 400px;
+  }
+  .services .services_container .popup-service-card-2-container .popup-service-card-2 {
+    max-width: 400px;
+  }
+  .services .services_container .popup-service-card-3-container .popup-service-card-3 {
+    max-width: 400px;
   }
 }/*# sourceMappingURL=adap.css.map */

@@ -36,7 +36,7 @@
             
         }
         .hero{
-            margin-bottom: 490px;
+
             .hero_container{
 
                 .hero-title{
@@ -110,6 +110,12 @@
                         font-size: 40px;
                         line-height: 150%;
                     }
+
+                    form {
+                        input[type="submit"] {
+                            margin-top: 100px;
+                        }
+                    }
                 }
             }
         }
@@ -128,26 +134,85 @@
             }
         }
     }
+}
 
-    footer{
-        .footer_container{
-            .footer-links{
-                ul{
-                    li{
-                        a{
-                            font-size: 22px;
-                        }
+@media (max-width: 1200px){
+
+    header {
+        padding: 20px 0;
+    }
+
+    main {
+        .hero {
+            padding-top: 180px;
+
+            background-image: url("/images/hero-adapt-bg.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            border-radius: 0 0 35px 35px;
+            height: 700px;
+            margin-bottom: 120px;
+
+            position: relative;
+
+            hero::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: rgb(0, 0, 0); /* цвет и прозрачность фильтра */
+                pointer-events: none; 
+            }
+            
+
+            .hero_container {
+                position: relative;
+
+                /* Добавлены стили для центрирования кнопки */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end;
+
+                .hero-btn {
+                    display: flex;
+
+                    
+                }
+
+                
+
+                margin: 0;
+                .hero-title{
+                    display: block;
+                    text-align: center;
+                    margin: 0;
+                    
+                    h1 {
+                       text-align: center;
+                       display: -webkit-inline-box;
+                       margin: 0;
                     }
                 }
+
+                img {
+                    display: none;
+                }
+
             }
         }
     }
 }
 
+
 @media (max-width: 1000px){
     main{
         .hero{
-            margin-bottom: 350px;
+
 
             .hero_container{
                 img{
@@ -158,7 +223,7 @@
                 }
                 .hero-title{
                     h1{
-                        margin-right: -100px;
+
                     }
                 }
             }
@@ -185,7 +250,7 @@
             .services_container{
                 .services-cards{
                     li{
-                        height: 650px;
+                        height: 600px;
                         img{
                             margin-top: 50px;
                             margin-bottom: 40px;
@@ -207,7 +272,7 @@
         .price{
             .price_container{
                 img{
-                    width: 100%;
+                    width: 85%;
                 }
             }
         }
@@ -223,9 +288,7 @@
 }
 
 @media (max-width: 900px){
-    header{
-        display: none;
-    }
+
     main{
         .hero{
             .hero_container{
@@ -233,13 +296,18 @@
                     top: 77px;
                 }
                 .hero-title{
+                    max-width: 330px;
                     h1{
                         font-size: 30px;
 
-                        max-width: 300px;
+                        max-width: 500px;
 
-                        margin-right: -40px;
-                        margin-left: 50px;
+
+                    }
+
+                    p {
+                        margin-top: 20px;
+                        font-size: 18px;
                     }
                 }
             }
@@ -259,6 +327,7 @@
 
                     img{
                         margin: 60px 0 50px 0;
+                        width: 70%;
                     }
                     .about-us-text{
                         text-align: center;
@@ -286,7 +355,8 @@
             .services_container{
                 .services-cards{
                     li{
-                        max-width: 450px;
+                        padding: 0 20px;
+                        max-width: 370px;
                     }
                 }
             }
@@ -313,6 +383,12 @@
                 }
                 .form-right-part{
                     max-width: 100%;
+
+                    form {
+                        input[type="submit"] {
+                            margin-bottom: 70px;
+                        }
+                    }
                 }
             }
         }
@@ -343,11 +419,6 @@
             .footer-links{
                 ul{
                     gap: 40px;
-                    li{
-                        a{
-                            font-size: 18px;
-                        }
-                    }
                 }
             }
         }
@@ -356,24 +427,22 @@
 }
 
 @media (max-width: 740px){
-    main{
-        [class*="_container"]{
-            .bg-yel-circle, .bg-purple-circle,.bg-turquoise-circle{
-                display: none;
+    main {
+
+        .about-us {
+            .about-us_container {
+                .about-us-block {
+
+                }
             }
         }
 
+
         .hero{
-            margin-bottom: 250px;
+            margin-bottom: 100px;
             .hero_container{
                 .hero-title{
-                    display: block;
-                    h1{
-                        margin: 0;
-                    }
-                    p{
-                        font-size: 15px;
-                    }
+
                 }
                 img{
                     left: 38px;
@@ -404,6 +473,7 @@
                 }
             }
         }
+    
     }
     footer{
         .footer_container{
@@ -419,6 +489,28 @@
                             text-align: center;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 501px) {
+    .services {
+        .services_container {
+            .popup-service-card-1-container {
+                .popup-service-card-1 {
+                    max-width: 400px;
+                }
+            }
+            .popup-service-card-2-container {
+                .popup-service-card-2 {
+                    max-width: 400px;
+                }
+            }
+            .popup-service-card-3-container {
+                .popup-service-card-3 {
+                    max-width: 400px;
                 }
             }
         }

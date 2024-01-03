@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Розклад</title>
+    
+        <link rel="stylesheet" href="/rozklad/styles/rozklad.css">
+        <link rel="stylesheet" href="../styles/responsive.css">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/adap.css">
+        <link rel="stylesheet" href="../rozklad/styles/adapt-rozklad.css">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+        <!-- fonts -->
+        <!-- font-family: "Unbounded" -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Unbounded:wght@500&display=swap" rel="stylesheet">
+    
+        <!-- Montserrat -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
+        <script src="/javaScript/jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
+        <script src="/javaScript/main.js"></script>
+        <script src="/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+    
+    </head>
+<body>
+    <main>
+        <header>
+            <div class="header_container">
+                <nav>
+                    <a class="header-link" href="/index.html"><img class="header-logo" src="/images/vglogo.png" alt="logo"></a>
+                    <ul>
+                        <li><a class="nav-btn" href="/index.html">Головна</a></li>
+                        <li><a href="/index.html#services-id">Послуги</a></li>
+                        <li><a href="/trainer/trainers.html">Тренери</a></li>
+                        <li><a href="">Прайс</a></li>
+                        <li><a href="">Розклад</a></li>
+                        <li><a href="">Галерея</a></li>
+                        <li><a href="">Контакти</a></li>
+                        <li><a class="header-btn" href="#form-id">Записатися</a></li>
+                    </ul>
+                    <span class="burger-menu" onclick="toggleBurgerMenu()">&#9776;</span>
+                </nav>
+            </div>
+        </header>
+        
+
+
+        <section class="schedule-section">
+          <h2 class="wow animate__animated animate__fadeInUp">Розклад</h2>
+            <div class="schedule__container">
+
+                <span class="bg-blue-circle"></span>
+
+
+                <table class="wow animate__animated animate__fadeInUp">
+                    <thead>
+                      <tr>
+                        <th>Час та тривалість</th>
+                        <th>Понедiлок</th>
+                        <th>Вiвторок</th>
+                        <th>Середа</th>
+                        <th>Четвер</th>
+                        <th>П'ятниця</th>
+                        <th>Субота</th>
+                        <th>Недiля</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>8:00 - 9:00</td>
+                        <td>English</td>
+                        <td>Math</td>
+                        <td>Science</td>
+                        <td>History</td>
+                        <td>German</td>
+                        <td>English</td>
+                        <td>Math</td>
+                      </tr>
+                      <tr>
+                        <td>9:00 - 10:00</td>
+                        <td>Math</td>
+                        <td>English</td>
+                        <td>Art</td>
+                        <td>PE</td>
+                        <td>Music</td>
+                        <td>English</td>
+                        <td>Math</td>
+                      </tr>
+                      <tr>
+                        <td>10:00 - 11:00</td>
+                        <td>Science</td>
+                        <td>Art</td>
+                        <td>Math</td>
+                        <td>PE</td>
+                        <td>English</td>
+                        <td>English</td>
+                        <td>Math</td>
+                      </tr>
+                      <tr>
+                        <td>11:00 - 12:00</td>
+                        <td>History</td>
+                        <td>PE</td>
+                        <td>Art</td>
+                        <td>Math</td>
+                        <td>Science</td>
+                        <td>English</td>
+                        <td>Math</td>
+                      </tr>
+                      <tr>
+                        <td>12:00 - 1:00</td>
+                        <td>German</td>
+                        <td>Music</td>
+                        <td>PE</td>
+                        <td>History</td>
+                        <td>English</td>
+                        <td>English</td>
+                        <td>Math</td>
+                      </tr>
+                      <tr>
+                        <td>1:00 - 2:00</td>
+                        <td>Lunch</td>
+                        <td>Lunch</td>
+                        <td>Lunch</td>
+                        <td>Lunch</td>
+                        <td>Lunch</td>
+                        <td>English</td>
+                        <td>Math</td>
+                      </tr>
+                      <tr>
+                        <td>2:00 - 3:00</td>
+                        <td>PE</td>
+                        <td>German</td>
+                        <td>English</td>
+                        <td>Science</td>
+                        <td>Math</td>
+                        <td>English</td>
+                        <td>Math</td>
+                      </tr>
+                      <tr>
+                        <td>3:00 - 4:00</td>
+                        <td>Music</td>
+                        <td>History</td>
+                        <td>Art</td>
+                        <td>Math</td>
+                        <td>Science</td>
+                        <td>English</td>
+                        <td>Math</td>
+                      </tr>
+                      <tr>
+                        <td>4:00 - 5:00</td>
+                        <td>Art</td>
+                        <td>PE</td>
+                        <td>Math</td>
+                        <td>History</td>
+                        <td>English</td>
+                        <td>English</td>
+                        <td>Math</td>
+                      </tr>
+                      <tr>
+                        <td>5:00 - 6:00</td>
+                        <td>Science</td>
+                        <td>English</td>
+                        <td>Art</td>
+                        <td>PE</td>
+                        <td>German</td>
+                        <td>English</td>
+                        <td>Math</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+            </div>
+        </section>
+
+        <section id="form-id" class="form">
+            <div class="form_container">
+                <span class="bg-purple-circle"></span>
+                <span class="bg-yel-circle"></span>
+
+                <div class="form-left-part wow animate__animated animate__fadeInLeft">
+                    <img src="../images/form-img.png" alt="">
+                    <h3 class="txt-headline">Заповнюйте форму і адміністратор з Вами зв’яжеться</h3>
+                </div>
+
+                <div class="form-right-part wow animate__animated animate__fadeInRight">
+                    <h2 class="txt-headline">ЗАПИС НА ЗАНЯТТЯ</h2>
+                    <form>
+                        <label for="name"></label>
+                        <input class="input-field" type="text" id="name" name="name" placeholder="Ваше iм'я" maxlength="12" autocomplete="off" required><br><br>
+
+                        <label for="phone"></label>
+                        <input class="input-field" type="tel" id="phone" name="phone" placeholder="Номер телефону" pattern="[0-9+]*" maxlength="13" autocomplete="off" required><br><br>
+
+                        <label for="age"></label>
+                        <input class="input-field" type="number" id="age" name="age" placeholder="Вік дитини" autocomplete="off" pattern="[0-9]"" max="14" maxlength="2" required><br><br>
+
+                        <input type="submit" value="Записатися">
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    
+    <footer>
+
+        <div class="footer_container">
+            <div class="footer-links">
+
+                <a href="index.html"><img class="footer-logo" src="/images/vglogo.png" alt="logo"></a>
+                <ul>
+                    <li>
+                        <a href="">Головна</a>
+                        <a href="">Розклад</a>
+                    </li>
+                    <li>
+                        <a href="">Послуги</a>
+                        <a href="">Тренери</a>
+                    </li>
+                    <li>
+                        <a href="">Контакти</a>
+                        <a href="">Галерея</a>
+                    </li>
+                    <li>
+                        <a href="">Прайс</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <p>© Усі права захищені</p>
+        </div>
+
+    </footer>
+    
+</body>
+</html>
