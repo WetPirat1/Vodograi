@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,73 +8,90 @@
 
     <link rel="stylesheet" href="styles/responsive.css">
     <link rel="stylesheet" href="styles/style.css">
-
+    <link rel="stylesheet" href="./styles/header-footer.css"">
+    <link rel="stylesheet" href="styles/adap.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="./javaScript/burger.js"></script>
     <!-- fonts -->
     <!-- font-family: "Unbounded" -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Unbounded:wght@500&display=swap" rel="stylesheet">
 
+    <!-- Unbounded-light -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Unbounded:wght@200&display=swap" rel="stylesheet">
+
     <!-- Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
-    <script src="javaScript/jquery.js"></script>
-    <script src="javaScript/main.js"></script>
+    <script src="/javaScript/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="/javaScript/main.js"></script>
     <script src="/wow.min.js"></script>
     <script>
-      new WOW().init();
+        new WOW().init();
     </script>
 
 </head>
+
 <body>
     <header>
-
         <div class="header_container">
+            <a href="#"><img class="header-logo" src="../images/vglogo.png" alt=""></a>
             <nav>
                 <ul>
-                    <li class="header-logo"><a href="">ЛОГО</a></li>
                     <li><a class="nav-btn" href="">Головна</a></li>
-                    <li><a href="">Послуги</a></li>
+                    <li><a href="#services-id">Послуги</a></li>
                     <li><a href="trainer/trainers.html">Тренери</a></li>
-                    <li><a href="">Прайс</a></li>
-                    <li><a href="">Розклад</a></li>
-                    <li><a href="">Галерея</a></li>
-                    <li><a href="">Контакти</a></li>
-                    <li><a class="header-btn" href="">Записатися</a></li>
+                    <li><a href="#price-id">Прайс</a></li>
+                    <li><a href="/rozklad/rozklad.html">Розклад</a></li>
+                    <li><a href="#gallery-id">Галерея</a></li>
+                    <li><a href="#contact-us-id">Контакти</a></li>
+                    <li><a class="header-btn" href="#form-id">Записатися</a></li>
                 </ul>
             </nav>
+    
+            <div class="burger">
+                <span></span>
+            </div>
         </div>
-
     </header>
+    
 
     <main>
 
-        <section class="hero">
+        <section class="hero  wow animate__animated animate__fadeInDown">
             <div class="hero_container">
-                <span class="bg-yel-circle"></span>
+                <span class="bg-yel-circle wow animate__animated animate__fadeInUp"></span>
 
-                <div class="hero-title">
-                    <h1 class="txt-headline">ДИТЯЧИЙ БАСЕЙН VODO.GRAI</h1>
+                <div class="hero-title wow animate__animated animate__fadeInUp">
+                    <h1 class="txt-headline">ДИТЯЧИЙ БАСЕЙН <span style="color: rgb(0, 234, 255);">VODO</span>.<span style="color: rgb(149, 0, 218);">GRAI</span></h1>
                     <p>Плавання - це просто, весело та безпечно.</p>
                 </div>
-                <img src="images/hero-img.png" alt="тут має бути тематичне фото">
+                <img class="wow animate__animated animate__fadeInUp" src="images/hero-img.png" alt="тут має бути тематичне фото">
+
+                <a class="hero-btn wow animate__animated animate__fadeInUp" href="#form-id">Записатися</a>
 
                 <span class="bg-purple-circle"></span>
             </div>
         </section>
 
-        <section class="about-us">
+        <section id="about-us-id" class="about-us">
             <div class="about-us_container">
-                <h2 class="txt-headline">ПРО НАС</h2>
+                <h2 class="txt-headline wow animate__animated animate__fadeInUp">ПРО НАС</h2>
 
-                <div class="about-us-block">
+                <div class="about-us-block wow animate__animated animate__fadeInUp">
 
                     <img src="images/about-us-img.png" alt="тут має бути тематичне фото">
 
                     <div class="about-us-text">
-                        <h3 class="txt-headline" style="font-size: 37px;">Дружній простір для Ваших дітей</h3>
+                        <h3 class="txt-headline">Дружній простір для Ваших дітей</h3>
                         <p>Наш басейн - це місце, де кожна дитина навчиться плавати з комфортом та впевненістю. У нас працюють висококваліфіковані фахівці, які проводять індивідуальні і групові заняття. А також заняття для дітей з особливими потребами. Ми допомагаємо подолати страх перед водою, коригуємо психоемоційний стан. Ми прагнемо забезпечити найкращий досвід для вашої сім'ї!</p>
                     </div>
 
@@ -84,107 +102,142 @@
             </div>
         </section>
 
-        <section class="services">
+        <section id="services-id" class="services">
             <div class="services_container">
 
                 <span class="bg-purple-circle"></span>
 
-                <h2 class="txt-headline">ПОСЛУГИ</h2>
+                <h2 class="txt-headline wow animate__animated animate__fadeInUp">ПОСЛУГИ</h2>
 
                     <ul class="services-cards">
 
-                            <a href="javascript:PopUpShow()">
-                                <li class="services-card-1 card-shadow">
-                                    <img src="images/services-card1-img.png" alt="">
-                                    <h3 class="txt-headline">Вільне плавання</h3>
-                                    <p>Самостійне плавання: ваші правила, ваша швидкість. Відкрийте світ водних пригод на свій лад!</p>
-                                </li>
-                            </a>
+                        <a href="javascript:PopUpShow()">
+                            <li class="services-card-1 card-shadow wow animate__animated animate__fadeInLeft">
+                                <img src="images/services-card1-img.png" alt="">
+                                <h3 class="txt-headline">Вільне плавання</h3>
+                                <p>Самостійне плавання:<br>ваші правила, ваша швидкість. Відкрийте світ водних пригод на свій лад!</p>
+                            </li>
+                        </a>
+                    
+                        <a href="javascript:PopUpShow2()">
+                            <li class="services-card-2 card-shadow wow animate__animated animate__fadeInUp">
+                                <img src="images/services-card2-img.png" alt="">
+                                <h3 class="txt-headline">Індивідуальне</h3>
+                                <p>Iндивідуальне заняття з однією дитиною.<br>Особлива увага та розвиток плавання з власним інструктором.
+                                    Максимум користі для вашого малятка!</p>
+                            </li>
+                        </a>
 
-                            <a href="javascript:PopUpShow()">
-                                <li class="services-card-2 card-shadow">
-                                    <img src="images/services-card2-img.png" alt="">
-                                    <h3 class="txt-headline">Індивідуальне плавання</h3>
-                                    <p>Iндивідуальне заняття з однією дитиною. Особлива увага та розвиток плавання з власним інструктором. Максимум користі для вашого малятка!</p>
-                                </li>
-                            </a>
+                        <span class="bg-turquoise-circle wow animate__animated animate__fadeInUp"></span>
 
-                            <a href="javascript:PopUpShow()">
-                                <li class="services-card-3 card-shadow">
-                                    <img src="images/services-card3-img.png" alt="">
-                                    <h3 class="txt-headline">Групове плавання</h3>
-                                    <p>Заняття у групі. Веселі та навчальні заняття в невеликих групах. Сприяємо командній роботі та особистісному зростанню вашої дитини!</p>
-                                </li>
-                            </a>
+                        <a href="javascript:PopUpShow3()">
+                            <li class="services-card-3 card-shadow wow animate__animated animate__fadeInRight">
+                                <img src="images/services-card3-img.png" alt="">
+                                <h3 class="txt-headline">Групове плавання</h3>
+                                <p>Заняття у групі.<br>Веселі та навчальні заняття в невеликих групах. Сприяємо командній роботі та
+                                    особистісному зростанню вашої дитини!</p>
+                            </li>
+                        </a>
+                        
                     </ul>
 
                 </div>
 
-                <div class="popup-services-card-1-container" id="popup-service-card-1">
-                    <div class="popup-services-card-1">
-                        <div class="popup-services-card-1-body">
+                <div class="popup-service-card-1-container" id="popup-service-card-1">
+                    <div class="popup-service-card-1">
+                        <div class="popup-service-card-1-body">
 
-                            <h2 class="txt-headline">Індивідуальне заняття</h2>
+                            <h2 class="txt-headline">Вільне плавання</h2>
                             <img src="images/popup.png" alt="">
-                            <p>Індивідуальні заняття з плавання - це особлива увага та занурення в світ водних пригод для вашої дитини. Кожен урок проводиться з власним професійним інструктором, який враховує потреби та можливості кожного. Ми розуміємо, що кожна дитина унікальна, тому підходимо до кожного уроку індивідуально. Обирайте індивідуальні заняття з плавання для вашого малюка, і ми гарантуємо вам якісне навчання та незабутні враження від кожного візиту до нашого басейну. Наша мета - розвивати у дітях любов до води та навчити їх плавати з задоволенням та впевненістю. <span>Тривалість одного занятя - 45 хвилин.</span></p>
+                            <p>Самостійне плавання: ваші правила, ваша швидкість. Відкрийте світ водних пригод на свій лад!</p>
 
                             <a class="popup-form" href="">Записатися</a>
 
-                            <a class="popup-hide-btn" href="javascript:PopUpHide()">&#10007;</a>
+                            <a class="popup-hide-btn" href="javascript:PopUpHide()">&#x2715;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup-service-card-2-container" id="popup-service-card-2">
+                    <div class="popup-service-card-2">
+                        <div class="popup-service-card-2-body">
+                            <h2 class="txt-headline">Індивідуальне заняття</h2>
+                            <img src="images/popup.png" alt="">
+                            <p>Кожен урок проводиться з власним професійним інструктором, який враховує потреби та можливості кожного. Ми гарантуємо вам якісне навчання та незабутні враження від кожного візиту до нашого басейну.<br><br><span>Тривалість одного занятя - 45 хвилин.</span></p>
+
+                            <a class="popup-form" href="">Записатися</a>
+
+                            <a class="popup-hide-btn" href="javascript:PopUpHide2()">&#x2715;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup-service-card-3-container" id="popup-service-card-3">
+                    <div class="popup-service-card-3">
+                        <div class="popup-service-card-3-body">
+
+                            <h2 class="txt-headline">Групове плавання</h2>
+                            <img src="images/popup.png" alt="">
+                            <p>Ця послуга передбачає заняття у групі. Веселі та навчальні заняття в невеликих групах. Сприяємо командній роботі та особистісному зростанню вашої дитини!</p>
+
+                            <a class="popup-form" href="">Записатися</a>
+
+                            <a class="popup-hide-btn" href="javascript:PopUpHide3()">&#x2715;</a>
                         </div>
                     </div>
                 </div>
 
         </section>
 
-        <section class="price">
+        <section id="price-id" class="price">
+            
 
-            <h2 class="txt-headline">ПРАЙС</h2>
+            <h2 class="txt-headline wow animate__animated animate__fadeInUp">ПРАЙС</h2>
 
             <div class="price_container">
                 <span class="bg-purple-circle"></span>
-                <img src="images/price.svg" alt="">
+                <img class="wow animate__animated animate__fadeInUp" src="images/price.svg" alt="">
             </div>
 
         </section>
 
-        <section class="gallery">
-            <span class="bg-turquoise-circle"></span>
+        <section id="gallery-id" class="gallery">
+            <span class="bg-turquoise-circle wow animate__animated animate__fadeInUp"></span>
             <div class="gallery_container">
-                <h2 class="txt-headline">ГАЛЕРЕЯ</h2>
+                <h2 class="txt-headline wow animate__animated animate__fadeInUp">ГАЛЕРЕЯ</h2>
 
 
 
-                <div class="gallery-block">
+                <div class="gallery-block wow animate__animated animate__fadeInUp">
                     <!-- Full-width images with number text -->
                     <div class="mySlides">
                         <div class="numbertext">1 / 6</div>
-                        <img src="images/gallery-1.jpg" style="width:100%">
+                        <img src="images/galery/galery-1.jpg" style="width:100%">
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">2 / 6</div>
-                        <img src="images/gallery-2.jpg" style="width:100%">
+                        <img src="images/galery/galery-2.jpeg" style="width:100%">
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">3 / 6</div>
-                        <img src="images/gallery-3.jpg" style="width:100%">
+                        <img src="images/galery/galery-3.jpg" style="width:100%">
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">4 / 6</div>
-                        <img src="images/gallery-1.jpg" style="width:100%">
+                        <img src="images/galery/galery-4.jpg" style="width:100%">
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">5 / 6</div>
-                        <img src="images/gallery-2.jpg" style="width:100%">
+                        <img src="images/galery/galery-5.jpg" style="width:100%">
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">6 / 6</div>
-                        <img src="images/gallery-3.jpg" style="width:100%">
+                        <img src="images/galery/galery-6.jpg" style="width:100%">
                     </div>
 
                     <!-- Next and previous buttons -->
@@ -195,6 +248,8 @@
                 </div>
 
             </div>
+
+            <!-- Ваш код HTML и стили здесь -->
 
             <script>
 
@@ -235,41 +290,47 @@
             </script>
         </section>
 
-        <section class="form">
-            <div class="form_container">
-                <span class="bg-purple-circle"></span>
-                <span class="bg-yel-circle"></span>
+<section id="form-id" class="form">
+    <div class="form_container">
+        <span class="bg-purple-circle wow animate__animated animate__fadeInUp"></span>
+        <span class="bg-blue-circle wow animate__animated animate__fadeInUp"></span>
 
-                <div class="form-left-part">
-                    <img src="images/form-img.png" alt="">
-                    <h3 class="txt-headline">Заповнюйте форму і адміністратор з Вами зв’яжеться</h3>
-                </div>
+        <div class="form-left-part wow animate__animated animate__fadeInLeft">
+            <img src="images/form-img.png" alt="">
+            <h3 class="txt-headline">Заповнюйте форму і адміністратор зв’яжеться з Вами</h3>
+        </div>
 
-                <div class="form-right-part">
-                    <h2 class="txt-headline">ЗАПИС НА ЗАНЯТТЯ</h2>
-                    <form>
-                        <label for="name"></label>
-                        <input type="text" id="name" name="name" placeholder="Ім'я:" required><br><br>
+        <div class="form-right-part wow animate__animated animate__fadeInRight">
+            <h2 class="txt-headline">ЗАПИС НА ЗАНЯТТЯ</h2>
+            <form>
+                <label for="name"></label>
+                <input class="input-field" type="text" id="name" name="name" placeholder="Ваше iм'я" maxlength="12" autocomplete="off" required><br><br>
 
-                        <label for="phone"></label>
-                        <input type="tel" id="phone" name="phone" placeholder="Номер телефона:" required><br><br>
+                <label for="phone"></label>
+                <input class="input-field" type="tel" id="phone" name="phone" placeholder="Номер телефону" pattern="[0-9+]*" maxlength="13" autocomplete="off" required><br><br>
 
-                        <label for="age"></label>
-                        <input type="number" id="age" name="age" placeholder="Вік дитини:" required><br><br>
+                <label for="age"></label>
+                <input class="input-field" type="number" id="age" name="age" placeholder="Вік дитини" autocomplete="off" pattern="[0-9]" max="14" maxlength="2" required><br><br>
 
-                        <input type="submit" value="Записатися">
-                    </form>
-                </div>
+                <input class="wow animate__animated animate__fadeInUp" type="checkbox" id="agreement" style="height: 15px; margin-bottom: 15px;" required>
+                <label class="wow animate__animated animate__fadeInUp" for="agreement">Я погоджуюсь з <a class="policy-agree" href="" target="_blank" style="font-size: 14px; text-decoration: underline; ">обробкою моїх персональних даних</a></label><br><br>
 
-            </div>
-        </section>
+                <input type="submit" value="Записатися">
+            </form>
+            
+            <span class="bg-yel-circle wow animate__animated animate__fadeInUp"></span>
+        </div>
 
-        <section class="contact-us">
+    </div>
+</section>
+
+
+        <section id="contact-us-id" class="contact-us">
             <div class="contact-us_container">
-                <h2 class="txt-headline">КОНТАКТИ</h2>
+                <h2 class="txt-headline wow animate__animated animate__fadeInUp">КОНТАКТИ</h2>
 
                 <div class="contact-us-all">
-                    <ul class="contact-us-left">
+                    <ul class="contact-us-left wow animate__animated animate__fadeInUp">
                         <li>
                             <img src="images/adress.svg" alt="">
                                 <a href="">вулиця Виконкомівська, 24, Дніпро, Дніпропетровська область, 49000</a>
@@ -279,6 +340,8 @@
                             <img src="images/Phone.svg" alt="">
                                 <a href="">+38(096)2344567</a>
                         </li>
+
+                        <span class="bg-turquoise-circle"></span>
 
                         <li>
                             <img src="images/Viber.svg" alt="">
@@ -291,12 +354,81 @@
                         </li>
                     </ul>
 
-                    <a class="contat-us-map" href="">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240018.4612590781!2d35.092973122740695!3d48.381397342292615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe303fd08468f%3A0xa1cf3d5f2c11aba!2z0JTQvdGW0L_RgNC-LCDQlNC90ZbQv9GA0L7Qv9C10YLRgNC-0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNDkwMDA!5e0!3m2!1suk!2sua!4v1698775769925!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
+                    <a class="contat-us-map wow animate__animated animate__fadeInUp" href="">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.955973153465!2d35.04409661258978!3d48.45737427116084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe38dfe2059db%3A0x867035e4ed3484d3!2z0JTQuNGC0Y_Rh9C40Lkg0LHQsNGB0LXQudC9IFZvZG8uZ3JhaQ!5e0!3m2!1sen!2sde!4v1702217492241!5m2!1sen!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </a>
                 </div>
+
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="faq_container">
+
+                <h2 class="txt-headline wow animate__animated animate__fadeInUp" >FAQ</h2>
+
+                <div class="accordion wow animate__animated animate__fadeInUp"> 
+                    <span class="bg-purple-circle wow animate__animated animate__fadeInUp"></span>   
+                    <div class="accordion-item">
+                      <h3 class="accordion-title">Які умови безпеки дотримуються в басейні?</h3>
+                      
+                      <div class="accordion-body">
+                        <p>У басейні дотримуються всіх правил безпеки, які передбачені законодавством України.</p>
+                        <br>
+                        <p>Басейн огороджений парканом, що запобігає падінню людей у воду.</p>
+                        <br>
+                        <p>При вході в басейн необхідно пройти інструктаж з техніки безпеки.</p>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h3 class="accordion-title">Який досвід роботи має персонал басейну?</h3>
+                      <div class="accordion-body">
+                        <p>Персонал басейну має великий досвід роботи з обслуговуванням басейнів.</p>
+                        <p>Всі працівники басейну мають відповідну освіту та кваліфікацію.</p>
+                        <br>
+                        <p>Персонал басейну постійно проходить навчання та підвищення кваліфікації.</p>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h3 class="accordion-title">Чи є можливість відвідування басейну для дітей з особливими потребами?</h3>
+                      <div class="accordion-body">
+                        <p>Так, у басейні є можливість відвідування для дітей з особливими потребами.</p>
+                        <br>
+                        <p>Для цього необхідно звернутися до адміністратора басейну та отримати відповідну довідку.</p>
+                        <br>
+                        <p>Адміністрація басейну забезпечить комфортні умови для відвідування басейну дітьми з особливими потребами.</p>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h3 class="accordion-title">Чи є у басейні знижки для постійних клієнтів?</h3>
+                      <div class="accordion-body">
+                        <p>Так, у басейні є знижки для постійних клієнтів.</p>
+                        <br>
+                        <p>Для отримання знижки необхідно оформити клубну картку басейну.</p>
+                        <br>
+                        <p>Клубна картка дає право на знижку в розмірі 10% на всі послуги басейну.</p>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h3 class="accordion-title">Які сертифікати якості мають обладнання та вода в басейні?</h3>
+                      <div class="accordion-body">
+                        <p>Обладнання та вода в басейні мають всі необхідні сертифікати якості.</p>
+                        <br>
+                        <p>Обладнання басейну відповідає всім вимогам безпеки та якості.</p>
+                        <p>Вода в басейні регулярно перевіряється на відповідність санітарним нормам.</p>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h3 class="accordion-title">Чи є у басейні медична служба?</h3>
+                      <div class="accordion-body">
+                        <p>Так, у басейні є медична служба.</p>
+                        <br>
+                        <p>Медична служба працює цілодобово і надає першу медичну допомогу у разі необхідності.</p>
+                        <br>
+                        <p>Медична служба складається з кваліфікованих фахівців, які мають досвід роботи з обслуговування басейнів.</p>
+                      </div>
+                    </div>
+                  </div>  
 
             </div>
         </section>
@@ -308,7 +440,7 @@
         <div class="footer_container">
             <div class="footer-links">
 
-                <img src="images/adress.svg" alt="logo">
+                <a href="index.html"><img class="footer-logo" src="/images/vglogo.png" alt="logo"></a>
                 <ul>
                     <li>
                         <a href="">Головна</a>
@@ -329,10 +461,33 @@
 
             </div>
 
-            <p>Усі права захищені</p>
+            <p>© Усі права захищені | <a href="" style="font-size: 10px; ">Полiтика конфiденцiйностi</a></p>
         </div>
 
-    </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+        // Get the burger and navigation elements
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('nav');
 
+            // Toggle the 'active' class on burger and navigation on click
+            burger.addEventListener('click', function() {
+                this.classList.toggle('active');
+                nav.classList.toggle('open');
+
+            });
+
+            // Close the burger menu when any navigation link is clicked
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    burger.classList.remove('active');
+                    nav.classList.remove('open');
+                });
+            });
+            });
+        </script>
+    </footer>
 </body>
+
 </html>

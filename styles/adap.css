@@ -1,0 +1,313 @@
+@charset "UTF-8";
+@media (max-width: 1337px) {
+  main .about-us .about-us_container .about-us-block .about-us-text .txt-headline {
+    width: 400px;
+  }
+  main .form .form_container .bg-purple-circle {
+    padding: 250px;
+    border-radius: 979px;
+    background: rgba(151, 71, 255, 0.542);
+    filter: blur(200px);
+    position: absolute;
+    top: 233px;
+    left: 225px;
+    z-index: -1;
+  }
+}
+@media (max-width: 1300px) {
+  main h2 {
+    font-size: 45px;
+    margin-bottom: 80px;
+  }
+  main .hero .hero_container .hero-title h1 {
+    font-size: 40px;
+    margin-right: -60px;
+    margin-left: 50px;
+  }
+  main .hero .hero_container .hero-title p {
+    line-height: 20px;
+  }
+  main .hero .hero_container img {
+    width: 90%;
+    top: 70px;
+    left: 46px;
+  }
+  main .hero .hero_container .bg-purple-circle {
+    bottom: -474px;
+    right: 146px;
+  }
+  main .about-us .about-us_container .about-us-block .about-us-text .txt-headline {
+    font-size: 30px;
+  }
+  main .about-us .about-us_container .about-us-block img {
+    width: 60%;
+  }
+  main .services .services_container .services-cards li h3 {
+    font-size: 24px;
+  }
+  main .services .services_container .services-cards li p {
+    font-size: 20px;
+  }
+  main .form .form_container .form-left-part h3 {
+    font-size: 35px;
+  }
+  main .form .form_container .form-right-part h2 {
+    font-size: 40px;
+    line-height: 150%;
+  }
+  main .form .form_container .form-right-part form input[type=submit] {
+    margin-top: 100px;
+  }
+  main .contact-us .contact-us_container .contact-us-all .contact-us-left li a {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1200px) {
+  header {
+    padding: 20px 0;
+  }
+  main .hero {
+    padding-top: 180px;
+    background-image: url("/images/hero-adapt-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0 0 35px 35px;
+    height: 700px;
+    margin-bottom: 120px;
+    position: relative;
+  }
+  main .hero hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgb(0, 0, 0); /* цвет и прозрачность фильтра */
+    pointer-events: none;
+  }
+  main .hero .hero_container {
+    position: relative;
+    /* Добавлены стили для центрирования кнопки */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+  }
+  main .hero .hero_container .hero-btn {
+    display: flex;
+  }
+  main .hero .hero_container .hero-title {
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
+  main .hero .hero_container .hero-title h1 {
+    text-align: center;
+    display: -webkit-inline-box;
+    margin: 0;
+  }
+  main .hero .hero_container img {
+    display: none;
+  }
+  main .hero .hero_container .bg-yel-circle {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  main .hero .hero_container img {
+    width: 80%;
+    top: 39px;
+    left: 100px;
+  }
+  main .about-us .about-us_container .about-us-block img {
+    width: 55%;
+    margin-right: 10px;
+  }
+  main .about-us .about-us_container .about-us-block .about-us-text .txt-headline {
+    top: 13px;
+    left: -59px;
+    font-size: 25px;
+  }
+  main .services .services_container .services-cards li {
+    height: 600px;
+  }
+  main .services .services_container .services-cards li img {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    max-height: 200px;
+    max-width: 50%;
+  }
+  main .services .services_container .services-cards li h3 {
+    font-size: 22px;
+  }
+  main .services .services_container .services-cards li p {
+    font-size: 20px;
+  }
+  main .price .price_container img {
+    width: 85%;
+  }
+  main .form .form_container .bg-yel-circle {
+    right: 286px;
+  }
+}
+@media (max-width: 900px) {
+  main .hero .hero_container img {
+    top: 77px;
+  }
+  main .hero .hero_container .hero-title {
+    max-width: 330px;
+  }
+  main .hero .hero_container .hero-title h1 {
+    font-size: 30px;
+    max-width: 500px;
+  }
+  main .hero .hero_container .hero-title p {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  main .about-us {
+    margin-bottom: 55px;
+  }
+  main .about-us .about-us_container .about-us-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 800px;
+    height: 650px;
+  }
+  main .about-us .about-us_container .about-us-block img {
+    margin: 60px 0 50px 0;
+    width: 70%;
+  }
+  main .about-us .about-us_container .about-us-block .about-us-text {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  main .about-us .about-us_container .about-us-block .about-us-text .txt-headline {
+    position: inherit;
+    margin: 0;
+  }
+  main .about-us .about-us_container .about-us-block .about-us-text p {
+    width: 80%;
+  }
+  main .services .services_container .services-cards li {
+    padding: 0 20px;
+    max-width: 370px;
+  }
+  main .services .services_container .services-cards .bg-turquoise-circle {
+    display: none;
+  }
+  main .form .form_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  main .form .form_container .bg-purple-circle {
+    left: -108px;
+  }
+  main .form .form_container .form-left-part {
+    max-width: 80%;
+    margin-bottom: 50px;
+  }
+  main .form .form_container .form-left-part h3 {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  main .form .form_container .form-right-part {
+    max-width: 100%;
+  }
+  main .form .form_container .form-right-part form input[type=submit] {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  main .contact-us .contact-us_container .contact-us-all .contact-us-left li img {
+    margin-right: 5px;
+    max-width: 70px;
+    max-height: 70px;
+  }
+  main .contact-us .contact-us_container .contact-us-all .contact-us-left li a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 740px) {
+  main .hero {
+    margin-bottom: 100px;
+  }
+  main .hero .hero_container img {
+    left: 38px;
+    top: 146px;
+  }
+  main .gallery .bg-turquoise-circle {
+    display: none;
+  }
+  main .contact-us .contact-us_container .contact-us-all {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .contact-us .contact-us_container .contact-us-all .contact-us-left {
+    width: 90%;
+  }
+  main .contact-us .contact-us_container .contact-us-all .contat-us-map {
+    width: 90%;
+  }
+}
+@media (max-width: 501px) {
+  .services .services_container .popup-service-card-1-container .popup-service-card-1 {
+    max-width: 400px;
+  }
+  .services .services_container .popup-service-card-2-container .popup-service-card-2 {
+    max-width: 400px;
+  }
+  .services .services_container .popup-service-card-3-container .popup-service-card-3 {
+    max-width: 400px;
+  }
+}
+@media (max-width: 600px) {
+  main .services .popup-service-card-1-container .popup-service-card-1 {
+    height: 650px;
+    max-width: 400px;
+  }
+  main .services .popup-service-card-1-container .popup-service-card-1 .popup-service-card-1-body h2 {
+    font-size: 27px;
+  }
+  main .services .popup-service-card-1-container .popup-service-card-1 .popup-service-card-1-body img {
+    max-width: 350px;
+    height: 150px;
+  }
+  main .services .popup-service-card-2-container .popup-service-card-2 {
+    max-width: 400px;
+  }
+  main .services .popup-service-card-2-container .popup-service-card-2 .popup-service-card-2-body h2 {
+    font-size: 23px;
+  }
+  main .services .popup-service-card-2-container .popup-service-card-2 .popup-service-card-2-body img {
+    max-width: 350px;
+    height: 150px;
+  }
+  main .services .popup-service-card-2-container .popup-service-card-2 .popup-service-card-2-body p span {
+    font-size: 20px;
+  }
+  main .services .popup-service-card-3-container .popup-service-card-3 {
+    max-width: 400px;
+  }
+  main .services .popup-service-card-3-container .popup-service-card-3 .popup-service-card-3-body h2 {
+    font-size: 23px;
+  }
+  main .services .popup-service-card-3-container .popup-service-card-3 .popup-service-card-3-body img {
+    max-width: 350px;
+    height: 150px;
+  }
+  main .services .popup-service-card-3-container .popup-service-card-3 .popup-service-card-3-body p span {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=adap.css.map */
