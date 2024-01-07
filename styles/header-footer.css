@@ -8,8 +8,7 @@ header {
   top: 0;
   width: 100%;
   background-color: rgba(20, 28, 44, 0.679);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   z-index: 1000;
   transition: background-color 0.3s ease-in-out;
 }

@@ -1,0 +1,85 @@
+@charset "UTF-8";
+main .redirect-section {
+  height: 900px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/bg-redirect.jpg");
+}
+main .redirect-section .redirect__container {
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* Горизонтальное центрирование */
+  align-items: center; /* Вертикальное центрирование */
+}
+main .redirect-section .redirect__container .redirect-box {
+  padding: 45px;
+  background-color: rgba(15, 15, 15, 0.927);
+  border-radius: 15px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 500px;
+}
+main .redirect-section .redirect__container .redirect-box .ready-symbol {
+  font-size: 200px;
+  color: rgb(255, 255, 255);
+}
+main .redirect-section .redirect__container .redirect-box h2 {
+  margin-bottom: 0;
+  font-size: 22px;
+}
+main .redirect-section .redirect__container .redirect-box p {
+  margin-bottom: 60px;
+  font-size: 18px;
+}
+main .redirect-section .redirect__container .redirect-box .return-button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: rgb(196, 56, 211);
+  transition: 0.2s ease-in-out;
+}
+main .redirect-section .redirect__container .redirect-box .return-button:hover {
+  background-color: rgb(147, 46, 158);
+}
+
+@media (max-width: 570px) {
+  main .redirect-section .redirect__container {
+    height: 90%;
+  }
+  main .redirect-section .redirect__container .redirect-box {
+    width: 400px;
+  }
+  main .redirect-section .redirect__container .redirect-box .ready-symbol {
+    font-size: 100px;
+  }
+  main .redirect-section .redirect__container .redirect-box h2 {
+    font-size: 17px;
+  }
+  main .redirect-section .redirect__container .redirect-box p {
+    font-size: 15px;
+  }
+  main .redirect-section .redirect__container .redirect-box .return-button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(196, 56, 211);
+    font-size: 15px;
+    transition: 0.2s ease-in-out;
+  }
+  main .redirect-section .redirect__container .redirect-box .return-button:hover {
+    background-color: rgb(147, 46, 158);
+  }
+}
+@media (max-width: 440px) {
+  main .redirect-section .redirect__container .redirect-box {
+    padding: 45px 30px;
+  }
+  main .redirect-section .redirect__container .redirect-box h2 {
+    font-size: 18px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  main .redirect-section .redirect__container .redirect-box p {
+    font-size: 17px;
+  }
+}/*# sourceMappingURL=redirect-styles.css.map */

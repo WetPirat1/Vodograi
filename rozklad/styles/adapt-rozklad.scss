@@ -11,13 +11,13 @@
 
             .schedule__container {
                 .bg-blue-circle {
-                    padding: 300px;
+                    padding: 200px;
                     border-radius: 979px;
                     background: rgba(39, 199, 180, 0.659);
-                    filter: blur(200px);
+                    filter: blur(150px);
                     position: absolute;
                     top: -188px;
-                    left: -112px;
+                    left: -200px;
                     z-index: -1;
                 }
 
@@ -94,7 +94,7 @@ main .schedule-section .schedule__container::-webkit-scrollbar-track {
 @media (max-width: 768px) {
     main .schedule-section .schedule__container {
         h2 {
-            font-size: 40px; /* Adjust font size for smaller screens */
+            font-size: 25px; /* Adjust font size for smaller screens */
         }
 
         th, td {
@@ -109,10 +109,12 @@ main .schedule-section .schedule__container::-webkit-scrollbar-track {
 @media (max-width: 768px) {
 
     
-    main .schedule-section .schedule__container {
-        h2 {
-            font-size: 40px; /* Adjust font size for smaller screens */
+    main .schedule-section
+        h2{
+            font-size: 25px;
         }
+    .schedule__container {
+
 
         th, td {
             padding: 8px; /* Adjust cell padding for smaller screens */
@@ -124,11 +126,23 @@ main .schedule-section .schedule__container::-webkit-scrollbar-track {
 @media (max-width: 480px) {
     main .schedule-section .schedule__container {
         h2 {
-            font-size: 30px; /* Further adjust font size for phones */
+            font-size: 25px; /* Further adjust font size for phones */
         }
 
         th, td {
-            padding: 6px; /* Further adjust cell padding for phones */
+            padding: 6px;
+        }
+
+    }
+    main{
+        .form{
+            .form_container{
+                .form-right-part{
+                    h2{
+                        font-size: 35px;
+                    }
+                }
+            }
         }
     }
 }

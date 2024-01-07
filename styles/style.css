@@ -237,8 +237,7 @@ main .services .popup-service-card-1-container {
   max-width: 100%;
   max-height: 100%;
   background-color: rgba(0, 0, 0, 0.612);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   overflow: hidden;
   position: fixed;
   top: 0px;
@@ -307,8 +306,7 @@ main .services .popup-service-card-2-container {
   max-width: 100%;
   max-height: 100%;
   background-color: rgba(0, 0, 0, 0.612);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   overflow: hidden;
   position: fixed;
   top: 0px;
@@ -377,8 +375,7 @@ main .services .popup-service-card-3-container {
   max-width: 100%;
   max-height: 100%;
   background-color: rgba(0, 0, 0, 0.612);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   overflow: hidden;
   position: fixed;
   top: 0px;
@@ -516,8 +513,7 @@ main .gallery .gallery_container .gallery-block .next {
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
-  -moz-user-select: none;
-       user-select: none;
+  user-select: none;
   -webkit-user-select: none;
 }
 main .gallery .gallery_container .gallery-block .next {
@@ -598,14 +594,6 @@ main .form .form_container input {
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.47);
   text-align: center;
-}
-main .form .form_container input::-moz-placeholder {
-  text-align: center;
-  color: #FFFFFF;
-  opacity: 80%;
-  padding-left: 10px;
-  font-size: 16px;
-  line-height: 45px;
 }
 main .form .form_container input::placeholder {
   text-align: center;

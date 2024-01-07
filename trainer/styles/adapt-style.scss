@@ -1,14 +1,38 @@
+@media (max-width: 1400px) {
+    main{
+        .trainer-cards{
+            .trainer-cards_container{
+                .bg-turquoise-circle{
+                    left: 45px;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 680px) {
     main {
         .trainer-cards {
             padding-top: 110px;
+            .trainer-cards_container{
+                h1{
+                    font-size: 30px;
+                }
+                .bg-turquoise-circle{
+                    display: none;
+                }
+                .bg-yel-circle{
+                    left: -309px;
+                    filter: blur(91px);
+                }
+            }
         }
 
     .requirements{
         .requirements_container{
             h2{
                 max-width: 1000px;
-                font-size: 45px;
+                font-size: 30px;
                 line-height: 60px;
                 margin: 0 auto;
 
@@ -17,6 +41,10 @@
             }
 
             ul{
+                .bg-yel-circle{
+                    filter: blur(100px);
+                    left: -185px;
+                }
                 li{
                     align-items: center;
                     
@@ -57,6 +85,13 @@
     }
 
     .attention {
+        .bg-yel-circle{
+            left: -286px;
+            filter: blur(99px);
+        }
+        .bg-blue-circle{
+            right: 197px;
+        }
         .attention_container {
             h2 {
                 font-size: 35px;

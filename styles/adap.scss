@@ -364,6 +364,9 @@
                         padding: 0 20px;
                         max-width: 370px;
                     }
+                    .bg-turquoise-circle{
+                        display: none;
+                    }
                 }
             }
         }
@@ -376,6 +379,10 @@
 
                 align-items: center;
                 text-align: center;
+
+                .bg-purple-circle{
+                    left: -108px;
+                }
 
                 .form-left-part{
                     max-width: 80%;

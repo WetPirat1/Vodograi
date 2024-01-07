@@ -230,14 +230,6 @@ main .form .form_container input {
   background: rgba(255, 255, 255, 0.47);
   text-align: center;
 }
-main .form .form_container input::-moz-placeholder {
-  text-align: center;
-  color: #FFFFFF;
-  opacity: 80%;
-  padding-left: 10px; /* Отступ слева */
-  font-size: 16px; /* Размер шрифта */
-  line-height: 45px; /* Выравнивание по высоте с полем ввода */
-}
 main .form .form_container input::placeholder {
   text-align: center;
   color: #FFFFFF;

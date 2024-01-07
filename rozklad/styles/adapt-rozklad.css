@@ -9,13 +9,13 @@
     margin-bottom: 50px;
   }
   main .schedule-section .schedule__container .bg-blue-circle {
-    padding: 300px;
+    padding: 200px;
     border-radius: 979px;
     background: rgba(39, 199, 180, 0.659);
-    filter: blur(200px);
+    filter: blur(150px);
     position: absolute;
     top: -188px;
-    left: -112px;
+    left: -200px;
     z-index: -1;
   }
   main .schedule-section .schedule__container table {
@@ -49,7 +49,6 @@
   main .schedule-section .schedule__container::-webkit-scrollbar {
     width: 80%; /* Set the width of the scrollbar */
     height: 10px;
-    -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
   main .schedule-section .schedule__container::-webkit-scrollbar-thumb {
@@ -69,27 +68,30 @@
 /* Responsive styles for screens up to 768px */
 @media (max-width: 768px) {
   main .schedule-section .schedule__container h2 {
-    font-size: 40px; /* Adjust font size for smaller screens */
+    font-size: 25px; /* Adjust font size for smaller screens */
   }
   main .schedule-section .schedule__container th, main .schedule-section .schedule__container td {
     padding: 8px; /* Adjust cell padding for smaller screens */
   }
 }
 @media (max-width: 768px) {
-  main .schedule-section .schedule__container h2 {
-    font-size: 40px; /* Adjust font size for smaller screens */
+  main .schedule-section h2 {
+    font-size: 25px;
   }
-  main .schedule-section .schedule__container th, main .schedule-section .schedule__container td {
+  .schedule__container th, .schedule__container td {
     padding: 8px; /* Adjust cell padding for smaller screens */
   }
 }
 /* Responsive styles for screens up to 480px (phones) */
 @media (max-width: 480px) {
   main .schedule-section .schedule__container h2 {
-    font-size: 30px; /* Further adjust font size for phones */
+    font-size: 25px; /* Further adjust font size for phones */
   }
   main .schedule-section .schedule__container th, main .schedule-section .schedule__container td {
-    padding: 6px; /* Further adjust cell padding for phones */
+    padding: 6px;
+  }
+  main .form .form_container .form-right-part h2 {
+    font-size: 35px;
   }
 }
 /* Additional media queries for smaller screen sizes if needed */

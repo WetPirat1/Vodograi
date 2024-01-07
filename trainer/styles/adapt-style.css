@@ -1,13 +1,32 @@
+@media (max-width: 1400px) {
+  main .trainer-cards .trainer-cards_container .bg-turquoise-circle {
+    left: 45px;
+  }
+}
 @media (max-width: 680px) {
   main .trainer-cards {
     padding-top: 110px;
   }
+  main .trainer-cards .trainer-cards_container h1 {
+    font-size: 30px;
+  }
+  main .trainer-cards .trainer-cards_container .bg-turquoise-circle {
+    display: none;
+  }
+  main .trainer-cards .trainer-cards_container .bg-yel-circle {
+    left: -309px;
+    filter: blur(91px);
+  }
   main .requirements .requirements_container h2 {
     max-width: 1000px;
-    font-size: 45px;
+    font-size: 30px;
     line-height: 60px;
     margin: 0 auto;
     margin-bottom: 90px;
+  }
+  main .requirements .requirements_container ul .bg-yel-circle {
+    filter: blur(100px);
+    left: -185px;
   }
   main .requirements .requirements_container ul li {
     align-items: center;
@@ -36,6 +55,13 @@
     color: #e3e3e3;
     font-size: 13px;
     font-weight: 300;
+  }
+  main .attention .bg-yel-circle {
+    left: -286px;
+    filter: blur(99px);
+  }
+  main .attention .bg-blue-circle {
+    right: 197px;
   }
   main .attention .attention_container h2 {
     font-size: 35px;
